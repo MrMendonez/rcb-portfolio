@@ -109,6 +109,12 @@ ul {
     padding: 15px;
 }
 
+.certs {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
 #content {
     padding-bottom: 85px;
 }
