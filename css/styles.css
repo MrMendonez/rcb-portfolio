@@ -109,13 +109,9 @@ ul {
     padding: 15px;
 }
 
-.certs {
+.links {
     text-decoration: none;
     color: blue;
-    font-weight: bold;
-}
-
-.bold  {
     font-weight: bold;
 }
 
