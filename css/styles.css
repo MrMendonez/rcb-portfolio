@@ -1,5 +1,8 @@
 /* CSS for My Portfolio */
 
+a {
+    color: Green;
+}
 * { margin: 0; padding: 0; }
 
 body
