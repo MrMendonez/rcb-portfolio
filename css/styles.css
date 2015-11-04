@@ -19,7 +19,7 @@ td {
     vertical-align: text-top;
 }
 
-.td-title{
+.td-title {
     padding: 10px 0px; 
     font-weight: bolder;
 }
@@ -116,7 +116,7 @@ img {
 ul {
     list-style-position: inside;
     text-align: left;
-    padding: 15px;
+    padding-left: 15px;
 }
 
 .links {
