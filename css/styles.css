@@ -93,6 +93,10 @@ img {
     background-color: gray;
 }
 
+ul .checkbox {
+    list-style: (<i class="fa fa-check-square"></i>);
+}
+
 
 .container {
     width: 960px;
