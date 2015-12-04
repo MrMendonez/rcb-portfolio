@@ -1,69 +1,209 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<meta author="Darryl Mendonez">
-        <title>Darryl Mendonez</title>
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link href = "css/styles.css" rel = "stylesheet" />
-    </head>
-    <body>
-	    <div id = "navbar">
-			<div class = "container">
-		        <div id = "logo-area"><a href="home.html"><img src = "img/profilepic.jpg" id = "logo"/></a></div>
-		        <div id = "nav-area">
-		            <ul id = "nav">
-		            	<a href = "contact.html"><li>Contact</li></a>
-		            	<a href = "blog.html"><li>Blog</li></a>
-		                <a href = "resume.html"><li>Resume</li></a>
-		                <a href = "home.html"><li>Home</li></a>
-		            </ul>    
-		        </div>
-		    </div>
-		</div> <!-- navbar -->
-        <div class = "container page">
-            <div id = "name-title">
-                <h1>Darryl Mendonez</h1>
-                <img src = "img/profilepic.jpg" width = "150px" />
-                <h2>
-                	Web Design Teacher and<br>
-                	Google Education Trainer<br>
-                	at South Brunswick Public Schools
-            	</h2>
-		
+  <head>
+  	<meta author="Darryl Mendonez">
+    <title>Darryl Mendonez</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Darryl Mendonez</a>
+        <div class="collapse navbar-collapse  navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#contact" data-toggle="modal">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+            <hr>
+            <h2 class="text-center">Darryl Brian Mendonez</h2>
+            <img class="center-block" src="img/profilepic.jpg" class="img-responsive" width="150px">
+            <h4 class="text-center">[Web Design Teacher / Freelance Web Developer]</h4>
+            </div> <!-- panel-heading -->
+            <div class="panel-body">
+              <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#objective" aria-controls="objective" role="tab" data-toggle="tab">Objective</a></li>
+                  <li role="presentation"><a href="#professional-experience" aria-controls="professional-experience" role="tab" data-toggle="tab">Professional Experience</a></li>
+                  <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
+                  <li role="presentation"><a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Portfolio</a></li>
+                  <li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab">GitHub</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="objective">
+                    <h3>Career Objective</h3>
+                    <p>
+                      <ul>
+                        <li>I am looking to become a Computer Science or STEM Supervisor where I can take my skills and experience to bring full-stack web development curriculum to a school district. In this day and age students need to have access to learn the skills necessary to become web developers yet there is such a minimal amount of teachers and adminstrators with the knowledge to effectively teach students these skills. With my Computer Engineering background and 13 years of teaching experience I can write curriculum, train teachers, and teach students all the skills necessary to become full-stack web developers by the time they graduate high school and put them in higly competitive positions when applying to top colleges and universities.</li>
+                        <li>I am also looking to do free-lance work on web development projects.</li>
+                      </ul>
+                    </p>
+                    <h3 class = "content-title">Summary</h3>
+                    <p class = "content-text">
+                      I love teaching and I love technology. I am happy that my job allows me to feed both passions.<br>
+                      <ul>
+                        <li>I also teach Web Design (HTML, CSS, JS, and Bootstrap) and 21st Century Computer Applications which focuses on students mastering cloud-based computing through the Google Apps suite.</li>
+                        <li>I am a Tech Educator at South Brunswick High School in New Jersey. I am responsible for training teachers and staff on implementing the Google Apps suite into their workflow and curriculum. By using Google Apps district staff become more organized and efficient. Teachers are able to develop creative and innovative lessons.</li>
+                      </ul>
+                    </p>
+                  </div> <!-- end objective -->
+                  <div role="tabpanel" class="tab-pane" id="professional-experience">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="panel panel-primary">
+                          <div class="panel-heading">
+                            <h3>South Brunswick High School</h3>
+                            <h5>South Brunswick, NJ</h5>
+                            <h5>2004 - Present</h5>
+                          </div> <!-- end panel-heading -->
+                          <div class="panel-body">
+                            
+                            <div class="row">
+                              <div id="web-design-teacher" class="col-md-4">
+                                <h3 class="text-center">
+                                  Web Design & Business Teacher
+                                </h3>
+                                  <p>
+                                    July 2013 - Present
+                                    <u>Classes:</u>
+                                    <ul>
+                                      <li>Introduction to Web Design</li>
+                                      <li>Web Animation</li>
+                                      <li>21st Century Computer and Multimedia Applications</li>
+                                      <li>Personal Financial Management</li>
+                                    </ul>
+                                    <u>Notable Projects:</u>
+                                    <ul>
+                                      <li><a href="https://4598ceb4dd3fa10814247ba1accd1c31c1c9f9dd.googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/" target="blank">Learn Web Design</a> - Created my own Bootstrap website called "Learn Web Design" and is used in all my web design & computer classes by students as their online 'textbook' for class
+                                      <a href="https://4598ceb4dd3fa10814247ba1accd1c31c1c9f9dd.googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/" target="blank"><img src="img/learnwebdesign.png" class="img-responsive" /></a></li>
+                                    </p>
+                                  </ul>
+                                   <a href="gettingstarted.html" class="btn btn-default">Learn More</a>
+                              </div>
+                              <div id="html5" class="col-md-4">
+                                  <a href="html5_1.html">
+                                      <img class="img-responsive center-block" vspace="10" src="images/html5.png">
+                                  </a>
+                                   <h3 class="text-center"><a href = "html5_1.html">HTML5</a></h3>
+                                  <p>HTML5 is a markup language used for structuring and presenting content for the Internet and it aims to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood
+                                      by computers and devices.</p>
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-html5"></i> Learn HTML5 <span class="caret"></span></button>
+                                          <ul class="dropdown-menu" role="menu">
+                                              <li><a href="html5_1.html">Introduction to HTML5</a></li>
+                                              <li><a href="html5_2.html">HTML5 Basics</a></li>
+                                          </ul>
+                                  </div>
+                              </div>
+                              <div id="css3" class="col-md-4">
+                                  <a href="css1.html">
+                                      <img class="img-responsive center-block" src="images/css3.png">
+                                  </a>
+                                   <h3 class="text-center"><a href = "css1.html">CSS3</a></h3>
+                                  <p>Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language.</p> 
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-css3"></i> Learn CSS3 <span class="caret"></span></button>
+                                          <ul class="dropdown-menu" role="menu">
+                                              <li><a href="css1.html">Introduction to CSS</a></li>
+                                              <li><a href="css2.html">Colors and Backgound</a></li>
+                                              <li><a href="css3.html">Video Tutorials</a></li>
+                                          </ul>
+                                  </div>
+                              </div>
+                          </div>
+
+                          </div> <!-- end panel-body -->
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="education">...</div>
+                  <div role="tabpanel" class="tab-pane" id="portfolio">...</div>
+                  <div role="tabpanel" class="tab-pane" id="github">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="list-group"></div>
+                      </div>
+                      <div class="col-md-7">
+                        <table class="table">
+                          <thead>
+                            <th>sha</th>
+                            <th>Author</th>
+                            <th>Message</th>
+                            <th>Date</th>
+                          </thead>
+                          <tbody></tbody>
+                        </table>
+                      </div> <!-- end col-md-7 -->
+                    </div> <!-- end row -->
+                  </div>
+                </div>
+
+              </div>
+
+
+
             </div>
-            <div id = "content">
-            	<div id = "objective">
-            		<h3 class = "content-title">Career Objective</h3>
-	                <p class = "content-text">
-		                <ul>
-		                	<li>I am looking to become a Computer Science or STEM Supervisor where I can take my skills and experience to bring full-stack web development curriculum to a school district. In this day and age students need to have access to learn the skills necessary to become web developers yet there is such a minimal amount of teachers and adminstrators with the knowledge to effectively teach students these skills. With my Computer Engineering background and 13 years of teaching experience I can write curriculum, train teachers, and teach students all the skills necessary to become full-stack web developers by the time they graduate high school and put them in higly competitive positions when applying to top colleges and universities.</li>
-		                	<li>I am also looking to do free-lance work on web development projects.</li>
-		                </ul>
-					</p>
-            	</div>
-            	<div id = "summary">
-	                <h3 class = "content-title">Summary</h3>
-	                <p class = "content-text">
-		                I love teaching and I love technology. I am happy that my job allows me to feed both passions.<br>
-						<ul>
-							<li>I also teach Web Design (HTML, CSS, JS, and Bootstrap) and 21st Century Computer Applications which focuses on students mastering cloud-based computing through the Google Apps suite.</li>
-							<li>I am a Tech Educator at South Brunswick High School in New Jersey. I am responsible for training teachers and staff on implementing the Google Apps suite into their workflow and curriculum. By using Google Apps district staff become more organized and efficient. Teachers are able to develop creative and innovative lessons.</li>
-						</ul>
-					</p>
-				</div>  <!-- summary -->
-			</div>  <!-- content -->
-		</div>  <!-- container page -->
-		<div id = "footer">
-		    <div class = "container">
-		    	<a href = "mailto:darrylmendonez@gmail.com"><i class="fa fa-envelope"></i></a>
-		    	<a href = "https://plus.google.com/+DarrylMendonez/about" target = "blank"><i class="fa fa-google-plus"></i></a>
-		    	<a href = "https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target = "blank"><i class="fa fa-youtube-play"></i></a>
-		    	<a href = "https://www.twitter.com/MrMendonez" target = "blank"><i class="fa fa-twitter"></i></a>
-		    	<a href = "http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target = "blank"><i class="fa fa-stack-overflow"></i></a>
-		    	<a href = "https://github.com/MrMendonez" target = "blank"><i class="fa fa-github"></i></a>
-		        <a href = "https://www.linkedin.com/in/darrylmendonez" target = "blank"><i class="fa fa-linkedin"></i></a>
-		    </div>
-		</div> <!-- footer -->
+          </div> <!-- panel panel-primary -->
+        </div> <!-- col-md-12 -->
+      </div> <!-- row -->
+    </main>
+		<footer id="footer" class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class ="container">
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.linkedin.com/in/darrylmendonez" target="blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/MrMendonez" target="blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target="blank"><i class="fa fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.twitter.com/MrMendonez" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target="blank"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href ="https://plus.google.com/+DarrylMendonez/about" target="blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href ="mailto:darrylmendonez@gmail.com"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div> <!-- end collapse navbar-collapse navHeaderCollapse -->
+      </div> <!-- end container -->
+    </footer>
+    <aside class="modal fade" id="contact" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Contact</h4>
+          </div>
+          <div class = "modal-body text-center">
+            <ul class="list-inline">
+              <li><a href="https://www.linkedin.com/in/darrylmendonez" target="blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/MrMendonez" target="blank" class="btn btn-github"><i class="fa fa-github"></i></a></li>
+              <li><a href="http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target="blank" class="btn btn-stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+              <li><a href="https://www.twitter.com/MrMendonez" target="blank" class = "btn btn-twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target="blank" class="btn btn-youtube"><i class="fa fa-youtube-play"></i></a></li>
+              <li><a href ="https://plus.google.com/+DarrylMendonez/about" target="blank" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
+              <li class="u-email"><a href ="mailto:darrylmendonez@gmail.com" class = "btn btn-email"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/repos.js"></script>
+    <script type="text/javascript" src="js/commits.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     </body>
  </html>
