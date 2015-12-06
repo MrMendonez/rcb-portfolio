@@ -1,15 +1,15 @@
 // Scripts for My Portfolio
 
 $(document).ready(function(){
-  var carrotUp = $("<i>").addClass("fa fa-sort-asc");
-  var carrotDown = $("<i>").addClass("fa fa-sort-desc");
+  var carrotUp = $("<span>").addClass("glyphicon glyphicon-triangle-top");
+  var carrotDown = $("<span>").addClass("glyphicon glyphicon-triangle-bottom");
 
   $(document).on("click", ".read-more", function(){
-    $(".read-more").replaceWith($("<span>").addClass("read-less ").append("Read less ").append(carrotUp));
+    $(this).replaceWith($("<span>").addClass("read-less").append("Read less ").append(carrotUp));
     })
 
   $(document).on("click", ".read-less", function(){
-    $(".read-less").replaceWith($("<span>").addClass("read-more ").append("Read more ").append(carrotDown));
+    $(this).replaceWith($("<span>").addClass("read-more").append("Read more ").append(carrotDown));
   })
-  
+
 });
