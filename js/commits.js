@@ -15,14 +15,17 @@ $(document).ready(function() {
   });
 
   function buildTableRow(commitData) {
-    var shaTd = $("<td>").append(commitData.sha);
+    var shaTd = $("<td>").append(commitLink);
     var authorTd = $("<td>").append(commitData.author.login);
     var messageTd = $("<td>").append(commitData.commit.message);
     var dateTd = $("<td>").append(commitData.commit.author.date);
+    var commitLink = $("<a>").append(commitData.sha);
+    commitLink.attr("href", commitData.html_url).attr("target", "_blank");
 
-    return $("<tr>").append(shaTd)
+    return $("<tr>").append(shaTd.append(commitLink))
       .append(authorTd)
       .append(messageTd)
       .append(dateTd);
+
   }
 });
