@@ -18,15 +18,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .eight-bit-font {
-  font-family: "Press Start 2P"
+  font-family: "Press Start 2P";
 }
 
 .friends-font {
-    font-family: "Shadows Into Light"
+    font-family: "Shadows Into Light";
 }
 
 .iceland-font {
-  font-family:  "Iceland"
+  font-family:  "Iceland";
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans";
 }
 
 /* Social Media Buttons */
