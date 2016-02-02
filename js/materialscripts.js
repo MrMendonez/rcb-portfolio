@@ -9,4 +9,9 @@ $(document).ready(function(){
     $(this).toggleClass("animated pulse");
   })
 
+  // Parallax Effect
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
 }); // end document ready function
