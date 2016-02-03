@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .parallax-container {
-      height: 800px;
-    }
+  height: 800px;
+}
 
 .inline {
     display: inline-block;
