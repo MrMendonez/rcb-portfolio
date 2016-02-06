@@ -16,6 +16,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <!-- Materialize Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Devicons -->
+  <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <!-- Animations by Dan Eden -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <!-- Custom Styles -->  
@@ -53,11 +55,11 @@
       <div class="row container">
         <img src="img/profilepicsf4.jpg" width="300px" class="responsive-img rounded-img center-block" />
         <h5 class="center-align">Web Design Teacher / Front-End Web Developer</h5>
-        <p>A high school teacher in South Brunswick, NJ where I teach HTML, CSS, Bootstrap, and jQuery in my Web Design classes as well as cloud-based computing and photoshop in my computer classes.<br />
+        <p><i class="fa fa-graduation-cap fa-2x"></i> A high school teacher in South Brunswick, NJ where I teach HTML, CSS, Bootstrap, and jQuery in my Web Design classes as well as cloud-based computing and photoshop in my computer classes.<br />
         <br />
-        I'm finishing my training to become a full-stack web developer at Rutgers Coding Bootcamp, a rigorous program where I’ve learned much more about web development including Materialize, APIs, NodeJS, MYSQL, Express, and so much more.<br />
+        <i class="fa fa-code fa-2x"></i> I'm finishing my training to become a full-stack web developer at Rutgers Coding Bootcamp, a rigorous program where I've learned much more about web development including Materialize, APIs, NodeJS, MYSQL, Express, and so much more.<br />
         <br />
-        I also have a passion for exploring. I've snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I've backpacked from Costa Rica to Nicaragua and hiked the Concepcion Volcano of Ometepe on horseback. I've seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail in the Cathedral of Valencia in Spain. I've swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I'm not finished...</p>
+        <i class="fa fa-plane fa-2x"></i> When I'm not working I feed my love for traveling. I've snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I've backpacked from Costa Rica to Nicaragua and hiked the Concepcion Volcano of Ometepe on horseback. I've seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail at the Cathedral of Valencia in Spain. I've swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I have much more to see...</p>
       </div> <!-- end row container -->
     </div> <!-- end section grey -->
     <div class="parallax-container valign-wrapper">
@@ -71,75 +73,103 @@
         <div class="col s6">
           <div class="card">
             <div class="card-image card-image waves-effect waves-block waves-light">
-              <img src="img/dailybriefing.png" class="activator">
+              <a href="http://dailybriefing.herokuapp.com/" target="_blank"><img src="img/dailybriefing.png" class="wave"></a>
             </div>
             <div class="card-content black-text">
-              <span class="card-title activator grey-text text-darken-4">Daily Briefing<i class="material-icons right">more_vert</i></span>
+              <a href="http://dailybriefing.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4">Daily Briefing</span></a>
               <p>
-                Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice.<br />
+                Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice. Daily Briefing as a front-end project utilizing many web tools including:
+                <div class="container">
+                  <ul>
+                    <li class="bullets">Materialize is the CSS framework</li>
+                    <li class="bullets">jQuery is the engine</li>
+                    <li class="bullets">API's:
+                    <div class="container">
+                      <ul>                  
+                        <li class="bullets">The Dark Sky Forecast</li>
+                        <li class="bullets">Google Maps</li>
+                        <li class="bullets">Bing</li>
+                        <li class="bullets">EventBrite</li>
+                        <li class="bullets">Flickr</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="bullets">Firebase is used for the 'Like' button counter</li>
+                  </ul>
+                </div>
               </p>
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn grey darken-3" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
+              </div> <!-- end center-btn -->
             </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn grey darken-3" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
-            </div>
-            <div class="card-reveal black-text">
-              <span class="card-title grey-text text-darken-4">Details on Daily Briefing<i class="material-icons right">close</i></span>
-              <ul>
-                <li class="bullets">Materialize is the CSS framework</li>
-                <li class="bullets">jQuery is the engine</li>
-                <li class="bullets">API's:
-                    <ul>
-                      <li class="bullets">The Dark Sky Forecast</li>
-                      <li class="bullets">Google Maps</li>
-                      <li class="bullets">Bing</li>
-                      <li class="bullets">EventBrite</li>
-                      <li class="bullets">Flickr</li>
-                    </ul>
-                </li>
-                <li class="bullets">Firebase is used for the 'Like' button counter</li>
-              </ul>
-              <div class="card-action">
-              <a class="waves-effect waves-light btn grey darken-3" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
-            </div>
-            </div> <!-- end card-reveal -->
           </div>
         </div> <!-- end daily briefing col s6 -->
         <div class="col s6">
           <div class="card">
             <div class="card-image card-image waves-effect waves-block waves-light">
-              <img src="img/fireandice.png" class="activator">
+              <a href="http://fireandicepoem.herokuapp.com/" target="_blank"><img src="img/fireandice.png" class="wave"></a>
             </div>
             <div class="card-content black-text">
-              <span class="card-title activator grey-text text-darken-4">Daily Briefing<i class="material-icons right">more_vert</i></span>
+              <a href="http://fireandicepoem.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4">Fire and Ice</span></a>
               <p>
-                Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice.<br />
+                A site of the poem Fire and Ice by Robert Frost with stunning images parallaxed as you read the poem. This was a practice in MaterializeCSS and the parallax effect that has become very popular
               </p>
+              <br />
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn grey darken-3" href="http://fireandicepoem.herokuapp.com/" target="_blank">Launch Fire and Ice <i class="material-icons right">launch</i></a>
+              </div> <!-- end center-btn -->
             </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn grey darken-3" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
-            </div>
-            <div class="card-reveal black-text">
-              <span class="card-title grey-text text-darken-4">Details on Daily Briefing<i class="material-icons right">close</i></span>
-              <ul>
-                <li class="bullets">Materialize is the CSS framework</li>
-                <li class="bullets">jQuery is the engine</li>
-                <li class="bullets">API's:
-                    <ul>
-                      <li class="bullets">The Dark Sky Forecast</li>
-                      <li class="bullets">Google Maps</li>
-                      <li class="bullets">Bing</li>
-                      <li class="bullets">EventBrite</li>
-                      <li class="bullets">Flickr</li>
-                    </ul>
-                </li>
-                <li class="bullets">Firebase is used for the 'Like' button counter</li>
-              </ul>
-              <div class="card-action">
-              <a class="waves-effect waves-light btn grey darken-3" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
-            </div>
-            </div> <!-- end card-reveal -->
           </div>
         </div> <!-- end fire and ice col s6 -->
+      </div> <!-- end row container -->
+      <div class="row container">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a href="https://miketysonsshootout.herokuapp.com/" target="_blank"><img src="img/shootout.png" class="activator"></a>
+            </div>
+            <div class="card-content black-text">
+              <a href="https://miketysonsshootout.herokuapp.com/" target="_blank"><span class="card-title activator grey-text text-darken-4">Mike Tyson's Shoot-Out</span></a>
+              <p>
+                A 'Rock, Paper, Scissors, Shoot!' game with a throwback theme to the tune of Mike Tyson's Punch-Out. Name your character or play as Little Mac and see if you can beat Mike Tyson in a game of Rock, Paper, Scissors!
+                <div class="container">
+                  <ul>
+                    <li class="bullets">CSS3 and jQuery were both used for animations</li>
+                   <li class="bullets">CSS3 and Font Awesome were used to design the NES controller</li>
+                   <li>Optimized for mobile play with Bootstrap</li>
+                  </ul>
+                </div>
+              </p>
+              <br />
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn grey darken-3" href="https://miketysonsshootout.herokuapp.com/" target="_blank">Play Mike Tyson's Shoot-Out <i class="material-icons right">launch</i></a>
+              </div> <!-- end center-btn -->
+            </div>
+          </div>
+        </div> <!-- end booked col s6 -->
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a href="https://immense-inlet-4323.herokuapp.com/" target="_blank"><img src="img/booked.png" class="activator"></a>
+            </div>
+            <div class="card-content black-text">
+              <a href="https://immense-inlet-4323.herokuapp.com/" target="_blank"><span class="card-title activator grey-text text-darken-4">Booked</span></a>
+              <p>
+                A front-end hotel booking website. Search for any city in the world to find hotels.
+                <div class="container">
+                  <ul>
+                    <li class="bullets">jQuery was used for animations</li>
+                   <li class="bullets">Bootstrap was used for responsive design, carousel, and modals</li>
+                  </ul>
+                </div>
+              </p>
+              <br />
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn grey darken-3" href="https://immense-inlet-4323.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
+              </div> <!-- end center-btn -->
+            </div>
+          </div>
+        </div> <!-- end booked col s6 -->
       </div> <!-- end row container -->
     </div> <!-- end section grey -->
   </main>
