@@ -14,4 +14,11 @@ $(document).ready(function(){
     $('.parallax').parallax();
   });
 
+  // Pulse animation on mouse hover for img links
+  $(".pulse-on-mouseenter").on("mouseenter", function() {
+    $(this).toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $(this).toggleClass("animated pulse");
+  })
+
 }); // end document ready function
