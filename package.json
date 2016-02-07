@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MrMendonez/rcb-portfolio/issues"
   },
-  "homepage": "https://github.com/MrMendonez/rcb-portfolio#readme"
+  "homepage": "https://github.com/MrMendonez/rcb-portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
