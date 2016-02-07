@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors Shoot!</title>
+  <meta author="Darryl Mendonez">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/animations.css">
+  <link rel="stylesheet" type="text/css" href="css/social-media.css">
+  <link rel="stylesheet" type="text/css" href="css/nes-controller.css">
+  <link rel="stylesheet" type="text/css" href="css/shootout-styles.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <main class="container">
+    <div id="main-panel" class="panel panel-default">
+      <div id="panel-title" class="panel-body text-center">Mike Tyson's</div>
+      <div class="panel-body text-center">
+        <div id="jumbotron-and-new-button">
+          <div class="jumbotron">
+            <h1 id="shoot-out" class="inline">Shoot-Out!!<span id="reg" class="inline">&reg;</span></h1>
+          </div>
+          <h4 id="new"><span class="glove-color"><i class="fa fa-hand-rock-o fa-rotate-90"></i> <i class="fa fa-hand-paper-o fa-rotate-90"></i>  <i class="fa fa-hand-scissors-o fa-flip-horizontal"></i></span> <button id="new-button" class="btn btn-danger">NEW</button> <span class="glove-color"> <i class="fa fa-hand-scissors-o"></i> <i class="fa fa-hand-paper-o fa-rotate-270"></i> <i class="fa fa-hand-rock-o fa-rotate-270"></i></span></h4>
+        </div> <!-- end jumbotron-and-new-button -->
+        <div id="name-form-div">
+          <br />
+          <br />
+          <form id="name-form" class="form-inline">
+            <div class="form-group">
+              <label class="blue-font">Enter Name:</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Little Mac">
+            </div>
+            <button id="submit-name-button" type="submit" class="btn btn-danger">Play</button>
+          </form>
+        </div> <!-- end name-form-div -->
+        <div id="1987-nintendo-div">
+          <br />
+          <br />
+          <br />
+          <span class="white-font">&copy;1987 Nintendo</span></h4>
+        </div> <!-- end 1987-nintendo-div" -->
+        <div id="gameplay-panel" class="panel panel-default">
+          <div id="tv" data-animationstatus="not-playing">
+            <div id="choose-screen">
+              <br />
+              <p>Round: <span class="round-number">1</span> of 5</p>
+              <i class="fa fa-hand-rock-o fa-5x"></i> <i class="fa fa-hand-paper-o fa-5x"></i>  <i class="fa fa-hand-scissors-o fa-5x"></i><br />
+              <i class="fa fa-question fa-5x tossing-nonstop"></i>
+            </div>
+            <div id="rpss-screen">
+              <br />
+              <br />
+              <h4 id="rock-screen">Rock</h4>
+              <h4 id="paper-screen">Paper</h4>
+              <h4 id="scissors-screen">Scissors</h4>
+              <h4 id="shoot-screen">Shoot!</h4>
+            </div>
+            <div id="reveal-screen">
+              <br />
+              <p class="smaller-font"><span class="username-placeholder"></span>:&nbsp;&nbsp;&nbsp;Mike Tyson:</p>
+              <i id="reveal-screen-user-choice" class="fa fa-5x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="reveal-screen-computer-choice" class="fa fa-5x"></i>
+            </div>
+            <div id="end-of-round-screen">
+              <br />
+              <h2 class="won-lost-or-tied-msg"></h2>
+            </div>
+            <div id="pause-screen">
+              <p>Paused</p>
+            </div>
+            <div id="game-over-screen">
+              <p><span class="username-placeholder"></span>'s Score: <span class="user-score">0</span></p>
+              <p>Mike Tyson's Score: <span class="computer-score">0</span></p>
+              <p>Ties: <span class="tied-game-count">0</span></p>
+              <p class="won-lost-or-tied-series"></p>
+              <p>Press button to play again!</p>
+            </div>
+          </div> <!-- end tv screen -->
+          <br />
+           <!-- nes controller -->
+          <div id="nes-controller" class="controller-background">
+            <i id="d-pad" data-choice="Rock" class="fa fa-plus fa-5x btn-choices"></i>
+            <i id="select" class="fa fa-minus fa-3x"></i>
+            <i id="start" data-status="on" class="fa fa-minus fa-3x"></i>
+            <i id="a-button" data-choice="Paper" class="fa fa-circle fa-3x btn-choices"></i>
+            <i id="b-button" data-choice="Scissors" class="fa fa-circle fa-3x btn-choices"></i>
+          </div>
+          <br />
+          <div id="scoreboard" class = "text-center">
+            <br />
+            <br />
+            <h4><span class="username-placeholder"></span>: <span class="user-score">0</span></h4>
+            <h4>Mike Tyson: <span class="computer-score">0</span></h4>
+            <h4>Ties: <span class="tied-game-count">0</span></h4>
+            <!-- <h3 class="won-lost-or-tied-msg"></h3> -->
+          </div>
+          <div id="credits" class = "text-center">
+            <p class="white-font">Closing Credits</p>
+            <p class="white-font">Inspired by Mike Tyson's Punch-Out</p>
+            <p class="white-font">Game designed by <a href="https://darrylmendonez.herokuapp.com/" target="_blank">Darryl Mendonez</a></p>
+            <button id="play-again-button" class="btn btn-success btn-choices">Play Again</button>
+            <button id="exit-button" class="btn btn-danger">Exit</button>
+          </div>
+        </div> <!-- gameplay-panel -->
+      </div>
+    </div>
+  </main>
+  <aside id="credits-modal" class="modal fade" role="dialog"  tabindex='-1'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Credits</h4>
+        </div>
+        <div class = "modal-body text-center">
+          <p>Inspired by Mike Tyson's Punch-Out</p>
+          <p>Game designed by <a href="https://darrylmendonez.herokuapp.com/" target="_blank">Darryl Mendonez</a></p>
+        </div>
+        <div class="modal-footer">
+          <button id="reset-button" class="btn btn-danger" data-dismiss="modal">Reset</button>
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <aside class="modal fade" id="contact" role="dialog"  tabindex='-1'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Contact</h4>
+        </div>
+        <div class = "modal-body text-center">
+          <ul class="list-inline">
+            <li><a href="https://www.linkedin.com/in/darrylmendonez" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/MrMendonez" target="_blank" class="btn btn-github"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target="_blank" class="btn btn-stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.twitter.com/MrMendonez" target="_blank" class = "btn btn-twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target="_blank" class="btn btn-youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href ="https://plus.google.com/+DarrylMendonez/about" target="_blank" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
+            <li class="u-email"><a href ="mailto:darrylmendonez@gmail.com" class = "btn btn-email"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script type="text/javascript" src="js/shootout-scripts.js"></script>
+</body>
+</html>
