@@ -44,12 +44,9 @@ nav, footer {
   opacity: 0.75;
 }
 
-.inline {
-    display: inline-block;
-}
-
-.borderless {
-    border: 0;
+ul#footer-nav li {
+    display:inline;
+    margin: 0px 20px;
 }
 
 .raleway {
@@ -72,3 +69,12 @@ nav, footer {
   font-family: "Josefin Sans";
 }
 
+/*unused classes so far*/
+
+.inline {
+    display: inline-block;
+}
+
+.borderless {
+    border: 0;
+}
