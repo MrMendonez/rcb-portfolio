@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Rutgers Coding Bootcamp Portfolio",
+  "main": "express-demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMendonez/rcb-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrMendonez/rcb-portfolio/issues"
+  },
+  "homepage": "https://github.com/MrMendonez/rcb-portfolio#readme"
+}
