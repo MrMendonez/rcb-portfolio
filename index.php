@@ -1,1 +1,1 @@
-<?php require 'materialized.html' ;?>
+<?php require 'index.html' ;?>
