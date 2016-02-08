@@ -2,6 +2,7 @@ var express = require('express');
 var GitHubApi = require('node-github');
 var bodyparser = require('body-parser');
 var session = require('express-session');
+var middleware = require('./middleware.js')
 var app = express();
 var PORT = process.env.PORT || 3000;
 
@@ -20,6 +21,13 @@ app.use(session({
 
 app.use(bodyparser.urlencoded({extended:false}));
 
+app.use(session({
+  secret: "fjkdlasfjda",
+  cookie: {maxAge: 60000},
+  saveUninitialized: true,
+  resave: false
+}));
+
 app.get("/", function(req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
@@ -28,8 +36,12 @@ app.get("/login", function(req, res) {
   res.sendFile(process.cwd() + "/views/login.html");
 });
 
-app.get("/resume", function(req, res) {
+app.get("/resume", middleware.isAuthenticated, function(req, res) {
   res.sendFile(process.cwd() + "/views/resume.html");
+});
+
+app.get("/loginhelp", function(req, res) {
+  res.sendFile(process.cwd() + "/views/loginhelp.html");
 });
 
 app.get("/repos", function(req, res) {
@@ -38,10 +50,6 @@ app.get("/repos", function(req, res) {
 
 app.get("/shootout", function(req, res) {
   res.sendFile(process.cwd() + "/views/rock-paper-scissors.html");
-});
-
-app.get("/img", function(req, res) {
-  res.sendFile(process.cwd() + "/views/img");
 });
 
 app.get('/repos/:user', function(req, res) {
@@ -53,7 +61,6 @@ app.get('/repos/:user', function(req, res) {
   github.user.getFrom({
     user: user
   }, function(err, result) {
-    console.log(result);
     res.send(JSON.stringify(result));
   });
 });
@@ -62,32 +69,18 @@ app.get('/repos/:user', function(req, res) {
 
 
 
-// Log in to view resume
-function middleware(req,res,next){
- var sess = req.session;
 
- if(sess.authenticated === undefined || sess.authenticated === false){
-   res.redirect("/resume");
- }
- next();
-
-}
-
-app.post('/resume', function(req,res){
-   console.log(req.body);
-   if(req.body.usrname === "guest" && req.body.password === "guest"){
-     req.session.authenticated = true;
-     res.redirect("/views/resume.html");
-   }
-   else {
-     req.session.authenticated = false;
-     res.redirect("/views/loginhelp.html");
-   }
-
-});
-
-app.get("/help", function(req, res) {
-  res.sendFile(process.cwd() + "/views/loginhelp.html");
+app.post('/login', function(req,res) {
+  console.log(req.body);
+  if(req.body.usrname === "guest" && req.body.password === "guest") {
+    req.session.isAuthenticated = true;
+    console.log("if fired");
+    res.redirect("/resume");
+  }
+  else {
+    req.session.isAuthenticated = false;
+    res.redirect("/loginhelp");
+  }
 });
 
 // Listening for request
