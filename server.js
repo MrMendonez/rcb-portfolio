@@ -44,10 +44,6 @@ app.get("/loginhelp", function(req, res) {
   res.sendFile(process.cwd() + "/views/loginhelp.html");
 });
 
-app.get("/repos", function(req, res) {
-  res.sendFile(process.cwd() + "/views/repos.html");
-});
-
 app.get("/shootout", function(req, res) {
   res.sendFile(process.cwd() + "/views/rock-paper-scissors.html");
 });
