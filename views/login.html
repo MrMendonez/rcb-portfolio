@@ -37,27 +37,32 @@
     </nav>
   </div> <!-- end navbar -->
   <main>
-    <div id="home" class="parallax-title-container scrollspy">
+    <div id="home" class="parallax-container scrollspy">
       <div class="center-block">
         <h1 class="center-align title">Darryl Mendonez</h1>
         <h4 class="center-align title"><i>Login to view resume</i></h4>
       </div>
       <div class="parallax">
-        <img src="img/macbookdesk2.jpg">
+        <img src="img/macbooklogin2.jpg">
       </div>
     </div> <!-- end parallax-container -->
     <div id="bio" class="section grey darken-1 scrollspy">
       <div class="row container">
-        <h4>Login to view resume</h4>
-        <form class="col s12" method="POST">
+        <div class="col s4">
+          <h4>
+          Guest? Use guest login:</h4>
+          <h5>User Name: guest<br />
+          Password: guest</h5>
+        </div>
+        <form class="col s8" method="POST">
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s8">
               <input id="usrname" type="text" class="validate" name="usrname">
               <label for="usrname">User Name</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s8">
               <input id="password" type="password" class="validate" name="password">
               <label for="password">Password</label>
             </div>
@@ -66,10 +71,6 @@
           <br />
           <br />
         </form>
-        <h5>
-        Guest? Use guest login:</h5>
-        <p>User Name: guest<br />
-        Password: guest</p>
       </div> <!-- end row container -->
     </div> <!-- end section grey -->
   </main>
