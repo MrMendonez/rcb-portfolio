@@ -15,6 +15,30 @@ $(document).ready(function(){
     $("#fi-btn").toggleClass("animated pulse");
   });
 
+  $(".pulse-on-so").on("mouseenter", function() {
+    $("#so-btn").toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $("#so-btn").toggleClass("animated pulse");
+  });
+
+  $(".pulse-on-booked").on("mouseenter", function() {
+    $("#booked-btn").toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $("#booked-btn").toggleClass("animated pulse");
+  });
+
+  $(".pulse-on-checked").on("mouseenter", function() {
+    $("#checked-btn").toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $("#checked-btn").toggleClass("animated pulse");
+  });
+
+  $(".pulse-on-lwd").on("mouseenter", function() {
+    $("#lwd-btn").toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $("#lwd-btn").toggleClass("animated pulse");
+  });
+
   // Parallax Effect
   $(document).ready(function(){
     $('.parallax').parallax();
