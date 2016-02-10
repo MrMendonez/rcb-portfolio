@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 
+  $("#down-arrow").hide().delay(3000).fadeIn(500);
+
   // Pulse animation on mouse hover for img links and buttons
   // DRY this code up
   $(".pulse-on-mouseenter").on("mouseenter", function() {
