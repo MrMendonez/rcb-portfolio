@@ -3,6 +3,7 @@
 $(document).ready(function(){
 
   // Pulse animation on mouse hover for img links and buttons
+  // DRY this code up
   $(".pulse-on-db").on("mouseenter", function() {
     $("#db-btn").toggleClass("animated pulse");
   }).on("mouseleave", function() {
