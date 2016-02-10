@@ -28,13 +28,13 @@
     <nav>
       <div class="nav-wrapper">
         <div class="container">
-          <a href="#" class="brand-logo">Darryl Mendonez</a>
+          <a href="#" class="brand-logo fadeInDown wow" data-wow-delay=".1s">Darryl Mendonez</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#social">Social</a></li>
+            <li><a href="#home" class="fadeInDown wow" data-wow-delay=".4s">Home</a></li>
+            <li><a href="#bio" class="fadeInDown wow" data-wow-delay=".6s">Bio</a></li>
+            <li><a href="#projects" class="fadeInDown wow" data-wow-delay=".8s">Projects</a></li>
+            <li><a href="#tools" class="fadeInDown wow" data-wow-delay="1s">Tools</a></li>
+            <li><a href="#social" class="fadeInDown wow" data-wow-delay="1.2s">Social</a></li>
           </ul>
         </div> <!--- end container -->
       </div> <!--- end nav-wrapper -->
@@ -43,8 +43,8 @@
   <main>
     <div id="home" class="parallax-title-container scrollspy">
       <div class="center-block">
-        <h1 class="center-align text-shadow">Darryl Mendonez</h1>
-        <h4 class="center-align text-shadow"><i>Front-End Web Dev</i></h4>
+        <h1 class="center-align text-shadow fadeInDown wow" data-wow-delay="2s">Darryl Mendonez</h1>
+        <h4 class="center-align text-shadow fadeInDown wow" data-wow-delay="2s"><i>Front-End Web Dev</i></h4>
       </div>
       <div class="parallax">
         <img src="img/macbookair3.jpg">
@@ -52,8 +52,8 @@
     </div> <!-- end parallax-container -->
     <div id="bio" class="section grey darken-1 scrollspy">
       <div class="row container">
-        <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block" />
-        <h5 class="center-align hide-on-small-only">Web Design Teacher / Front-End Web Developer</h5>
+        <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block zoomIn wow" data-wow-delay=".4s" />
+        <h5 class="center-align hide-on-small-only zoomIn wow" data-wow-delay=".8s">Web Design Teacher / Front-End Web Developer</h5>
         <h5 class="center-align hide-on-med-and-up">Web Design Teacher<br />
         Front-End Web Developer</h5>
         <p><i class="fa fa-graduation-cap fa-2x"></i> A high school teacher in South Brunswick, NJ where I teach HTML, CSS, Bootstrap, and jQuery in my Web Design classes as well as cloud-based computing and photoshop in my computer classes.<br />
@@ -72,8 +72,8 @@
     <div class="section grey darken-1">
       <div class="row container">
         <div class="col s12 m6">
-          <div class="card z-depth-5">
-            <div class="card-image card-image waves-effect waves-block waves-light">
+          <div class="card z-depth-5 pulse-on-mouseenter">
+            <div id="db-img" class="card-image card-image waves-effect waves-block waves-light">
               <a href="http://dailybriefing.herokuapp.com/" target="_blank"><img src="img/dailybriefing.png" class="wave"></a>
             </div>
             <div class="card-content black-text">
@@ -100,7 +100,7 @@
                 </div>
               </p>
               <div class="center-btn">
-                <a class="waves-effect waves-light btn grey darken-3 z-depth-5" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
+                <a id="db-btn" class="waves-effect waves-light btn grey darken-3 z-depth-5" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch Daily Briefing <i class="material-icons right">launch</i></a>
               </div> <!-- end center-btn -->
             </div>
           </div>
@@ -360,6 +360,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <!-- WOW JS to animate objects while scrolling -->
+  <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
