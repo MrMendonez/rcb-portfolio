@@ -2,13 +2,17 @@
 
 $(document).ready(function(){
 
-  // Pulse animation on mouse hover for img links and youtube videos
-  $(".pulse-on-mouseenter").on("mouseenter", function() {
-    $("#db-img").toggleClass("animated pulse");
+  // Pulse animation on mouse hover for img links and buttons
+  $(".pulse-on-db").on("mouseenter", function() {
     $("#db-btn").toggleClass("animated pulse");
   }).on("mouseleave", function() {
-    $("#db-img").toggleClass("animated pulse");
     $("#db-btn").toggleClass("animated pulse");
+  });
+
+  $(".pulse-on-fi").on("mouseenter", function() {
+    $("#fi-btn").toggleClass("animated pulse");
+  }).on("mouseleave", function() {
+    $("#fi-btn").toggleClass("animated pulse");
   });
 
   // Parallax Effect
