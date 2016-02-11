@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   $("#down-arrow-desktop").hide().delay(5000).fadeIn(500);
-  $("#down-arrow-tablet").hide().delay(5000).fadeIn(500);
+  $("#down-arrow-tablet").hide().delay(3000).fadeIn(500);
   $("#down-arrow-mobile").hide().delay(3000).fadeIn(500);
 
   // Pulse animation on mouse hover for img links and buttons
