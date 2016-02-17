@@ -13,7 +13,7 @@ $(document).ready(function(){
     $(this).toggleClass("animated pulse");
   });
 
-  // Pulse btn on mouse enter on project cards
+  // Pulse btn on mouse enter for project cards
   $(".pulse-activator").on("mouseenter", function() {
     $(this).find("a").toggleClass("animated pulse");
   }).on("mouseleave", function() {
