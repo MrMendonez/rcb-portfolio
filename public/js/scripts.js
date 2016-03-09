@@ -15,9 +15,9 @@ $(document).ready(function(){
 
   // Pulse btn on mouse enter for project cards
   $(".pulse-activator").on("mouseenter", function() {
-    $(this).find("a").toggleClass("animated pulse");
+    $(this).find(".launch-btn").toggleClass("animated pulse");
   }).on("mouseleave", function() {
-    $(this).find("a").toggleClass("animated pulse");
+    $(this).find(".launch-btn").toggleClass("animated pulse");
   });
 
   // Parallax Effect
