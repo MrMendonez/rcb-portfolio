@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="todoApp">
 <head>
   <title>Darryl Mendonez Portfolio</title>
   <meta author="Darryl Mendonez">
@@ -23,6 +23,8 @@
   <!-- Custom Styles -->  
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
   <div class="navbar-fixed hide-on-med-and-down">
@@ -140,9 +142,39 @@
       </div>
       <div class="parallax"><img src="img/macandipad.jpg"></div>
     </div>
-    <div class="section grey darken-1">
+    <div class="section grey darken-1" ng-controller="TodoListController as todoList">
       <div class="row container">
-        <div class="col s12 offset-m2 m8">
+        <div class="col s12 m6">
+          <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+            <div class="card-content black-text">
+              <span class="card-title grey-text text-darken-4 josefin-sans">My To Do List</span>
+              <h3 class="inline"><span class="devicons devicons-angular right"></span></h3>
+              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. This Angular app which allows for data-binding. Notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
+              <h2>My To Do List</h2>
+              <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
+              <form ng-submit="todoList.addTodo()">
+                <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
+                <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
+              </form>
+              <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
+              <ul>
+                <li ng-repeat="todo in todoList.todoItems">
+                  <p class="checkbox">
+                    <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
+                    <label class="done-{{todo.done}}" for="todoItem-{{$index}}">{{todo.name}}</label>
+                  </p>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://protected-cliffs-93710.herokuapp.com/" target="_blank">Launch My To Do List <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/angular-todo-list" target="_blank"><i class="fa fa-github"></i></a>
+              </div> <!-- end center-btn -->
+            </div>
+          </div>
+        </div> <!-- end my to do list -->
+        <div class="col s12 m6">
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="http://rureview.herokuapp.com/" target="_blank"><img src="img/rureview.png" class="wave"></a>
@@ -547,12 +579,6 @@
   </main>
   <footer>
       <div class="container center-align">
-        <!-- <ul id="footer-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/login">Resume</a></li>
-          <li><a href="/repos/mrmendonez">Repositories</a></li>
-          <li><a href="shootout">Mike Tyson's Shootout</a></li>
-        </ul>  -->
         <p>&copy 2016 Darryl Mendonez</p>
       </div>
   </footer>

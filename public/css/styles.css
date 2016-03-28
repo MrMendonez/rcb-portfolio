@@ -72,9 +72,23 @@ ul#footer-nav li {
 /*unused classes so far*/
 
 .inline {
-    display: inline-block;
+    display: inline;
 }
 
 .borderless {
     border: 0;
 }
+
+#angular-todolist {
+  background-image: url('../img/lined_paper.png');
+}
+
+.done-false {
+  font-size: 1.0rem;
+  color: #000000;
+}
+
+.done-true {
+  font-size: 1.0rem;
+  text-decoration: line-through;
+  color: gray;
