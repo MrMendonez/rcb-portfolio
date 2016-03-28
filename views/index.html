@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="todoApp">
+<html>
 <head>
   <title>Darryl Mendonez Portfolio</title>
   <meta author="Darryl Mendonez">
@@ -23,8 +23,10 @@
   <!-- Custom Styles -->  
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/routingApp.js"></script>
+  <base href="/" />
 </head>
 <body>
   <div class="navbar-fixed hide-on-med-and-down">
@@ -142,14 +144,14 @@
       </div>
       <div class="parallax"><img src="img/macandipad.jpg"></div>
     </div>
-    <div class="section grey darken-1" ng-controller="TodoListController as todoList">
+    <div ng-app="todoApp" class="section grey darken-1" ng-controller="TodoListController as todoList">
       <div class="row container">
         <div class="col s12 m6">
           <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-content black-text">
               <span class="card-title grey-text text-darken-4 josefin-sans">My To Do List</span>
               <h3 class="inline"><span class="devicons devicons-angular right"></span></h3>
-              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. This Angular app which allows for data-binding. Notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
+              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. Since this is an Angular app it allows for data-binding. Try using this app and notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
               <h2>My To Do List</h2>
               <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
               <form ng-submit="todoList.addTodo()">
@@ -576,6 +578,19 @@
               </span>
             </div>
           </a>
+        </div>
+      </div> <!-- end row container -->
+    </div> <!-- end section grey -->
+    <div id="popquiz" class="parallax-container valign-wrapper scrollspy" ng-app="RoutingApp">
+      <div class="valign center-block">
+        <h1 class="center-align text-shadow">Pop Quiz</h1>
+      </div>
+      <div class="parallax"><img src="img/appletv.jpg"></div>
+    </div> <!-- end parallax-container -->
+    <div class="section grey darken-1">
+      <div class="row container">
+        <div class="col s6">
+          <ui-view></ui-view>
         </div>
       </div> <!-- end row container -->
     </div> <!-- end section grey -->
