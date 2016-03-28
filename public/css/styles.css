@@ -69,14 +69,8 @@ ul#footer-nav li {
   font-family: "Josefin Sans";
 }
 
-/*unused classes so far*/
-
 .inline {
     display: inline;
-}
-
-.borderless {
-    border: 0;
 }
 
 #angular-todolist {
@@ -92,3 +86,9 @@ ul#footer-nav li {
   font-size: 1.0rem;
   text-decoration: line-through;
   color: gray;
+
+/*unused classes so far*/
+
+.borderless {
+    border: 0;
+}
