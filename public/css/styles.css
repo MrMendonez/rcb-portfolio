@@ -69,6 +69,10 @@ ul#footer-nav li {
   font-family: "Josefin Sans";
 }
 
+.roboto {
+  font-family: "Roboto";
+}
+
 .inline {
     display: inline;
 }
