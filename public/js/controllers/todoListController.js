@@ -1,5 +1,5 @@
-angular.module("todoApp", [])
-.controller("TodoListController", function($scope) {
+angular.module('appCtrl')
+.controller('TodoListController', function($scope) {
   var todoList = this;
   todoList.todoItems = [
     { name: "Wake up", done: true },
