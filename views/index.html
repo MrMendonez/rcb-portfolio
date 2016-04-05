@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="appCtrl">
 <head>
   <title>Darryl Mendonez Portfolio</title>
   <meta author="Darryl Mendonez">
@@ -25,8 +25,10 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/routingApp.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.js"></script>
+  <script type="text/javascript" src="js/controllers/app.js"></script>
+  <script type="text/javascript" src="js/controllers/todoListController.js"></script>
+  <script type="text/javascript" src="js/controllers/githubController.js"></script>
   <base href="/" />
 </head>
 <body>
@@ -50,7 +52,7 @@
     <div id="home" class="parallax-title-container scrollspy">
       <div class="center-align hide-on-med-and-down">
         <h1 class="text-shadow fadeInDown wow" data-wow-delay="2.5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>MEAN-Stack Web Dev</i></h4>
+        <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>Front-End Web Dev</i></h4>
         <div id="down-arrow-desktop">
           <br />
           <br />
@@ -76,7 +78,7 @@
       </div>
       <div class="center-align hide-on-large-only">
         <h1 class="text-shadow fadeInDown wow " data-wow-delay=".5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>MEAN-Stack Web Dev</i></h4>
+        <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>Front-End Web Dev</i></h4>
         <div id="down-arrow-mobile" class="hide-on-med-and-up">
           <br />
           <br />
@@ -129,9 +131,9 @@
     <div id="bio" class="section grey darken-1 scrollspy">
       <div class="row container">
         <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block" />
-        <h5 class="center-align hide-on-small-only" data-wow-delay=".8s">Web Design Teacher / MEAN-Stack Web Developer</h5>
+        <h5 class="center-align hide-on-small-only" data-wow-delay=".8s">Web Design Teacher / Front-End Web Developer</h5>
         <h5 class="center-align hide-on-med-and-up" data-wow-delay=".8s">Web Design Teacher<br />
-        MEAN-Stack Web Developer</h5>
+        Front-End Web Developer</h5>
         <p><i class="fa fa-graduation-cap fa-2x"></i> A high school teacher in South Brunswick, NJ where I teach HTML, CSS, Bootstrap, and jQuery in my Web Design classes as well as cloud-based computing and photoshop in my computer classes.<br />
         <br />
         <i class="fa fa-code fa-2x"></i> I'm finishing my training to become a full-stack web developer at Rutgers Coding Bootcamp, a rigorous yet exciting program where I've learned much more about web development including Materialize, APIs, NodeJS, MySQL, Express, and so much more.<br />
@@ -145,7 +147,7 @@
       </div>
       <div class="parallax"><img src="img/macandipad.jpg"></div>
     </div>
-    <div ng-app="todoApp" class="section grey darken-1" ng-controller="TodoListController as todoList">
+    <div class="section grey darken-1" ng-controller="TodoListController as todoList">
       <div class="row container">
         <div class="col s12 m6">
           <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
@@ -363,7 +365,7 @@
               </div> <!-- end center-btn -->
             </div>
           </div>
-        </div> <!-- end booked col s6 -->
+        </div> <!-- end checked col s6 -->
         <div class="col s12 m6">
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
@@ -382,16 +384,12 @@
               </p>
               <br />
               <div class="center-btn">
-                <!-- desktop button -->
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5 hide-on-med-and-down" href="https://learningwebdesign.herokuapp.com/" target="_blank">Launch Learning Web Design <i class="material-icons right">launch</i></a>
-                <!-- mobile and tablet button -->
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5 hide-on-large-only" href="https://learningwebdesign.herokuapp.com/" target="_blank">Web Design <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://learningwebdesign.herokuapp.com/" target="_blank">Web Design <i class="material-icons right">launch</i></a>
                 <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/learningwebdesign" target="_blank"><i class="fa fa-github"></i></a>
               </div> <!-- end center-btn -->
             </div>
           </div>
-        </div> <!-- end booked col s6 -->
-      </div> <!-- end row container -->
+        </div> <!-- end learning web design col s6 -->
     </div> <!-- end section grey -->
     <div id="tools" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
