@@ -21,9 +21,7 @@ $(document).ready(function(){
   });
 
   // Parallax Effect
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
+  $('.parallax').parallax();
 
   // Scrollspy Effect
   $('.scrollspy').scrollSpy();

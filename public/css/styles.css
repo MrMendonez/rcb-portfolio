@@ -91,6 +91,10 @@ ul#footer-nav li {
   text-decoration: line-through;
   color: gray;
 
+.parallax img {
+  display: block !important;
+}
+
 /*unused classes so far*/
 
 .borderless {

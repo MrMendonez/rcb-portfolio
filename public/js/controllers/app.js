@@ -1,1 +1,1 @@
-angular.module('appCtrl', ['ngTable']);
+angular.module('appCtrl', []);

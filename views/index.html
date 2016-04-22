@@ -3,8 +3,11 @@
 <head>
   <title>Darryl Mendonez Portfolio</title>
   <meta author="Darryl Mendonez">
+  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- MaterializeCSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -23,15 +26,16 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <!-- Custom Styles -->  
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Angular Scripts -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.js"></script>
   <script type="text/javascript" src="js/controllers/app.js"></script>
+  <script type="text/javascript" src="js/controllers/appController.js"></script>
   <script type="text/javascript" src="js/controllers/todoListController.js"></script>
-  <script type="text/javascript" src="js/controllers/githubController.js"></script>
   <base href="/" />
 </head>
-<body>
+<body ng-controller="appController">
   <div class="navbar-fixed hide-on-med-and-down">
     <nav>
       <div class="nav-wrapper">
@@ -52,7 +56,7 @@
     <div id="home" class="parallax-title-container scrollspy">
       <div class="center-align hide-on-med-and-down">
         <h1 class="text-shadow fadeInDown wow" data-wow-delay="2.5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>Front-End Web Dev</i></h4>
+        <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>Full-Stack Web Dev</i></h4>
         <div id="down-arrow-desktop">
           <br />
           <br />
@@ -78,7 +82,7 @@
       </div>
       <div class="center-align hide-on-large-only">
         <h1 class="text-shadow fadeInDown wow " data-wow-delay=".5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>Front-End Web Dev</i></h4>
+        <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>Full-Stack Web Dev</i></h4>
         <div id="down-arrow-mobile" class="hide-on-med-and-up">
           <br />
           <br />
@@ -131,9 +135,9 @@
     <div id="bio" class="section grey darken-1 scrollspy">
       <div class="row container">
         <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block" />
-        <h5 class="center-align hide-on-small-only" data-wow-delay=".8s">Web Design Teacher / Front-End Web Developer</h5>
+        <h5 class="center-align hide-on-small-only" data-wow-delay=".8s">Web Design Teacher / Full-Stack Web Developer</h5>
         <h5 class="center-align hide-on-med-and-up" data-wow-delay=".8s">Web Design Teacher<br />
-        Front-End Web Developer</h5>
+        Full-Stack Web Developer</h5>
         <p><i class="fa fa-graduation-cap fa-2x"></i> A high school teacher in South Brunswick, NJ where I teach HTML, CSS, Bootstrap, and jQuery in my Web Design classes as well as cloud-based computing and photoshop in my computer classes.<br />
         <br />
         <i class="fa fa-code fa-2x"></i> I'm finishing my training to become a full-stack web developer at Rutgers Coding Bootcamp, a rigorous yet exciting program where I've learned much more about web development including Materialize, APIs, NodeJS, MySQL, Express, and so much more.<br />
