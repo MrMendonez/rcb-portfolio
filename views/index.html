@@ -24,7 +24,7 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <!-- Animations by Dan Eden -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <!-- Custom Styles -->  
+  <!-- Custom Styles -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- Angular Scripts -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
@@ -188,7 +188,7 @@
               <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. Since this is an Angular app it allows for data-binding. Try using this app and notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
               <h2>My To Do List</h2>
               <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
-              <form ng-submit="todoList.addTodo()">
+              <form id="add-form" ng-submit="todoList.addTodo()">
                 <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
                 <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
               </form>
@@ -225,7 +225,7 @@
                     <li class="bullets">Node.js is the engine</li>
                     <li class="bullets">npm packages:
                     <div class="container">
-                      <ul>                  
+                      <ul>
                         <li class="bullets">Express</li>
                         <li class="bullets">Express-Session</li>
                         <li class="bullets">Sequelize</li>
@@ -267,7 +267,7 @@
                     <li class="bullets">jQuery is the engine</li>
                     <li class="bullets">API's:
                     <div class="container">
-                      <ul>                  
+                      <ul>
                         <li class="bullets">The Dark Sky Forecast</li>
                         <li class="bullets">Google Maps</li>
                         <li class="bullets">Bing</li>
@@ -444,7 +444,7 @@
           </div>
         </div>
       </div> <!-- end row container -->
-      <div class="row container">  
+      <div class="row container">
         <div class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
             <span class="devicons devicons-bootstrap fa-5x fadeIn wow" data-wow-delay=".4s"></span>
