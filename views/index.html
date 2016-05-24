@@ -153,7 +153,7 @@
     </div>
     <div class="section grey darken-1" ng-controller="TodoListController as todoList">
       <div class="row container">
-        <div class="col s12 m8 offset-m2">
+        <div class="col s12 m6"> <!-- Trip Chats -->
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="http://tripchats.herokuapp.com/" target="_blank"><img src="img/tripchats.png" class="wave"></a>
@@ -177,79 +177,30 @@
               </div> <!-- end center-btn -->
             </div>
           </div>
-        </div> <!-- end ru review -->
-      </div> <!-- end row container -->
-      <div class="row container">
-        <div class="col s12 m6">
-          <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
-            <div class="card-content black-text">
-              <span class="card-title grey-text text-darken-4 josefin-sans">My To Do List</span>
-              <h3 class="inline"><span class="devicons devicons-angular right"></span></h3>
-              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. Since this is an Angular app it allows for data-binding. Try using this app and notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
-              <h2>My To Do List</h2>
-              <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
-              <form id="add-form" ng-submit="todoList.addTodo()">
-                <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
-                <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
-              </form>
-              <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
-              <ul>
-                <li ng-repeat="todo in todoList.todoItems">
-                  <p class="checkbox">
-                    <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
-                    <label class="done-{{todo.done}}" for="todoItem-{{$index}}">{{todo.name}}</label>
-                  </p>
-                </li>
-              </ul>
-              <br />
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://protected-cliffs-93710.herokuapp.com/" target="_blank">My To Do List <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/angular-todo-list" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end my to do list -->
-        <div class="col s12 m6">
+        </div> <!-- end trip chats -->
+        <div class="col s12 m6"> <!-- Trusting Pixels -->
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://rureview.herokuapp.com/" target="_blank"><img src="img/rureview.png" class="wave"></a>
+              <a href="http://www.trustingpixels.com/" target="_blank"><img src="img/trustingpixels.png" class="wave"></a>
             </div>
             <div class="card-content black-text">
-              <a href="http://rureview.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">RU Review</span></a>
+              <a href="http://www.trustingpixels.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">Trusting Pixels</span></a>
               <p>
-                There are plenty of places to eat at Rutgers! RU Review is a place where users can read reviews about the many food spots on and around campus. Users can create accounts and write their own reviews as well as update and delete. RU Review as a back-end CRUD project utilizing many web tools:
+                A freelance job I did for a new business that promotes photoshop-free advertisements. The business owner gave me mockups done on photoshop of what he wanted his site to look like. I was able to successfully create the site to his exact specifications. He had a very strong attention to detail and we were able to collaborate successfully.
                 <div class="container">
                   <ul>
-                    <li class="bullets">Materialize is the CSS framework</li>
-                    <li class="bullets">Node.js is the engine</li>
-                    <li class="bullets">npm packages:
-                    <div class="container">
-                      <ul>
-                        <li class="bullets">Express</li>
-                        <li class="bullets">Express-Session</li>
-                        <li class="bullets">Sequelize</li>
-                        <li class="bullets">Passport</li>
-                        <li class="bullets">Passport-Local</li>
-                        <li class="bullets">Body-Parser</li>
-                        <li class="bullets">Express-Handlebars</li>
-                        <li class="bullets">Bcryptjs</li>
-                        <li class="bullets">MySQL-Handlebars</li>
-                        <li class="bullets">Dotenv</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="bullets">MySQL stores the data</li>
+                    <li class="bullets">MaterializeCSS is the CSS framework</li>
+                    <li class="bullets">AngularJS is used for routing which gives it a snappy transition when going from page to page</li>
                   </ul>
                 </div>
               </p>
               <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://rureview.herokuapp.com/" target="_blank">Launch RU Review <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/JamesonCodes/rutgers-virtual-flyer" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://www.trustingpixels.com/" target="_blank">Trusting Pixels <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/tp" target="_blank"><i class="fa fa-github"></i></a>
               </div> <!-- end center-btn -->
             </div>
           </div>
-        </div> <!-- end ru review -->
+        </div> <!-- end trip chats -->
       </div> <!-- end row container -->
       <div class="row container">
         <div class="col s12 m4">
@@ -288,28 +239,78 @@
           </div>
         </div> <!-- end daily briefing -->
         <div class="col s12 m4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://fireandicepoem.herokuapp.com/" target="_blank"><img src="img/fireandice.png" class="wave"></a>
-            </div>
+          <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-content black-text">
-              <a href="http://fireandicepoem.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 iceland-font">Fire and Ice</span></a>
-              <p>
-                A site of the poem Fire and Ice by Robert Frost with stunning images parallaxed as you read the poem. This was a practice in MaterializeCSS and the parallax effect that has become very popular.
-                <div class="container">
-                  <ul>
-                    <li class="bullets">MaterializeCSS was used to achieve the parallax effect</li>
-                  </ul>
-                </div>
-              </p>
+              <span class="card-title grey-text text-darken-4 josefin-sans">My To Do List</span>
+              <h3 class="inline"><span class="devicons devicons-angular right"></span></h3>
+              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. Since this is an Angular app it allows for data-binding. Try using this app and notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
+              <h2>My To Do List</h2>
+              <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
+              <form id="add-form" ng-submit="todoList.addTodo()">
+                <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
+                <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
+              </form>
+              <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
+              <ul>
+                <li ng-repeat="todo in todoList.todoItems">
+                  <p class="checkbox">
+                    <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
+                    <label class="done-{{todo.done}}" for="todoItem-{{$index}}">{{todo.name}}</label>
+                  </p>
+                </li>
+              </ul>
+              <br />
               <br />
               <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://fireandicepoem.herokuapp.com/" target="_blank">Fire and Ice <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/fire-and-ice" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://protected-cliffs-93710.herokuapp.com/" target="_blank">My To Do List <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/angular-todo-list" target="_blank"><i class="fa fa-github"></i></a>
               </div> <!-- end center-btn -->
             </div>
           </div>
-        </div> <!-- end fire and ice -->
+        </div> <!-- end my to do list -->
+        <div class="col s12 m4">
+          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a href="http://rureview.herokuapp.com/" target="_blank"><img src="img/rureview.png" class="wave"></a>
+            </div>
+            <div class="card-content black-text">
+              <a href="http://rureview.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">RU Review</span></a>
+              <p>
+                There are plenty of places to eat at Rutgers! RU Review is a place where users can read reviews about the many food spots on and around campus. Users can create accounts and write their own reviews as well as update and delete. RU Review as a back-end CRUD project utilizing many web tools:
+                <div class="container">
+                  <ul>
+                    <li class="bullets">Materialize is the CSS framework</li>
+                    <li class="bullets">Node.js is the engine</li>
+                    <li class="bullets">npm packages:
+                    <div class="container">
+                      <ul>
+                        <li class="bullets">Express</li>
+                        <li class="bullets">Express-Session</li>
+                        <li class="bullets">Sequelize</li>
+                        <li class="bullets">Passport</li>
+                        <li class="bullets">Passport-Local</li>
+                        <li class="bullets">Body-Parser</li>
+                        <li class="bullets">Express-Handlebars</li>
+                        <li class="bullets">Bcryptjs</li>
+                        <li class="bullets">MySQL-Handlebars</li>
+                        <li class="bullets">Dotenv</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="bullets">MySQL stores the data</li>
+                  </ul>
+                </div>
+              </p>
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://rureview.herokuapp.com/" target="_blank">RU Review <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/JamesonCodes/rutgers-virtual-flyer" target="_blank"><i class="fa fa-github"></i></a>
+              </div> <!-- end center-btn -->
+            </div>
+          </div>
+        </div> <!-- end ru review -->
+
+      </div> <!-- end row container -->
+      <div class="row container">
         <div class="col s12 m4">
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
@@ -335,8 +336,6 @@
             </div>
           </div>
         </div> <!-- end Mike Tyson's Shoot-Out -->
-      </div> <!-- end row container -->
-      <div class="row container">
         <div class="col s12 m4">
           <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
@@ -385,30 +384,6 @@
             </div>
           </div>
         </div> <!-- end checked -->
-        <div class="col s12 m4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="https://learningwebdesign.herokuapp.com/" target="_blank"><img src="img/learnwebdesign.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="https://learningwebdesign.herokuapp.com/" target="_blank"><span class="card-title wave grey-text text-darken-4">Learning Web Design</span></a>
-              <p>
-                A digital textbook used for my web design and computer applications classes to teach basic web design. This contains documentation and video tutorials to help students learn HTML, CSS, JavaScript, jQuery, and Bootstrap.
-                <div class="container">
-                  <ul>
-                    <li class="bullets">jQuery was used for animations</li>
-                    <li class="bullets">Bootstrap was used for theme, responsive design, carousel, and modals</li>
-                  </ul>
-                </div>
-              </p>
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://learningwebdesign.herokuapp.com/" target="_blank">Web Design <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/MrMendonez/learningwebdesign" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end learning web design -->
       </div> <!-- end row container -->
     </div> <!-- end section grey -->
     <div id="tools" class="parallax-container valign-wrapper scrollspy">
