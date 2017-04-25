@@ -4,7 +4,7 @@ var bodyparser = require('body-parser');
 var session = require('express-session');
 var middleware = require('./middleware.js')
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3050;
 
 app.use("/partials", express.static("public/partials"));
 app.use("/css", express.static("public/css"));
