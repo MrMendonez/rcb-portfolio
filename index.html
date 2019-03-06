@@ -1,41 +1,24 @@
-<!DOCTYPE html>
-<html ng-app="appCtrl">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="eng">
 <head>
   <title>Darryl Mendonez Portfolio</title>
   <meta author="Darryl Mendonez">
-  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <!-- MaterializeCSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- Materialize Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Devicons -->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-  <!-- Animations by Dan Eden -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <!-- Custom Styles -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <!-- Angular Scripts -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.js"></script>
-  <script type="text/javascript" src="js/controllers/app.js"></script>
-  <script type="text/javascript" src="js/controllers/appController.js"></script>
-  <script type="text/javascript" src="js/controllers/todoListController.js"></script>
-  <base href="/" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<body ng-controller="appController">
+<body id="vue-app">
   <div class="navbar-fixed hide-on-med-and-down">
     <nav>
       <div class="nav-wrapper">
@@ -57,7 +40,7 @@
       <div class="center-align hide-on-med-and-down">
         <h1 class="text-shadow fadeInDown wow" data-wow-delay="2.5s">Darryl Mendonez</h1>
         <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>Full-Stack Web Dev</i></h4>
-        <div id="down-arrow-desktop">
+        <!-- <div id="down-arrow-desktop">
           <br />
           <br />
           <br />
@@ -74,12 +57,12 @@
           <br />
           <br />
           <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i>
-        </div>
+        </div> -->
       </div>
       <div class="center-align hide-on-large-only">
         <h1 class="text-shadow fadeInDown wow " data-wow-delay=".5s">Darryl Mendonez</h1>
         <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>Full-Stack Web Dev</i></h4>
-        <div id="down-arrow-mobile" class="hide-on-med-and-up">
+        <!-- <div id="down-arrow-mobile" class="hide-on-med-and-up">
           <br />
           <br />
           <br />
@@ -121,7 +104,7 @@
           <br />
           <br />
           <br />
-          <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i>
+          <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i> -->
         </div>
       </div>
       <div class="parallax">
@@ -132,9 +115,9 @@
       <div class="row container">
         <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block" />
         <h5 class="center-align" data-wow-delay=".8s">Full-Stack Web Developer</h5>
-        <p><i class="fa fa-code fa-2x"></i> A front-end web developer at Nucleus Global, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects.<br />
+        <p><i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects.<br />
         <br />
-        <i class="fa fa-graduation-cap fa-2x"></i> I've completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including AngularJS, APIs, NodeJS, MySQL, Express, and so much more.<br />
+        <i class="fa fa-graduation-cap fa-2x"></i> I've completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including Angular, APIs, NodeJS, MySQL, Express, and so much more.<br />
         <br />
         <i class="fa fa-trophy fa-2x" aria-hidden="true"></i> Winner of the <a class="link" href="http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/" target="_blank">V12 Group Hackathon</a>. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.<br />
         <br />
@@ -560,14 +543,15 @@
   </main>
   <footer>
       <div class="container center-align">
-        <p>&copy 2017 Darryl Mendonez</p>
+        <p>&copy 2019 Darryl Mendonez</p>
       </div>
   </footer>
-
+</body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <!-- WOW JS to animate objects while scrolling -->
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
