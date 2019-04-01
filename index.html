@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
@@ -80,7 +81,7 @@
         </div>
       </div>
       <div class="row container">
-          <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 2) && (index < 5) )">
+          <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 2) && (index < 4) )">
             <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
               <div class="card-image card-image waves-effect waves-block waves-light">
                 <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
@@ -112,116 +113,37 @@
     </div> <!-- end parallax-container -->
     <div class="section grey darken-1">
       <div class="row container">
-        <div class="col s6 m3">
+        <div v-for="(tool, index) in toolsSection.tools" v-if="index < 4" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-html5 fa-5x fadeIn wow" data-wow-delay=".4s"></span>
-            <h5 class="fadeIn wow" data-wow-delay=".4s">HTML5</h5>
+            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
+            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
           </div>
         </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-css3 fa-5x fadeIn wow" data-wow-delay=".8s"></span>
-            <h5 class="fadeIn wow" data-wow-delay=".8s">CSS3</h5>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons devicons-javascript_badge fa-5x fadeIn wow" data-wow-delay="1.2s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay="1.2s">JavaScript</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay="1.2s">JavaScript</p>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-jquery fa-5x fadeIn wow" data-wow-delay="1.6s"></span>
-            <h5 class="fadeIn wow" data-wow-delay="1.6s">jQuery</h5>
-          </div>
-        </div>
-      </div> <!-- end row container -->
+      </div>
       <div class="row container">
-        <div class="col s6 m3">
+        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 4) && (index < 8) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-bootstrap fa-5x fadeIn wow" data-wow-delay=".4s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay=".4s">Bootstrap</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay=".4s">Bootstrap</p>
+            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
+            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
           </div>
         </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-materializecss fa-5x fadeIn wow" data-wow-delay=".8s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay=".8s">MaterializeCSS</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay=".8s">MaterializeCSS</p>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons devicons-git fa-5x fadeIn wow" data-wow-delay="1.2s"></span>
-            <h5 class="fadeIn wow" data-wow-delay="1.2s">Git</h5>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-github fa-5x fadeIn wow" data-wow-delay="1.6s"></span>
-            <h5 class="fadeIn wow" data-wow-delay="1.6s">GitHub</h5>
-          </div>
-        </div>
-      </div> <!-- end row container -->
+      </div>
       <div class="row container">
-        <div class="col s6 m3">
+        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 8) && (index < 12) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-streamline fa-5x fadeIn wow" data-wow-delay=".4s"></span>
-            <h5 class="fadeIn wow" data-wow-delay=".4s">API</h5>
+            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
+            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
           </div>
         </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-npm fa-5x fadeIn wow" data-wow-delay=".8s"></span>
-            <h5 class="fadeIn wow" data-wow-delay=".8s">npm</h5>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-firebase fa-5x fadeIn wow" data-wow-delay="1.2s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay="1.2s">Firebase</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay="1.2s">Firebase</p>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons devicons-mysql fa-5x fadeIn wow" data-wow-delay="1.6s"></span>
-            <h5 class="fadeIn wow" data-wow-delay="1.6s">MySQL</h5>
-          </div>
-        </div>
-      </div> <!-- end row container -->
+      </div>
       <div class="row container">
-        <div class="col s6 m3">
+        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 12) && (index < 16) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-mongodb fa-5x fadeIn wow" data-wow-delay=".4s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay=".4s">MongoDB</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay=".4s">MongoDB</p>
+            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
+            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
           </div>
         </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <h3 class="fadeIn wow" data-wow-delay=".8s">e</h3>
-            <h5 class="fadeIn wow" data-wow-delay=".8s">express</h5>
-          </div>
-          <span class="hide-on-med-and-up"><br /></span>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons-angular fa-5x fadeIn wow" data-wow-delay="1.2s"></span>
-            <h5 class="hide-on-med-and-down fadeIn wow" data-wow-delay="1.2s">AngularJS</h5>
-            <p class="hide-on-large-only fadeIn wow" data-wow-delay="1.2s">AngularJS</p>
-          </div>
-        </div>
-        <div class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span class="devicons devicons devicons-nodejs_small fa-5x fadeIn wow" data-wow-delay="1.6s"></span>
-            <h5 class="fadeIn wow" data-wow-delay="1.6s">Node.js</h5>
-          </div>
-        </div>
-      </div> <!-- end row container -->
+      </div>
     </div> <!-- end section grey -->
     <div id="social" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">

@@ -70,6 +70,21 @@ new Vue({
         },
         {
           animationDelay: '.4s',
+          url: 'http://www.chrysalismedical.com/',
+          imgPath: 'img/projects/chrysalis-medical.png',
+          title: 'Chrysalis Medical',
+          description: 'Created this website for Chrysalis Medical, a full-service agency that is dedicated to partnering with clients to provide high-quality scientific and strategic medical communications support',
+          tools: [
+            'Built with AngularJS',
+            'Angular Animate is used for fade-in page transitions',
+            'Animate.css is used to animate elements on each page load',
+            'Wow.js is used to control the timing of each animation',
+            'AngularJS Form Validation is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
+          ],
+          github: 'https://github.com/darrylmendonez/chrysalis-medical'
+        },
+        {
+          animationDelay: '.4s',
           url: 'http://trustingpixels.herokuapp.com/',
           imgPath: 'img/trustingpixels.png',
           title: 'Trusting Pixels',
@@ -116,6 +131,90 @@ new Vue({
           ],
           github: 'https://github.com/darrylmendonez/tp'
         }
+      ]
+    },
+    toolsSection: {
+      tools: [
+        {
+          class: 'devicons-html5',
+          animationDelay: '.4s',
+          title: 'HTML5'
+        },
+        {
+          class: 'devicons-css3',
+          animationDelay: '.8s',
+          title: 'CSS3'
+        },
+        {
+          class: 'devicons-javascript_badge',
+          animationDelay: '1.2s',
+          title: 'JavaScript'
+        },
+        {
+          class: 'devicons-jquery',
+          animationDelay: '1.6s',
+          title: 'jQuery'
+        },
+        {
+          class: 'devicons-bootstrap',
+          animationDelay: '.4s',
+          title: 'Bootstrap'
+        },
+        {
+          class: 'devicons-materializecss',
+          animationDelay: '.8s',
+          title: 'MaterializeCSS'
+        },
+        {
+          class: 'devicons-git',
+          animationDelay: '1.2s',
+          title: 'Git'
+        },
+        {
+          class: 'devicons-github',
+          animationDelay: '1.6s',
+          title: 'GitHub'
+        },
+        {
+          class: 'devicons-streamline',
+          animationDelay: '.4s',
+          title: 'API'
+        },
+        {
+          class: 'devicons-npm',
+          animationDelay: '.8s',
+          title: 'npm'
+        },
+        {
+          class: 'devicons-firebase',
+          animationDelay: '1.2s',
+          title: 'Firebase'
+        },
+        {
+          class: 'devicons-mysql',
+          animationDelay: '1.6s',
+          title: 'MySQL'
+        },
+        {
+          class: 'devicons-angular',
+          animationDelay: '.4s',
+          title: 'Angular'
+        },
+        {
+          class: 'devicons-react',
+          animationDelay: '.8s',
+          title: 'React'
+        },
+        {
+          class: 'devicon-vuejs-plain',
+          animationDelay: '1.2s',
+          title: 'Vue.js'
+        },
+        {
+          class: 'devicon-amazonwebservices-original',
+          animationDelay: '1.6s',
+          title: 'AWS'
+        },
       ]
     }
   }, // /data
