@@ -1,4 +1,6 @@
-/* CSS for My Portfolio */
+[v-cloak] {
+  display: none;
+}
 
 body {
     color: #FFFFFF;

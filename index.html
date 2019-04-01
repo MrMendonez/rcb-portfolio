@@ -18,173 +18,70 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<body id="vue-app">
-  <div class="navbar-fixed hide-on-med-and-down">
-    <nav>
-      <div class="nav-wrapper">
-        <div class="container">
-          <a href="#home" class="brand-logo fadeInDown wow" data-wow-delay=".1s">Darryl Mendonez</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="waves-effect waves-light"><a href="#home" class="fadeInDown wow" data-wow-delay=".4s">Home</a></li>
-            <li class="waves-effect waves-light"><a href="#bio" class="fadeInDown wow" data-wow-delay=".6s">Bio</a></li>
-            <li class="waves-effect waves-light"><a href="#projects" class="fadeInDown wow" data-wow-delay=".8s">Projects</a></li>
-            <li class="waves-effect waves-light"><a href="#tools" class="fadeInDown wow" data-wow-delay="1s">Tools</a></li>
-            <li class="waves-effect waves-light"><a href="#social" class="fadeInDown wow" data-wow-delay="1.2s">Social</a></li>
-          </ul>
-        </div> <!--- end container -->
-      </div> <!--- end nav-wrapper -->
-    </nav>
-  </div> <!-- end navbar -->
-  <main>
+<body>
+  <main id="vue-app" v-cloak>
+    <div class="navbar-fixed hide-on-med-and-down">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#home" class="brand-logo fadeInDown wow" :data-wow-delay="brandLogoDelay">{{ title }}</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" key="index"><a :href="navItem.link" class="fadeInDown wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <div id="home" class="parallax-title-container scrollspy">
-      <div class="center-align hide-on-med-and-down">
-        <h1 class="text-shadow fadeInDown wow" data-wow-delay="2.5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="3.5s"><i>Full-Stack Web Dev</i></h4>
-        <!-- <div id="down-arrow-desktop">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i>
-        </div> -->
-      </div>
-      <div class="center-align hide-on-large-only">
-        <h1 class="text-shadow fadeInDown wow " data-wow-delay=".5s">Darryl Mendonez</h1>
-        <h4 class="text-shadow fadeInDown wow" data-wow-delay="1.5s"><i>Full-Stack Web Dev</i></h4>
-        <!-- <div id="down-arrow-mobile" class="hide-on-med-and-up">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i>
-        </div>
-        <div id="down-arrow-tablet" class="hide-on-small-only hide-on-large-only">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <i class="fa fa-angle-double-down fa-5x pulse animated infinite text-shadow"></i> -->
-        </div>
+      <div class="center-align">
+        <h1 class="text-shadow fadeInDown wow" :data-wow-delay="titleDelay">{{ title }}</h1>
+        <h4 class="text-shadow fadeInDown wow" :data-wow-delay="subtitle.delay"><i>{{ subtitle.title }}</i></h4>
       </div>
       <div class="parallax">
-        <img src="img/macbookair.jpg">
+        <img :src="homeBackgroundPath">
       </div>
-    </div> <!-- end parallax-title-container -->
+    </div>
     <div id="bio" class="section grey darken-1 scrollspy">
       <div class="row container">
-        <img id="profilepic" src="img/profilepicv.jpg" width="300px" class="responsive-img rounded-img center-block" />
-        <h5 class="center-align" data-wow-delay=".8s">Full-Stack Web Developer</h5>
-        <p><i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects.<br />
-        <br />
-        <i class="fa fa-graduation-cap fa-2x"></i> I've completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including Angular, APIs, NodeJS, MySQL, Express, and so much more.<br />
-        <br />
-        <i class="fa fa-trophy fa-2x" aria-hidden="true"></i> Winner of the <a class="link" href="http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/" target="_blank">V12 Group Hackathon</a>. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.<br />
-        <br />
-        <i class="fa fa-plane fa-2x"></i> When I'm not working, I feed my love for traveling. I've snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I've backpacked from Costa Rica to Nicaragua and have enjoyed the sushi in Japan. I've seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail at the Cathedral of Valencia in Spain. I've swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I have much more to see...</p>
-      </div> <!-- end row container -->
-    </div> <!-- end section grey -->
+        <img id="profilepic" src="img/bio/profilepic.jpg" width="300px" class="responsive-img rounded-img center-block" />
+        <h5 class="center-align" data-wow-delay=".8s">{{ bioSection.title }}</h5>
+        <p v-for="(description, index) in bioSection.descriptions" v-html="description" ></p>
+      </div>
+    </div>
     <div id="projects" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
-        <h1 class="center-align text-shadow">Projects</h1>
+        <h1 class="center-align text-shadow">{{ projectsSection.title }}</h1>
       </div>
-      <div class="parallax"><img src="img/macandipad.jpg"></div>
+      <div class="parallax"><img :src="projectsSection.backgroundPath"></div>
     </div>
-    <div class="section grey darken-1" ng-controller="TodoListController as todoList">
+    <div class="section grey darken-1">
       <div class="row container">
-        <div class="col s12 m12 l6"> <!-- Trip Chats -->
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+        <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="index < 2">
+          <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
             <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://tripchats.herokuapp.com/" target="_blank"><img src="img/tripchats.png" class="wave"></a>
+              <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
             </div>
-            <div class="card-content black-text">
-              <a href="http://tripchats.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">Trip Chats</span></a>
+            <div :key="project.title" class="card-content black-text">
+              <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
               <p>
-                A full-stack project that allows users to post itineraries of trips they plan on going to. Other users can post comments to suggest to the original poster so they can get advice of what places to see and activities to do. This gives users access to insight from locals or other travelers to make the best of their trip.
+                {{ project.description }}
                 <div class="container">
                   <ul>
-                    <li class="bullets">MySQL stores the data</li>
-                    <li class="bullets">Express is the web framework</li>
-                    <li class="bullets">AngularJS is the router and controller</li>
-                    <li class="bullets">Node.js is the engine</li>
-                    <li class="bullets">Bootstrap is the CSS framework</li>
+                    <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
                   </ul>
                 </div>
               </p>
               <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://tripchats.herokuapp.com/" target="_blank">Trip Chats <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/paulducsantos/tripchat" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
+                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
             </div>
           </div>
-        </div> <!-- end trip chats -->
-        <div class="col s12 m12 l6"> <!-- Trusting Pixels -->
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://trustingpixels.herokuapp.com/" target="_blank"><img src="img/trustingpixels.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="http://trustingpixels.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">Trusting Pixels</span></a>
-              <p>
-                A freelance job I did for a new business that promotes photoshop-free advertisements. The business owner gave me mockups done on photoshop of what he wanted his site to look like. I was able to successfully create the site to his exact specifications. He had a very strong attention to detail and we were able to collaborate successfully.
-                <div class="container">
-                  <ul>
-                    <li class="bullets">MaterializeCSS is the CSS framework</li>
-                    <li class="bullets">AngularJS is used for routing which gives it a snappy transition when going from page to page</li>
-                  </ul>
-                </div>
-              </p>
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://trustingpixels.herokuapp.com/" target="_blank">Trusting Pixels <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/tp" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end trip chats -->
+        </div>
       </div> <!-- end row container -->
       <div class="row container">
-        <div class="col s12 m12 l4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+        <div class="col s12 m12 l6">
+          <div class="card z-depth-5" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="http://dailybriefing.herokuapp.com/" target="_blank"><img src="img/dailybriefing.png" class="wave"></a>
             </div>
@@ -218,38 +115,8 @@
             </div>
           </div>
         </div> <!-- end daily briefing -->
-        <div class="col s12 m12 l4">
-          <div id="angular-todolist" class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
-            <div class="card-content black-text">
-              <span class="card-title grey-text text-darken-4 josefin-sans">My To Do List</span>
-              <h3 class="inline"><span class="devicons devicons-angular right"></span></h3>
-              <p>This AngularJS app allows the user to add items to a to-do list and check it off as they complete each item. The user can also delete items off the list completely. Since this is an Angular app it allows for data-binding. Try using this app and notice how the list changes as the you interact with it without the browser needing to reload the page or link to another page.</p>
-              <h2>My To Do List</h2>
-              <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
-              <form id="add-form" ng-submit="todoList.addTodo()">
-                <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
-                <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
-              </form>
-              <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
-              <ul>
-                <li ng-repeat="todo in todoList.todoItems">
-                  <p class="checkbox">
-                    <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
-                    <label class="done-{{todo.done}}" for="todoItem-{{$index}}">{{todo.name}}</label>
-                  </p>
-                </li>
-              </ul>
-              <br />
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://protected-cliffs-93710.herokuapp.com/" target="_blank">Launch <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/angular-todo-list" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end my to do list -->
-        <div class="col s12 m12 l4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+        <div class="col s12 m12 l6">
+          <div class="card z-depth-5" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="http://rureview.herokuapp.com/" target="_blank"><img src="img/rureview.png" class="wave"></a>
             </div>
@@ -293,7 +160,7 @@
       </div> <!-- end row container -->
       <div class="row container">
         <div class="col s12 m12 l4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+          <div class="card z-depth-5" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="https://miketysonsshootout.herokuapp.com/" target="_blank"><img src="img/shootout.png" class="wave"></a>
             </div>
@@ -304,8 +171,8 @@
                 <div class="container">
                   <ul>
                     <li class="bullets">CSS3 and jQuery were both used for animations</li>
-                   <li class="bullets">CSS3 and Font Awesome were used to design the NES controller</li>
-                   <li>Optimized for mobile play with Bootstrap</li>
+                    <li class="bullets">CSS3 and Font Awesome were used to design the NES controller</li>
+                    <li>Optimized for mobile play with Bootstrap</li>
                   </ul>
                 </div>
               </p>
@@ -318,7 +185,7 @@
           </div>
         </div> <!-- end Mike Tyson's Shoot-Out -->
         <div class="col s12 m12 l4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+          <div class="card z-depth-5" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="https://immense-inlet-4323.herokuapp.com/" target="_blank"><img src="img/booked.png" class="wave"></a>
             </div>
@@ -329,7 +196,7 @@
                 <div class="container">
                   <ul>
                     <li class="bullets">jQuery was used for animations</li>
-                   <li class="bullets">Bootstrap was used for responsive design, carousel, and modals</li>
+                    <li class="bullets">Bootstrap was used for responsive design, carousel, and modals</li>
                   </ul>
                 </div>
               </p>
@@ -342,7 +209,7 @@
           </div>
         </div> <!-- end booked -->
         <div class="col s12 m12 l4">
-          <div class="card z-depth-5 pulse-activator" data-wow-delay=".4s">
+          <div class="card z-depth-5" data-wow-delay=".4s">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a href="https://damp-woodland-6914.herokuapp.com/" target="_blank"><img src="img/checked.png" class="wave"></a>
             </div>
@@ -516,17 +383,6 @@
             </div>
           </a>
         </div>
-        <!-- <div class="col s6 m6 l3 pulse-on-mouseenter">
-          <a href="https://twitter.com/darryl_brian" target="_blank">
-            <div class="card-panel grey darken-3 center-align z-depth-5">
-              <span class="white-text">
-                <h5 class="fadeIn wow" data-wow-delay="1.2s">Twitter</h5>
-                <i class="fa fa-twitter fa-5x fadeIn wow" data-wow-delay="1.2s"></i>
-                <p class="fadeIn wow" data-wow-delay="1.2s">@Darryl_Brian</p>
-              </span>
-            </div>
-          </a>
-        </div> -->
         <div class="col offset-s3 s6 m4 l3 pulse-on-mouseenter">
           <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com" target="_blank">
             <div class="card-panel grey darken-3 center-align z-depth-5">
@@ -538,15 +394,15 @@
             </div>
           </a>
         </div>
-      </div> <!-- end row container -->
-    </div> <!-- end section grey -->
-  </main>
-  <footer>
-      <div class="container center-align">
-        <p>&copy 2019 Darryl Mendonez</p>
       </div>
-  </footer>
-</body>
+    </div>
+    <footer>
+        <div class="container center-align">
+          <p>&copy 2019 Darryl Mendonez</p>
+        </div>
+    </footer>
+  </main>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>

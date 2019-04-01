@@ -14,11 +14,11 @@ $(document).ready(function(){
   });
 
   // Pulse btn on mouse enter for project cards
-  $(".pulse-activator").on("mouseenter", function() {
-    $(this).find(".launch-btn").toggleClass("animated pulse");
-  }).on("mouseleave", function() {
-    $(this).find(".launch-btn").toggleClass("animated pulse");
-  });
+  // $(".pulse-activator").on("mouseenter", function() {
+  //   $(this).find(".launch-btn").toggleClass("animated pulse");
+  // }).on("mouseleave", function() {
+  //   $(this).find(".launch-btn").toggleClass("animated pulse");
+  // });
 
   // Parallax Effect
   $('.parallax').parallax();

@@ -7,57 +7,102 @@ new Vue({
     linebreak: '<br>',
     doubleLinebreak: '<br><br>',
     // data
-    title: 'Immuno-Oncology Literature Alert',
-    date: 'February 16-28, 2019',
-    descriptions: [
-      'The Immuno-Oncology Literature Alert brings value by keeping readers abreast of the published immuno-oncology landscape in a comprehensive and concise fashion.',
-      'Publications are selected by performing an online-first journal scan of 12 top-tier journals*. Highlights are selected based on the strategic themes of the Merck immuno-oncology program.',
-      'Note that the Literature Alerts are strictly for your information and internal use only. Please do not use or distribute externally.',
-      'Please refer to the <a href="https://evarooms.merckgroup.com/organization/gma/global-medical-excellence/gmc-home" target="_blank">GMC EVA page</a> to manage subscriptions to TA-specific services, such as Literature Alerts, Publication News, or Quarterly Med Info Insights Reports.',
-    ],
-    highlights: [
-      'Nivolumab plus ipilimumab was an effective 1L treatment of advanced/metastatic NSCLC and high TMB was associated with improved ORR and prolonged PFS, regardless of tumor PD-L1 expression (Ready <em>et al</em>)'
-    ],
-    publications: [
+    title: 'Darryl Mendonez',
+    brandLogoDelay: '.2s',
+    navItems: [
       {
-        id: 0,
-        title:
-          'First-line nivolumab plus ipilimumab in advanced non–small-cell lung cancer (CheckMate 568): outcomes by programmed death ligand 1 and tumor mutational burden as biomarkers',
-        author: 'Ready N, Hellman MD, Awad MM, <em>et al</em>.',
-        journal: 'J Clin Oncol',
-        link:
-          'http://ascopubs.org/doi/full/10.1200/JCO.18.01042',
-        keyMessages: [
-          'In the phase 2 CheckMate 568 trial of 288 patients with untreated, recurrent stage IIIB/IV NSCLC, ORR was 30% overall and 41% and 15% in patients with ≥1% and <1% tumor PD-L1 expression, respectively. Regardless of PD-L1 expression, ORR was higher in patients with TMB of ≥10 mut/Mb (≥1%/<1% tumor PD-L1 expression, 48%/47%) vs TMB of <10 mut/Mb (≥1%/<1% tumor PD-L1 expression, 18%/5%), and PFS was longer in patients with TMB of ≥10 mut/Mb vs <10 mut/Mb (median, 7.1 vs 2.6 months)',
-        ],
-      }, // /id: 0
-      {
-        id: 1,
-        title:
-          'B7-H3 expression in Merkel cell carcinoma-associated endothelial cells correlates with locally aggressive primary tumor features and increased vascular density',
-        author: 'Aung PP, Parra ER, Barua S, <em>et al</em>.',
-        journal: 'Clin Cancer Res',
-        link:
-          'http://clincancerres.aacrjournals.org/content/early/2019/02/26/1078-0432.CCR-18-2355',
-        keyMessages: [
-          'Primary and metastatic MCC exhibit a dynamic range of co-localized CD31 and B7-H3 expression; increasing co-localized expression was significantly associated with increased tumor size (p=0.0060), greater depth of invasion (p=0.0110), presence of lymphovascular invasion (p=0.0453), and invasion beyond skin (p=0.0428) in primary MCC. Consistent with these findings, increasing co-localized expression of B7-H3 and CD31 correlated with increasing vascular density in primary MCC, but not metastatic MCC',
-        ],
+        title: 'Home',
+        link: '#home',
+        delay: '.4s'
       },
       {
-        id: 2,
-        title:
-          'Assessment of blood tumor mutational burden as a potential biomarker for immunotherapy in patients with non–small cell lung cancer with use of a next-generation sequencing cancer gene panel',
-        author: 'Wang Z, Duan J, Cai S, <em>et al.</em>',
-        journal: 'JAMA Oncol',
-        link:
-          'https://jamanetwork.com/journals/jamaoncology/fullarticle/2726029',
-        keyMessages: [
-          'In this study of 2 independent cohorts of patients with NSCLC, the correlation between blood TMB estimated by a 150-gene panel and tissue TMB measured by WES was evaluated and validated in matched blood and tissue samples from 48 and 50 patients with advanced NSCLC, respectively. Blood TMB estimated by the 150-gene panel correlated with the matched tissue TMB (Spearman correlation = 0.62). In patients who received anti–PD-1/L1 treatment, high blood TMB was associated with superior PFS (HR, 0.39; P = .01) and ORR (39.3% vs 9.1%; P = .02)',
-        ],
-      }
-    ], // /publications
-    footnote:
-      '*The following journals were included: <em>Ann Oncol, Blood, Cancer Discov, Clin Cancer Res, J Clin Oncol, JAMA, JAMA Oncol, Lancet, Lancet Oncol, Nat Med, New Engl J Med, Sci Transl Med</em>',
+        title: 'Bio',
+        link: '#bio',
+        delay: '.6s'
+      },
+      {
+        title: 'Projects',
+        link: '#projects',
+        delay: '.8s'
+      },
+      {
+        title: 'Tools',
+        link: '#tools',
+        delay: '1s'
+      },
+      {
+        title: 'Social',
+        link: '#social',
+        delay: '1.2s'
+      },
+    ],
+    titleDelay: '2.2s',
+    subtitle: {
+      title: 'Front-End Web Dev',
+      delay: '3.2s'
+    },
+    homeBackgroundPath: 'img/home/macbookair.jpg',
+    bioSection: {
+      title: 'Front-End Web Developer',
+      descriptions: [
+        '<i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects.',
+        '<i class="fa fa-graduation-cap fa-2x"></i> I\'ve completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including Angular, APIs, NodeJS, MySQL, Express, and so much more.',
+        '<i class="fa fa-trophy fa-2x" aria-hidden="true"></i> Winner of the <a class="link" href="http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/" target="_blank">V12 Group Hackathon</a>. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.',
+        '<i class="fa fa-plane fa-2x"></i> When I\'m not working, I feed my love for traveling. I\'ve snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I\'ve backpacked from Costa Rica to Nicaragua and have enjoyed the sushi in Japan. I\'ve seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail at the Cathedral of Valencia in Spain. I\'ve swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I have much more to see...'
+      ]
+    },
+    projectsSection: {
+      title: 'Projects',
+      backgroundPath: 'img/macandipad.jpg',
+      projects: [
+        {
+          animationDelay: '.4s',
+          url: 'http://www.scientificpathways.com/',
+          imgPath: 'img/projects/scientific-pathways.png',
+          title: 'Scientific Pathways',
+          description: 'Created this single-page website for Scientific Pathways, a global full-service medical communcations company that specializes in business planning and strategic consultation, client communications, account management, and overall program oversight with expertise in scientific research, strategic communication planning, scientific direction and content development.',
+          tools: [
+            'Built with AngularJS',
+            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+          ],
+          github: 'https://github.com/darrylmendonez/scientificpathways'
+        },
+        {
+          animationDelay: '.4s',
+          url: 'http://trustingpixels.herokuapp.com/',
+          imgPath: 'img/trustingpixels.png',
+          title: 'Trusting Pixels',
+          description: 'A freelance job I did for a new business that promotes photoshop-free advertisements. The business owner gave me mockups done on photoshop of what he wanted his site to look like. I was able to successfully create the site to his exact specifications. He had a very strong attention to detail and we were able to collaborate successfully.',
+          tools: [
+            'MaterializeCSS is the CSS framework',
+            'AngularJS is used for routing which gives it a snappy transition when going from page to page',
+          ],
+          github: 'https://github.com/darrylmendonez/tp'
+        },
+        {
+          animationDelay: '.4s',
+          url: 'http://dailybriefing.herokuapp.com/',
+          imgPath: 'img/dailybriefing.png',
+          title: 'Daily Briefing',
+          description: 'Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice. Daily Briefing is a front-end project utilizing many web tools:',
+          tools: [
+            'MaterializeCSS is the CSS framework',
+            'jQuery is the engine',
+            'API\'s:',
+            [
+              'The Dark Sky Forecast',
+              'Google Maps',
+              'Bing',
+              'EventBrite',
+              'Flickr'
+            ],
+            'Firebase is used for the \'Like\' button counter'
+          ],
+          github: 'https://github.com/darrylmendonez/tp'
+        }
+      ]
+    }
   }, // /data
   methods: {}, // /methods
 });
