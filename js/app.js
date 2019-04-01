@@ -53,7 +53,7 @@ new Vue({
     },
     projectsSection: {
       title: 'Projects',
-      backgroundPath: 'img/macandipad.jpg',
+      backgroundPath: 'img/projects/macandipad.jpg',
       projects: [
         {
           animationDelay: '.4s',
@@ -82,8 +82,23 @@ new Vue({
         },
         {
           animationDelay: '.4s',
+          url: 'http://tripchats.herokuapp.com/',
+          imgPath: 'img/projects/tripchats.png',
+          title: 'Trip Chats',
+          description: 'A full-stack project that allows users to post itineraries of trips they plan on going to. Other users can post comments to suggest to the original poster so they can get advice of what places to see and activities to do. This gives users access to insight from locals or other travelers to make the best of their trip.',
+          tools: [
+            'MySQL stores the data',
+            'Express is the web framework',
+            'AngularJS is the router and controller',
+            'Node.js is the engine',
+            'Bootstrap is the CSS framework'
+          ],
+          github: 'https://github.com/paulducsantos/tripchat'
+        },
+        {
+          animationDelay: '.4s',
           url: 'http://dailybriefing.herokuapp.com/',
-          imgPath: 'img/dailybriefing.png',
+          imgPath: 'img/projects/dailybriefing.png',
           title: 'Daily Briefing',
           description: 'Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice. Daily Briefing is a front-end project utilizing many web tools:',
           tools: [

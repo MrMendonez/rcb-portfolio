@@ -78,161 +78,31 @@
             </div>
           </div>
         </div>
-      </div> <!-- end row container -->
+      </div>
       <div class="row container">
-        <div class="col s12 m12 l6">
-          <div class="card z-depth-5" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://dailybriefing.herokuapp.com/" target="_blank"><img src="img/dailybriefing.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="http://dailybriefing.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">Daily Briefing</span></a>
-              <p>
-                Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice. Daily Briefing is a front-end project utilizing many web tools:
-                <div class="container">
-                  <ul>
-                    <li class="bullets">Materialize is the CSS framework</li>
-                    <li class="bullets">jQuery is the engine</li>
-                    <li class="bullets">API's:
-                    <div class="container">
-                      <ul>
-                        <li class="bullets">The Dark Sky Forecast</li>
-                        <li class="bullets">Google Maps</li>
-                        <li class="bullets">Bing</li>
-                        <li class="bullets">EventBrite</li>
-                        <li class="bullets">Flickr</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="bullets">Firebase is used for the 'Like' button counter</li>
-                  </ul>
+          <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 2) && (index < 5) )">
+            <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
+              <div class="card-image card-image waves-effect waves-block waves-light">
+                <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
+              </div>
+              <div :key="project.title" class="card-content black-text">
+                <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
+                <p>
+                  {{ project.description }}
+                  <div class="container">
+                    <ul>
+                      <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
+                    </ul>
+                  </div>
+                </p>
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
+                  <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
-              </p>
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://dailybriefing.herokuapp.com/" target="_blank">Launch <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/daily-briefing" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
+              </div>
             </div>
           </div>
-        </div> <!-- end daily briefing -->
-        <div class="col s12 m12 l6">
-          <div class="card z-depth-5" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="http://rureview.herokuapp.com/" target="_blank"><img src="img/rureview.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="http://rureview.herokuapp.com/" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">RU Review</span></a>
-              <p>
-                There are plenty of places to eat at Rutgers! RU Review is a place where users can read reviews about the many food spots on and around campus. Users can create accounts and write their own reviews as well as update and delete. RU Review is a back-end CRUD project utilizing many web tools:
-                <div class="container">
-                  <ul>
-                    <li class="bullets">Materialize is the CSS framework</li>
-                    <li class="bullets">Node.js is the engine</li>
-                    <li class="bullets">npm packages:
-                    <div class="container">
-                      <ul>
-                        <li class="bullets">Express</li>
-                        <li class="bullets">Express-Session</li>
-                        <li class="bullets">Sequelize</li>
-                        <li class="bullets">Passport</li>
-                        <li class="bullets">Passport-Local</li>
-                        <li class="bullets">Body-Parser</li>
-                        <li class="bullets">Express-Handlebars</li>
-                        <li class="bullets">Bcryptjs</li>
-                        <li class="bullets">MySQL</li>
-                        <li class="bullets">Handlebars</li>
-                        <li class="bullets">Dotenv</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="bullets">MySQL stores the data</li>
-                  </ul>
-                </div>
-              </p>
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="http://rureview.herokuapp.com/" target="_blank">RU Review <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/JamesonCodes/rutgers-virtual-flyer" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end ru review -->
-
-      </div> <!-- end row container -->
-      <div class="row container">
-        <div class="col s12 m12 l4">
-          <div class="card z-depth-5" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="https://miketysonsshootout.herokuapp.com/" target="_blank"><img src="img/shootout.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="https://miketysonsshootout.herokuapp.com/" target="_blank"><span class="card-title wave grey-text text-darken-4 eight-bit-font">Mike Tyson's Shoot-Out</span></a>
-              <p>
-                A 'Rock, Paper, Scissors, Shoot!' game with a throwback theme to the tune of Mike Tyson's Punch-Out. Name your character or play as Little Mac and see if you can beat Mike Tyson in a game of Rock, Paper, Scissors!
-                <div class="container">
-                  <ul>
-                    <li class="bullets">CSS3 and jQuery were both used for animations</li>
-                    <li class="bullets">CSS3 and Font Awesome were used to design the NES controller</li>
-                    <li>Optimized for mobile play with Bootstrap</li>
-                  </ul>
-                </div>
-              </p>
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://miketysonsshootout.herokuapp.com/" target="_blank">Play<i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/rocks-paper-scissors" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end Mike Tyson's Shoot-Out -->
-        <div class="col s12 m12 l4">
-          <div class="card z-depth-5" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="https://immense-inlet-4323.herokuapp.com/" target="_blank"><img src="img/booked.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="https://immense-inlet-4323.herokuapp.com/" target="_blank"><span class="card-title wave grey-text text-darken-4">Booked</span></a>
-              <p>
-                A front-end hotel booking website. Search for any city in the world to find hotels.
-                <div class="container">
-                  <ul>
-                    <li class="bullets">jQuery was used for animations</li>
-                    <li class="bullets">Bootstrap was used for responsive design, carousel, and modals</li>
-                  </ul>
-                </div>
-              </p>
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://immense-inlet-4323.herokuapp.com/" target="_blank">Booked <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/travel-site" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end booked -->
-        <div class="col s12 m12 l4">
-          <div class="card z-depth-5" data-wow-delay=".4s">
-            <div class="card-image card-image waves-effect waves-block waves-light">
-              <a href="https://damp-woodland-6914.herokuapp.com/" target="_blank"><img src="img/checked.png" class="wave"></a>
-            </div>
-            <div class="card-content black-text">
-              <a href="https://damp-woodland-6914.herokuapp.com/" target="_blank"><span class="card-title wave grey-text text-darken-4">Checked</span></a>
-              <p>
-                A front-end to-do list web application. Add, strikethrough, and delete tasks. Title and rename your list. Get things done with this fun and animated to-do list!
-                <div class="container">
-                  <ul>
-                    <li class="bullets">jQuery was used for animations</li>
-                    <li class="bullets">Bootstrap was used for responsive design, carousel, and modals</li>
-                  </ul>
-                </div>
-              </p>
-              <br />
-              <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" href="https://damp-woodland-6914.herokuapp.com/" target="_blank">Checked <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" href="https://github.com/darrylmendonez/todo-list" target="_blank"><i class="fa fa-github"></i></a>
-              </div> <!-- end center-btn -->
-            </div>
-          </div>
-        </div> <!-- end checked -->
-      </div> <!-- end row container -->
+        </div>
     </div> <!-- end section grey -->
     <div id="tools" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
