@@ -245,7 +245,8 @@ new Vue({
           username: 'darrylmendonez'
         },
       ]
-    }
+    },
+    copyright: '&copy 2019 Darryl Mendonez'
   }, // /data
   methods: {}, // /methods
 });
