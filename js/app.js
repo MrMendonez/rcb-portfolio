@@ -134,6 +134,8 @@ new Vue({
       ]
     },
     toolsSection: {
+      title: 'Tools',
+      backgroundPath: 'img/tools/macdesktop.jpg',
       tools: [
         {
           class: 'devicons-html5',
@@ -214,6 +216,33 @@ new Vue({
           class: 'devicon-amazonwebservices-original',
           animationDelay: '1.6s',
           title: 'AWS'
+        },
+      ]
+    },
+    socialSection: {
+      title: 'Social',
+      backgroundPath: 'img/social/iphone.jpg',
+      socialInfo: [
+        {
+          url: 'https://www.linkedin.com/in/darrylmendonez',
+          title: 'LinkedIn',
+          animationDelay: '.4s',
+          class: 'fa-linkedin',
+          username: 'darrylmendonez'
+        },
+        {
+          url: 'https://github.com/darrylmendonez',
+          title: 'GitHub',
+          animationDelay: '.8s',
+          class: 'fa-github',
+          username: 'darrylmendonez'
+        },
+        {
+          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com',
+          title: 'Gmail',
+          animationDelay: '1.2s',
+          class: 'fa-envelope',
+          username: 'darrylmendonez'
         },
       ]
     }

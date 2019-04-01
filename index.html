@@ -107,9 +107,9 @@
     </div> <!-- end section grey -->
     <div id="tools" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
-        <h1 class="center-align text-shadow">Tools</h1>
+        <h1 class="center-align text-shadow">{{ toolsSection.title }}</h1>
       </div>
-      <div class="parallax"><img src="img/macdesktop.jpg"></div>
+      <div class="parallax"><img :src="toolsSection.backgroundPath"></div>
     </div> <!-- end parallax-container -->
     <div class="section grey darken-1">
       <div class="row container">
@@ -147,41 +147,20 @@
     </div> <!-- end section grey -->
     <div id="social" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
-        <h1 class="center-align text-shadow">Social</h1>
+        <h1 class="center-align text-shadow">{{ socialSection.title }}</h1>
       </div>
-      <div class="parallax"><img src="img/iphone.jpg"></div>
+      <div class="parallax"><img :src="socialSection.backgroundPath"></div>
     </div> <!-- end parallax-container -->
     <div class="section grey darken-1">
       <div class="row container">
-        <div class="col s6 m4 offset-l2 l3 pulse-on-mouseenter">
-          <a href="https://www.linkedin.com/in/darrylmendonez" target="_blank">
+        <div class="col l2 hide-on-med-and-down"></div>
+        <div v-for="info in socialSection.socialInfo" :key="info.title" class="col s12 m4 l3 pulse-on-mouseenter">
+          <a :href="info.url" target="_blank">
             <div class="card-panel grey darken-3 center-align z-depth-5">
               <span class="white-text">
-                <h5 class="fadeIn wow" data-wow-delay=".4s">LinkedIn</h5>
-                <i class="fa fa-linkedin fa-5x fadeIn wow" data-wow-delay=".4s"></i>
-                <p class="fadeIn wow" data-wow-delay=".4s">darrylmendonez</p>
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="col s6 m4 l3 pulse-on-mouseenter">
-          <a href="https://github.com/darrylmendonez" target="_blank">
-            <div class="card-panel grey darken-3 center-align z-depth-5">
-              <span class="white-text">
-                <h5 class="fadeIn wow" data-wow-delay=".8s">GitHub</h5>
-                <i class="fa fa-github fa-5x fadeIn wow" data-wow-delay=".8s"></i>
-                <p class="fadeIn wow" data-wow-delay=".8s">darrylmendonez</p>
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="col offset-s3 s6 m4 l3 pulse-on-mouseenter">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com" target="_blank">
-            <div class="card-panel grey darken-3 center-align z-depth-5">
-              <span class="white-text">
-                <h5 class="fadeIn wow" data-wow-delay="1.6s">Gmail</h5>
-                <i class="fa fa-envelope fa-5x fadeIn wow" data-wow-delay="1.6s"></i>
-                <p class="fadeIn wow" data-wow-delay="1.6s">darrylmendonez</p>
+                <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>
+                <i :class="info.class" class="fa fa-5x fadeIn wow" data-wow-delay=".4s"></i>
+                <p class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.username }}</p>
               </span>
             </div>
           </a>
