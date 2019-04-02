@@ -147,6 +147,11 @@ new Vue({
           title: 'CSS3'
         },
         {
+          class: 'devicon-sass-original',
+          animationDelay: '1.6s',
+          title: 'Sass'
+        },
+        {
           class: 'devicons-javascript_badge',
           animationDelay: '1.2s',
           title: 'JavaScript'
@@ -210,11 +215,6 @@ new Vue({
           class: 'devicon-vuejs-plain',
           animationDelay: '1.2s',
           title: 'Vue.js'
-        },
-        {
-          class: 'devicon-amazonwebservices-original',
-          animationDelay: '1.6s',
-          title: 'AWS'
         },
       ]
     },
