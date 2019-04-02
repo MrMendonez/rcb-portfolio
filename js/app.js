@@ -45,9 +45,8 @@ new Vue({
     bioSection: {
       title: 'Front-End Web Developer',
       descriptions: [
-        '<i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects.',
-        '<i class="fa fa-graduation-cap fa-2x"></i> I\'ve completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including Angular, APIs, NodeJS, MySQL, Express, and so much more.',
-        '<i class="fa fa-trophy fa-2x" aria-hidden="true"></i> Winner of the <a class="link" href="http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/" target="_blank">V12 Group Hackathon</a>. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.',
+        '<i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects. Medical and pharmaceutical clients I\'ve developed websites and touchscreen kiosks for include but not limited to - Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, and Pfizer',
+        '<i class="fa fa-graduation-cap fa-2x"></i> In April 2016 I completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including AngularJS, APIs, NodeJS, MySQL, Express, and so much more.',
         '<i class="fa fa-plane fa-2x"></i> When I\'m not working, I feed my love for traveling. I\'ve snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I\'ve backpacked from Costa Rica to Nicaragua and have enjoyed the sushi in Japan. I\'ve seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail at the Cathedral of Valencia in Spain. I\'ve swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I have much more to see...'
       ]
     },
@@ -219,6 +218,31 @@ new Vue({
         },
       ]
     },
+    communityServiceSection: {
+      title: 'Community Service',
+      backgroundPath: 'img/community-service/background.jpg',
+      services: [
+        {
+          title: 'Teaching Assistant at Rutgers Coding Bootcamp',
+          imgPath: 'img/community-service/rcb-class.jpg',
+          description: 'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects.',
+          btnText: 'View Video'
+        },
+        {
+          title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
+          imgPath: 'img/community-service/freehold-student.jpg',
+          description: 'Trained five web development teachers on creating dynamic and interactive webpages using industry standard tools such as GitHub and Atom. Skills taught include HTML, CSS, JavaScript, and Bootstrap. I also worked closely with the Director of Curriculum and Instruction as well as the web development teachers on writing a three-year curriculum for their Web Design program',
+          btnText: 'Read Article',
+          url: 'https://www.app.com/story/money/business/career/2018/04/19/nj-jobs-freehold-hs-computer-class-facebook-model-phil-murphy/506372002/'
+        },
+        {
+          title: 'Guest Speaker at Impact 2018 by Trilogy Education Services',
+          imgPath: 'img/community-service/graduate-panel.jpg',
+          description: 'One of three graduates selected to participate in the Graduate Panel during Trilogy Education Services annual partner summit. Partners from universities across the nation were able to hear first hand from graduates about what it was like being a student, how the program has helped our career path, and what are lives have been like since graduating. There were also plenty of opportunities for university representatives to speak to us personally and ask specific questions or just hear our stories.',
+          btnText: 'View Video'
+        },
+      ]
+    },
     awardsSection: {
       title: 'Awards',
       backgroundPath: 'img/awards/background.jpg',
@@ -227,20 +251,21 @@ new Vue({
           title: 'School Spirit Award',
           presentedBy: 'Trilogy Education Services',
           location: 'Impact 2018',
-          imgPath: 'img/awards/handshake.png',
-          description: 'I was awarded the School Spirit Award from Trilogy Education Services at Impact 2018 - their annual partners summit. As a member of their first ever cohort at Rutgers University, I was recognized for my hardwork and leadership amoung my fellow classmates. I was also recognized for continuing my love for education by passing on my knowledge of web development by helping write a web dev curriculum for Freehold Regional High School District and training their teachers to code in HTML, CSS, Javascript, and Bootstrap while using the same tools used in the industry',
+          imgPath: 'img/awards/hug.jpg',
+          description: '"I couldn\'t be prouder to present this next award. When we were launching the company in our first class at Rutgers University I contacted this person for a potential TA opportunity. At the time he was teaching Web Design and Computer Applications at South Brunswick High School in New Jersey. And the conversation quickly turned to his interest in joining as a student. And his motivation to join the program was to gain a web development skill set and bring it back to his school district to create a curriculum that would impact lives at the middle school and high school level. So he came into the program and he quickly flourished and became one of the most dedicated and talented individuals in the classroom. He landed a job as a web developer almost immediately after graduation. And he never lost sight of his core why or his why he joined the program - his core motivation. And fast-forward a year and a half later he\'s now a consultant for Freehold High School in New Jersey. He is building a curriculum that\'ll change hopefully students\' lives at the high school level and he\'s taking their teachers through a mini-bootcamp to make sure they have the skills to be effective as educators. So it is with great pride that I present the School Spirit Award to Mr. Darryl Mendonez."<br><br>-Jedrek Woodarek, VP of Instruction at Trilogy Education Services',
           url: 'https://trilogyed.wistia.com/medias/0jd0brsrbi',
+          btnText: 'View Video'
         },
         {
           title: 'V12 Group Hackathon 2016',
           presentedBy: 'V12 Group',
           location: 'V12 Group',
           imgPath: 'img/awards/v12-winners.png',
-          description: 'Winner of the V12 Group Hackathon. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.',
+          description: 'Winner of the V12 Group Hackathon - Developed a web application on a team of seven that allows prospective business owners to search locations and see a map of demographics based on the user’s filtering choices. This allows the user to decide if a location was an optimal area to start their business. I was responsible for setting up the angular ui-routes, structuring the index.html, and helped in the overall design.',
           url: 'http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/',
+          btnText: 'View Article'
         }
       ]
-
     },
     socialSection: {
       title: 'Social',
@@ -268,8 +293,7 @@ new Vue({
           username: 'darrylmendonez'
         },
       ]
-    },
-    copyright: '&copy 2019 Darryl Mendonez'
+    }
   }, // /data
   methods: {}, // /methods
 });

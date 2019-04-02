@@ -144,7 +144,34 @@
           </div>
         </div>
       </div>
-    </div> <!-- end section grey -->
+    </div>
+    <div id="community-service" class="parallax-container valign-wrapper scrollspy">
+      <div class="valign center-block">
+        <h1 class="center-align text-shadow">{{ communityServiceSection.title }}</h1>
+      </div>
+      <div class="parallax"><img :src="communityServiceSection.backgroundPath"></div>
+    </div> <!-- end parallax-container -->
+    <div class="section grey darken-1">
+      <div class="row container">
+        <div class="col s12 m12 l4" v-for="(service, index) in communityServiceSection.services" v-if="index < 3">
+          <div class="card z-depth-5" :data-wow-delay="service.animationDelay">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a :href="service.url" target="_blank"><img :src="service.imgPath" class="wave"></a>
+            </div>
+            <div :key="service.title" class="card-content black-text">
+              <a :href="service.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ service.title }}</span></a>
+              <p>
+                {{ service.description }}
+              </p>
+              <br>
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="service.url" target="_blank">{{ service.btnText }} <i class="material-icons right">launch</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="awards" class="parallax-container valign-wrapper scrollspy">
         <div class="valign center-block">
           <h1 class="center-align text-shadow">{{ awardsSection.title }}</h1>
@@ -153,30 +180,24 @@
       </div> <!-- end parallax-container -->
       <div class="section grey darken-1">
         <div class="row container">
-            <div class="col s12 m12 l6" v-for="(award, index) in awardsSection.awards" v-if="index < 2">
-                <div class="card z-depth-5" :data-wow-delay="award.animationDelay">
-                  <div class="card-image card-image waves-effect waves-block waves-light">
-                    <a :href="award.url" target="_blank"><img :src="award.imgPath" class="wave"></a>
-                  </div>
-                  <div :key="award.title" class="card-content black-text">
-                    <a :href="award.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ award.title }}</span></a>
-                    <h6>Presented by {{ award.presentedBy }}</h6>
-                    <p>
-                      {{ award.description }}
-                      <div class="container">
-                        <ul>
-                          <li v-for="tool in award.tools" class="bullets">{{ tool }}</li>
-                        </ul>
-                      </div>
-                    </p>
-                    <div class="center-btn">
-                      <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="award.url" target="_blank">{{ award.title }} <i class="material-icons right">launch</i></a>
-                    </div>
-                  </div>
+          <div class="col s12 m12 l6" v-for="(award, index) in awardsSection.awards" v-if="index < 2">
+            <div class="card z-depth-5" :data-wow-delay="award.animationDelay">
+              <div class="card-image card-image waves-effect waves-block waves-light">
+                <a :href="award.url" target="_blank"><img :src="award.imgPath" class="wave"></a>
+              </div>
+              <div :key="award.title" class="card-content black-text">
+                <a :href="award.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ award.title }}</span></a>
+                <u>Presented by {{ award.presentedBy }}</u>
+                <p v-html="award.description"></p>
+                <br>
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="award.url" target="_blank">{{ award.btnText }} <i class="material-icons right">launch</i></a>
                 </div>
               </div>
-        </div>
+            </div>
+          </div>
       </div>
+    </div>
     <div id="social" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
         <h1 class="center-align text-shadow">{{ socialSection.title }}</h1>
