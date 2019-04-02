@@ -219,6 +219,29 @@ new Vue({
         },
       ]
     },
+    awardsSection: {
+      title: 'Awards',
+      backgroundPath: 'img/awards/background.jpg',
+      awards: [
+        {
+          title: 'School Spirit Award',
+          presentedBy: 'Trilogy Education Services',
+          location: 'Impact 2018',
+          imgPath: 'img/awards/handshake.png',
+          description: 'I was awarded the School Spirit Award from Trilogy Education Services at Impact 2018 - their annual partners summit. As a member of their first ever cohort at Rutgers University, I was recognized for my hardwork and leadership amoung my fellow classmates. I was also recognized for continuing my love for education by passing on my knowledge of web development by helping write a web dev curriculum for Freehold Regional High School District and training their teachers to code in HTML, CSS, Javascript, and Bootstrap while using the same tools used in the industry',
+          url: 'https://trilogyed.wistia.com/medias/0jd0brsrbi',
+        },
+        {
+          title: 'V12 Group Hackathon 2016',
+          presentedBy: 'V12 Group',
+          location: 'V12 Group',
+          imgPath: 'img/awards/v12-winners.png',
+          description: 'Winner of the V12 Group Hackathon. In seven hours my team and I built a web application that allowed new and existing businesses to analyze the demographics of a geographical region to best parlay their next business decision.',
+          url: 'http://njtechweekly.com/art/3006-rutgers-coding-bootcamp-students-shine-at-red-bank-based-v12-group-hackathon/',
+        }
+      ]
+
+    },
     socialSection: {
       title: 'Social',
       backgroundPath: 'img/social/iphone.jpg',
