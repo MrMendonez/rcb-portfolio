@@ -237,7 +237,8 @@ new Vue({
           title: 'Guest Speaker at Impact 2018 by Trilogy Education Services',
           imgPath: 'img/community-service/graduate-panel.jpg',
           description: 'One of three graduates selected to participate in the Graduate Panel during Trilogy Education Services annual partner summit. Partners from universities across the nation were able to hear first hand from graduates about what it was like being a student, how the program has helped our career path, and what are lives have been like since graduating. There were also plenty of opportunities for university representatives to speak to us personally and ask specific questions or just hear our stories.',
-          btnText: 'View Video'
+          btnText: 'View Video',
+          url: 'https://trilogyed.wistia.com/medias/sn5qazljtr'
         },
       ]
     },
