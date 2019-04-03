@@ -167,7 +167,7 @@ new Vue({
         {
           class: 'devicons-materializecss',
           animationDelay: '.8s',
-          title: 'MaterializeCSS'
+          title: 'Materialize'
         },
         {
           class: 'devicons-git',
