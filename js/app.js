@@ -65,14 +65,13 @@ new Vue({
             'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
             'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
-          github: 'https://github.com/darrylmendonez/scientificpathways'
         },
         {
           animationDelay: '.4s',
           url: 'http://www.chrysalismedical.com/',
           imgPath: 'img/projects/chrysalis-medical.png',
           title: 'Chrysalis Medical',
-          description: 'Created this website for Chrysalis Medical, a full-service agency that is dedicated to partnering with clients to provide high-quality scientific and strategic medical communications support',
+          description: 'Created this minimalist-style website for Chrysalis Medical, a full-service agency that is dedicated to partnering with clients in the pharmaceutical industry to provide high-quality scientific and strategic medical communications support',
           tools: [
             'Built with AngularJS',
             'Angular Animate is used for fade-in page transitions',
@@ -80,7 +79,6 @@ new Vue({
             'Wow.js is used to control the timing of each animation',
             'AngularJS Form Validation is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
           ],
-          github: 'https://github.com/darrylmendonez/chrysalis-medical'
         },
         {
           animationDelay: '.4s',
@@ -225,7 +223,7 @@ new Vue({
         {
           title: 'Teaching Assistant at Rutgers Coding Bootcamp',
           imgPath: 'img/community-service/rcb-class.jpg',
-          description: 'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects.',
+          description: 'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects. Students expressed genuine appreciation for the support I was able to provide.',
           btnText: 'View Video'
         },
         {

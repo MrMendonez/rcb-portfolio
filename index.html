@@ -74,7 +74,7 @@
               </p>
               <div class="center-btn">
                 <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
                 </p>
                 <div class="center-btn">
                   <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                  <a class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+                  <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@
               </p>
               <br>
               <div class="center-btn">
-                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="service.url" target="_blank">{{ service.btnText }} <i class="material-icons right">launch</i></a>
+                <a v-if="service.url" class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="service.url" target="_blank">{{ service.btnText }} <i class="material-icons right">launch</i></a>
               </div>
             </div>
           </div>
