@@ -56,6 +56,33 @@ new Vue({
       projects: [
         {
           animationDelay: '.4s',
+          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/index.html/',
+          imgPath: 'img/projects/ctf-white-label.png',
+          title: 'Clinical Development Pipeline',
+          description: 'This is an example of an touchscreen kiosk I developed for one of the world\'s most profitable pharmaceutical companies and was displayed at the <a href="https://www.aad.org/meetings/annual-meeting" target="_blank">2019 American Academy of Dermatology</a> in Washington DC and will be displayed at <a href="https://ddw.org/home" target="_blank">2019 Digestive Disease Week</a> in San Diego, CA and <a href="https://www.wcd2019milan.org/" target="_blank">2019 World Congress of Dermatology</a> in Milan, Italy. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes. This app is intended to be viewed at 1920 x 1080. Use developer tools to change your browser ratio via the \'Toggle device toolbar\' icon.',
+          tools: [
+            'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
+            'Angular Animations are used for page transitions',
+            'Bootstrap is the CSS framework',
+          ],
+          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
+        },
+        {
+          animationDelay: '.4s',
+          url: 'https://email-generator-db.firebaseapp.com/',
+          imgPath: 'img/projects/email-generator.png',
+          title: 'Email Generator',
+          description: 'This app is designed to make creating an html email simple. The idea is to build a template that would be used and reused by a company for sending emails. Once a design and format has been discussed with and approved by the client, the template can be styled to match the design and the client can simply fill out a form that will collect the contents of the email. Once submitted, the content would be appropriately placed within the template and the client can copy and paste the email directly into their email application.',
+          tools: [
+            'Built with React and Redux',
+            'MaterializeCSS',
+            'Firebase is used for its real-time database to collect data submitted via a form and authentication for registration and login',
+            'Moment.js is used to add date and time of when email template is created and for notifications'
+          ],
+          github: 'https://github.com/darrylmendonez/email-generator',
+        },
+        {
+          animationDelay: '.4s',
           url: 'http://www.scientificpathways.com/',
           imgPath: 'img/projects/scientific-pathways.png',
           title: 'Scientific Pathways',
@@ -135,84 +162,95 @@ new Vue({
       backgroundPath: 'img/tools/macdesktop.jpg',
       tools: [
         {
-          class: 'devicons-html5',
+          class: 'devicons devicons-html5',
           animationDelay: '.4s',
-          title: 'HTML5'
+          title: 'HTML5',
         },
         {
-          class: 'devicons-css3',
+          class: 'devicons devicons-css3',
           animationDelay: '.8s',
-          title: 'CSS3'
+          title: 'CSS3',
         },
         {
-          class: 'devicon-sass-original',
+          class: 'devicons devicon-sass-original',
           animationDelay: '1.6s',
-          title: 'Sass'
+          title: 'Sass',
         },
         {
-          class: 'devicons-javascript_badge',
+          class: 'devicons devicons-javascript_badge',
           animationDelay: '1.2s',
-          title: 'JavaScript'
+          title: 'JavaScript',
         },
         {
-          class: 'devicons-jquery',
+          class: 'devicons devicons-jquery',
           animationDelay: '1.6s',
-          title: 'jQuery'
+          title: 'jQuery',
+          url: 'http://miketysonsshootout.herokuapp.com/',
+          github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
         },
         {
-          class: 'devicons-bootstrap',
+          class: 'devicons devicons-bootstrap',
           animationDelay: '.4s',
-          title: 'Bootstrap'
+          title: 'Bootstrap',
+          url: 'https://www.chrysalismedical.com/',
         },
         {
-          class: 'devicons-materializecss',
+          class: 'devicons devicons-materializecss',
           animationDelay: '.8s',
-          title: 'Materialize'
+          title: 'Materialize',
+          url: 'http://www.scientificpathways.com/',
         },
         {
-          class: 'devicons-git',
+          class: 'devicons devicons-git',
           animationDelay: '1.2s',
-          title: 'Git'
+          title: 'Git',
         },
         {
-          class: 'devicons-github',
+          class: 'devicons devicons-github',
           animationDelay: '1.6s',
-          title: 'GitHub'
+          title: 'GitHub',
+          url: 'https://github.com/darrylmendonez',
         },
         {
-          class: 'devicons-streamline',
+          class: 'fa fa-area-chart',
           animationDelay: '.4s',
-          title: 'API'
+          title: 'Chart.js',
+          url: 'https://darrylmendonez.github.io/charts/',
+          github: 'https://github.com/darrylmendonez/charts',
         },
         {
-          class: 'devicons-npm',
+          class: 'devicons devicons-npm',
           animationDelay: '.8s',
-          title: 'npm'
+          title: 'npm',
         },
         {
-          class: 'devicons-firebase',
+          class: 'devicons devicons-firebase',
           animationDelay: '1.2s',
-          title: 'Firebase'
+          title: 'Firebase',
         },
         {
-          class: 'devicons-mysql',
+          class: 'devicons devicons-mysql',
           animationDelay: '1.6s',
-          title: 'MySQL'
+          title: 'MySQL',
         },
         {
-          class: 'devicons-angular',
+          class: 'devicons devicons-angular',
           animationDelay: '.4s',
-          title: 'Angular'
+          title: 'Angular',
+          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/index.html/',
+          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
         },
         {
-          class: 'devicons-react',
+          class: 'devicons devicons-react',
           animationDelay: '.8s',
-          title: 'React'
+          title: 'React',
+          url: 'https://email-generator-db.firebaseapp.com/',
+          github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
-          class: 'devicon-vuejs-plain',
+          class: 'devicons devicon-vuejs-plain',
           animationDelay: '1.2s',
-          title: 'Vue.js'
+          title: 'Vue.js',
         },
       ]
     },

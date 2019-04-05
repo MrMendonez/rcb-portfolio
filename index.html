@@ -64,8 +64,7 @@
             </div>
             <div :key="project.title" class="card-content black-text">
               <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
-              <p>
-                {{ project.description }}
+              <p v-html="project.description">
                 <div class="container">
                   <ul>
                     <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
@@ -81,29 +80,51 @@
         </div>
       </div>
       <div class="row container">
-          <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 2) && (index < 4) )">
-            <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
-              <div class="card-image card-image waves-effect waves-block waves-light">
-                <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
-              </div>
-              <div :key="project.title" class="card-content black-text">
-                <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
-                <p>
-                  {{ project.description }}
-                  <div class="container">
-                    <ul>
-                      <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
-                    </ul>
-                  </div>
-                </p>
-                <div class="center-btn">
-                  <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                  <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+        <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 2) && (index < 4) )">
+          <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
+            </div>
+            <div :key="project.title" class="card-content black-text">
+              <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
+              <p v-html="project.description">
+                <div class="container">
+                  <ul>
+                    <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
+                  </ul>
                 </div>
+              </p>
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row container">
+        <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 4) && (index < 6) )">
+          <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
+            <div class="card-image card-image waves-effect waves-block waves-light">
+              <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
+            </div>
+            <div :key="project.title" class="card-content black-text">
+              <a :href="project.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ project.title }}</span></a>
+              <p v-html="project.description">
+                <div class="container">
+                  <ul>
+                    <li v-for="tool in project.tools" class="bullets">{{ tool }}</li>
+                  </ul>
+                </div>
+              </p>
+              <div class="center-btn">
+                <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div> <!-- end section grey -->
     <div id="tools" class="parallax-container valign-wrapper scrollspy">
       <div class="valign center-block">
@@ -115,32 +136,96 @@
       <div class="row container">
         <div v-for="(tool, index) in toolsSection.tools" v-if="index < 4" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
-            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
+            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
+              <span v-if="tool.url">
+                <a :href="tool.url" target="_blank">
+                  <span :class="tool.class" class="fa-5x"></span>
+                  <h5>{{ tool.title }}</h5>
+                </a>
+                <div v-if="tool.github" class="row">
+                  <div class="col m6 offset-m3">
+                    <hr>
+                    <a :href="tool.github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </span>
+              <span v-else>
+                <span :class="tool.class" class="fa-5x"></span>
+                <h5>{{ tool.title }}</h5>
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="row container">
         <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 4) && (index < 8) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
-            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
+            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
+              <span v-if="tool.url">
+                <a :href="tool.url" target="_blank">
+                  <span :class="tool.class" class="fa-5x"></span>
+                  <h5>{{ tool.title }}</h5>
+                </a>
+                <div v-if="tool.github" class="row">
+                  <div class="col m6 offset-m3">
+                    <hr>
+                    <a :href="tool.github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </span>
+              <span v-else>
+                <span :class="tool.class" class="fa-5x"></span>
+                <h5>{{ tool.title }}</h5>
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="row container">
         <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 8) && (index < 12) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
-            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
+            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
+              <span v-if="tool.url">
+                <a :href="tool.url" target="_blank">
+                  <span :class="tool.class" class="fa-5x"></span>
+                  <h5>{{ tool.title }}</h5>
+                </a>
+                <div v-if="tool.github" class="row">
+                  <div class="col m6 offset-m3">
+                    <hr>
+                    <a :href="tool.github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </span>
+              <span v-else>
+                <span :class="tool.class" class="fa-5x"></span>
+                <h5>{{ tool.title }}</h5>
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="row container">
         <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 12) && (index < 16) )" class="col s6 m3">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <span :class="tool.class" class="devicons fa-5x fadeIn wow" :data-wow-delay="tool.animationDelay"></span>
-            <h5 class="fadeIn wow" :data-wow-delay="tool.animationDelay">{{ tool.title }}</h5>
+            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
+              <span v-if="tool.url">
+                <a :href="tool.url" target="_blank">
+                  <span :class="tool.class" class="fa-5x"></span>
+                  <h5>{{ tool.title }}</h5>
+                </a>
+                <div v-if="tool.github" class="row">
+                  <div class="col m6 offset-m3">
+                    <hr>
+                    <a :href="tool.github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </span>
+              <span v-else>
+                <span :class="tool.class" class="fa-5x"></span>
+                <h5>{{ tool.title }}</h5>
+              </span>
+            </div>
           </div>
         </div>
       </div>
