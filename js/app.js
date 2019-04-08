@@ -54,19 +54,19 @@ new Vue({
       title: 'Projects',
       backgroundPath: 'img/projects/macandipad.jpg',
       projects: [
-        {
-          animationDelay: '.4s',
-          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/index.html/',
-          imgPath: 'img/projects/ctf-white-label.png',
-          title: 'Clinical Development Pipeline',
-          description: 'This is an example of an touchscreen kiosk I developed for one of the world\'s most profitable pharmaceutical companies and was displayed at the <a href="https://www.aad.org/meetings/annual-meeting" target="_blank">2019 American Academy of Dermatology</a> in Washington DC and will be displayed at <a href="https://ddw.org/home" target="_blank">2019 Digestive Disease Week</a> in San Diego, CA and <a href="https://www.wcd2019milan.org/" target="_blank">2019 World Congress of Dermatology</a> in Milan, Italy. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes. This app is intended to be viewed at 1920 x 1080. Use developer tools to change your browser ratio via the \'Toggle device toolbar\' icon.',
-          tools: [
-            'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
-            'Angular Animations are used for page transitions',
-            'Bootstrap is the CSS framework',
-          ],
-          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
-        },
+        // {
+        //   animationDelay: '.4s',
+        //   url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/index.html/',
+        //   imgPath: 'img/projects/ctf-white-label.png',
+        //   title: 'Clinical Development Pipeline',
+        //   description: 'This is an example of an touchscreen kiosk I developed for one of the world\'s most profitable pharmaceutical companies and was displayed at the <a href="https://www.aad.org/meetings/annual-meeting" target="_blank">2019 American Academy of Dermatology</a> in Washington DC and will be displayed at <a href="https://ddw.org/home" target="_blank">2019 Digestive Disease Week</a> in San Diego, CA and <a href="https://www.wcd2019milan.org/" target="_blank">2019 World Congress of Dermatology</a> in Milan, Italy. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes. This app is intended to be viewed at 1920 x 1080. Use developer tools to change your browser ratio via the \'Toggle device toolbar\' icon.',
+        //   tools: [
+        //     'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
+        //     'Angular Animations are used for page transitions',
+        //     'Bootstrap is the CSS framework',
+        //   ],
+        //   github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
+        // },
         {
           animationDelay: '.4s',
           url: 'https://email-generator-db.firebaseapp.com/',
