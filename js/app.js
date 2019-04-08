@@ -227,6 +227,7 @@ new Vue({
           class: 'devicons devicons-firebase',
           animationDelay: '1.2s',
           title: 'Firebase',
+          url: 'https://email-generator-db.firebaseapp.com/',
         },
         {
           class: 'devicons devicons-mysql',
