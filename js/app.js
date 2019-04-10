@@ -212,11 +212,17 @@ new Vue({
           url: 'https://github.com/darrylmendonez',
         },
         {
-          class: 'fa fa-area-chart',
+          class: 'fas fa-chart-area',
           animationDelay: '.4s',
           title: 'Chart.js',
           url: 'https://darrylmendonez.github.io/charts/',
           github: 'https://github.com/darrylmendonez/charts',
+        },
+        {
+          class: 'fas fa-project-diagram',
+          animationDelay: '1.6s',
+          title: 'GraphQL',
+          url: 'https://github.com/darrylmendonez/reading-list'
         },
         {
           class: 'devicons devicons-npm',
@@ -230,12 +236,7 @@ new Vue({
           url: 'https://email-generator-db.firebaseapp.com/',
         },
         {
-          class: 'devicons devicons-mysql',
-          animationDelay: '1.6s',
-          title: 'MySQL',
-        },
-        {
-          class: 'devicons devicons-angular',
+          class: 'devicons devicons-angular fa-5x',
           animationDelay: '.4s',
           title: 'Angular',
           url: '',
@@ -313,21 +314,21 @@ new Vue({
           url: 'https://www.linkedin.com/in/darrylmendonez',
           title: 'LinkedIn',
           animationDelay: '.4s',
-          class: 'fa-linkedin',
+          class: 'fab fa-linkedin',
           username: 'darrylmendonez'
         },
         {
           url: 'https://github.com/darrylmendonez',
           title: 'GitHub',
           animationDelay: '.8s',
-          class: 'fa-github',
+          class: 'fab fa-github',
           username: 'darrylmendonez'
         },
         {
           url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com',
           title: 'Gmail',
           animationDelay: '1.2s',
-          class: 'fa-envelope',
+          class: 'far fa-envelope',
           username: 'darrylmendonez'
         },
       ]

@@ -5,10 +5,11 @@
   <meta author="Darryl Mendonez">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/materialize.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css”></i>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
@@ -73,7 +74,7 @@
               </p>
               <div class="center-btn">
                 <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -96,7 +97,7 @@
               </p>
               <div class="center-btn">
                 <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -119,7 +120,7 @@
               </p>
               <div class="center-btn">
                 <a class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="project.url" target="_blank">{{ project.title }} <i class="material-icons right">launch</i></a>
-                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fa fa-github"></i></a>
+                <a v-if="project.github" class="waves-effect waves-light btn-floating grey darken-3 z-depth-5 right" :href="project.github" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -273,7 +274,7 @@
             <div class="card-panel grey darken-3 center-align z-depth-5">
               <span class="white-text">
                 <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>
-                <i :class="info.class" class="fa fa-5x fadeIn wow" data-wow-delay=".4s"></i>
+                <i :class="info.class" class="fab fa-5x fadeIn wow" data-wow-delay=".4s"></i>
                 <p class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.username }}</p>
               </span>
             </div>
