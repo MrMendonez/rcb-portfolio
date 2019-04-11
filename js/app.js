@@ -45,7 +45,7 @@ new Vue({
     bioSection: {
       title: 'Front-End Web Developer',
       descriptions: [
-        '<i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile devices with a specific focus on large scale JavaScript projects. Medical and pharmaceutical clients I\'ve developed websites and touchscreen kiosks for include but not limited to - Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, and Pfizer',
+        '<i class="fa fa-code fa-2x"></i> A front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company, where I am responsible for the creation, development, and implementation of internal and external websites as well as web solutions for mobile and desktop devices as well as touchscreen kiosks with a specific focus on large scale JavaScript projects. Medical and pharmaceutical clients I\'ve developed websites and touchscreen kiosks for include but not limited to - Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, and Pfizer',
         '<i class="fa fa-graduation-cap fa-2x"></i> In April 2016 I completed training to become a full-stack web developer through Rutgers Coding Bootcamp, a rigorous yet exciting program where I learned in-depth web development including AngularJS, APIs, NodeJS, MySQL, Express, and so much more.',
         '<i class="fa fa-plane fa-2x"></i> When I\'m not working, I feed my love for traveling. I\'ve snowboarded through the evergreen mountains of Vermont and canoed the Bioluminescent Bay of Puerto Rico. I\'ve backpacked from Costa Rica to Nicaragua and have enjoyed the sushi in Japan. I\'ve seen with my own eyes the Crown of Thorns at Notre Dame in Paris as well as the Holy Grail at the Cathedral of Valencia in Spain. I\'ve swam the beautiful beaches of the Philippines and climbed the Lanikai Pillboxes of Hawaii to catch the Golden Sunrise Sky. I have much more to see...'
       ]
@@ -201,6 +201,11 @@ new Vue({
           url: 'http://www.scientificpathways.com/',
         },
         {
+          class: 'devicons devicons-npm',
+          animationDelay: '.8s',
+          title: 'npm',
+        },
+        {
           class: 'devicons devicons-git',
           animationDelay: '1.2s',
           title: 'Git',
@@ -223,11 +228,6 @@ new Vue({
           animationDelay: '1.6s',
           title: 'GraphQL',
           url: 'https://github.com/darrylmendonez/reading-list'
-        },
-        {
-          class: 'devicons devicons-npm',
-          animationDelay: '.8s',
-          title: 'npm',
         },
         {
           class: 'devicons devicons-firebase',
