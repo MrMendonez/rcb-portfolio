@@ -201,11 +201,6 @@ new Vue({
           url: 'http://www.scientificpathways.com/',
         },
         {
-          class: 'devicons devicons-npm',
-          animationDelay: '.8s',
-          title: 'npm',
-        },
-        {
           class: 'devicons devicons-git',
           animationDelay: '1.2s',
           title: 'Git',
@@ -228,6 +223,12 @@ new Vue({
           animationDelay: '1.6s',
           title: 'GraphQL',
           url: 'https://github.com/darrylmendonez/reading-list'
+        },
+        {
+          class: 'devicon-d3js-plain',
+          animationDelay: '.8s',
+          title: 'D3',
+          url: 'https://darrylmendonez.github.io/budget-planner/'
         },
         {
           class: 'devicons devicons-firebase',

@@ -272,11 +272,9 @@
         <div v-for="info in socialSection.socialInfo" :key="info.title" class="col s12 m4 l3 pulse-on-mouseenter">
           <a :href="info.url" target="_blank">
             <div class="card-panel grey darken-3 center-align z-depth-5">
-              <span class="white-text">
-                <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>
-                <i :class="info.class" class="fab fa-5x fadeIn wow" data-wow-delay=".4s"></i>
-                <p class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.username }}</p>
-              </span>
+              <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>
+              <i :class="info.class" class="fab fa-5x fadeIn wow" data-wow-delay=".4s"></i>
+              <p class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.username }}</p>
             </div>
           </a>
         </div>
