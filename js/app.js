@@ -201,15 +201,15 @@ new Vue({
           url: 'http://www.scientificpathways.com/',
         },
         {
-          class: 'devicons devicons-atom',
-          animationDelay: '1.2s',
-          title: 'Electron',
-        },
-        {
           class: 'devicons devicons-github',
           animationDelay: '1.6s',
           title: 'GitHub',
           url: 'https://github.com/darrylmendonez',
+        },
+        {
+          class: 'devicons devicons-atom',
+          animationDelay: '1.2s',
+          title: 'Electron',
         },
         {
           class: 'fas fa-chart-area',
