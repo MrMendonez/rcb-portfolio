@@ -201,9 +201,9 @@ new Vue({
           url: 'http://www.scientificpathways.com/',
         },
         {
-          class: 'devicons devicons-git',
+          class: 'devicons devicons-atom',
           animationDelay: '1.2s',
-          title: 'Git',
+          title: 'Electron',
         },
         {
           class: 'devicons devicons-github',
