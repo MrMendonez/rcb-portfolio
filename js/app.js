@@ -240,7 +240,7 @@ new Vue({
           class: 'devicons devicons-angular fa-5x',
           animationDelay: '.4s',
           title: 'Angular',
-          url: '',
+          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
           github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
         },
         {
