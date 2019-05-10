@@ -254,6 +254,7 @@ new Vue({
           class: 'devicons devicon-vuejs-plain',
           animationDelay: '1.2s',
           title: 'Vue.js',
+          url: 'https://clinicalthinking.com/'
         },
       ]
     },
