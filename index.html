@@ -270,8 +270,7 @@
     </div> <!-- end parallax-container -->
     <div class="section grey darken-1">
       <div class="row container">
-        <div class="col l2 hide-on-med-and-down"></div>
-        <div v-for="info in socialSection.socialInfo" :key="info.title" class="col s12 m4 l3 pulse-on-mouseenter">
+        <div v-for="info in socialSection.socialInfo" :key="info.title" class="col s6 m3 l3 pulse-on-mouseenter">
           <a :href="info.url" target="_blank">
             <div class="card-panel grey darken-3 center-align z-depth-5">
               <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>

@@ -327,9 +327,16 @@ new Vue({
           username: 'darrylmendonez'
         },
         {
+          url: 'https://stackoverflow.com/users/5458425/darryl-mendonez',
+          title: 'Stack Overflow',
+          animationDelay: '1.2s',
+          class: 'fab fa-stack-overflow',
+          username: 'Darryl Mendonez'
+        },
+        {
           url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com',
           title: 'Gmail',
-          animationDelay: '1.2s',
+          animationDelay: '1.6s',
           class: 'far fa-envelope',
           username: 'darrylmendonez'
         },
