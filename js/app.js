@@ -11,29 +11,34 @@ new Vue({
     brandLogoDelay: '.2s',
     navItems: [
       {
-        title: 'Home',
-        link: '#home',
-        delay: '.4s'
-      },
-      {
         title: 'Bio',
         link: '#bio',
-        delay: '.6s'
+        delay: '.4s'
       },
       {
         title: 'Projects',
         link: '#projects',
-        delay: '.8s'
+        delay: '.6s'
       },
       {
         title: 'Tools',
         link: '#tools',
+        delay: '.8s'
+      },
+      {
+        title: 'Community',
+        link: '#community-service',
         delay: '1s'
+      },
+      {
+        title: 'Awards',
+        link: '#awards',
+        delay: '1.2s'
       },
       {
         title: 'Social',
         link: '#social',
-        delay: '1.2s'
+        delay: '1.4s'
       },
     ],
     titleDelay: '2.2s',

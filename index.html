@@ -28,7 +28,7 @@
       <nav>
         <div class="nav-wrapper">
           <div class="container">
-            <a href="#home" class="brand-logo fadeInDown wow" :data-wow-delay="brandLogoDelay">{{ title }}</a>
+            <a href="#home" class="brand-logo fadeInDown wow show-on-large" :data-wow-delay="brandLogoDelay">{{ title }}</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" key="index"><a :href="navItem.link" class="fadeInDown wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
             </ul>
