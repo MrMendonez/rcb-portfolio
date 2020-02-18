@@ -99,8 +99,10 @@ new Vue({
             'Built with React using Context API and Hooks',
             'MaterializeCSS is the CSS framework',
             'User data is saved on local storage so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
-            'Users can read, add, and delete task items'
+            'Users can read, add, and delete task items',
+            `Roadmap: edit task, edit list title, create multiple lists`
           ],
+          github: `https://github.com/darrylmendonez/minimallists`
         },
         {
           id: 4,
