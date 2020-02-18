@@ -60,6 +60,7 @@ new Vue({
       backgroundPath: 'img/projects/macandipad.jpg',
       projects: [
         {
+          id: 1,
           animationDelay: '.4s',
           url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
           imgPath: 'img/projects/ctf-white-label.png',
@@ -73,6 +74,7 @@ new Vue({
           github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
         },
         {
+          id: 2,
           animationDelay: '.4s',
           url: 'https://email-generator-db.firebaseapp.com/',
           imgPath: 'img/projects/email-generator.png',
@@ -87,6 +89,21 @@ new Vue({
           github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
+          id: 3,
+          animationDelay: '.4s',
+          url: 'https://darrylmendonez.github.io/minimallists/',
+          imgPath: 'img/projects/minimallists.png',
+          title: 'Minimal Lists',
+          description: `A simple to-do list application with no frills. Created with React using Context and Hooks. Your data is saved locally on your device which means it's not in a cloud or accessible by the developer and does not get lost when you close or refresh the page making this a useful tool:`,
+          tools: [
+            'Built with React using Context API and Hooks',
+            'MaterializeCSS is the CSS framework',
+            'User data is saved on local storage so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
+            'Users can read, add, and delete task items'
+          ],
+        },
+        {
+          id: 4,
           animationDelay: '.4s',
           url: 'http://www.scientificpathways.com/',
           imgPath: 'img/projects/scientific-pathways.png',
@@ -99,6 +116,7 @@ new Vue({
           ],
         },
         {
+          id: 5,
           animationDelay: '.4s',
           url: 'http://www.chrysalismedical.com/',
           imgPath: 'img/projects/chrysalis-medical.png',
@@ -113,6 +131,7 @@ new Vue({
           ],
         },
         {
+          id: 6,
           animationDelay: '.4s',
           url: 'http://trustingpixels.herokuapp.com/',
           imgPath: 'img/trustingpixels.png',
@@ -125,6 +144,7 @@ new Vue({
           github: 'https://github.com/darrylmendonez/tp'
         },
         {
+          id: 7,
           animationDelay: '.4s',
           url: 'http://tripchats.herokuapp.com/',
           imgPath: 'img/projects/tripchats.png',
@@ -140,6 +160,7 @@ new Vue({
           github: 'https://github.com/paulducsantos/tripchat'
         },
         {
+          id: 8,
           animationDelay: '.4s',
           url: 'http://dailybriefing.herokuapp.com/',
           imgPath: 'img/projects/dailybriefing.png',
