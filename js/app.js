@@ -356,7 +356,7 @@ new Vue({
         },
         {
           url: 'https://stackoverflow.com/users/5458425/darryl-mendonez',
-          title: 'Stack Overflow',
+          title: 'Stack<br>Overflow',
           animationDelay: '.8s',
           class: 'fab fa-stack-overflow',
         },
