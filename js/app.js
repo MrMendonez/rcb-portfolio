@@ -357,13 +357,13 @@ new Vue({
         {
           url: 'https://stackoverflow.com/users/5458425/darryl-mendonez',
           title: 'Stack Overflow',
-          animationDelay: '.6s',
+          animationDelay: '.8s',
           class: 'fab fa-stack-overflow',
         },
         {
           url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
           title: 'Gmail<br><br>',
-          animationDelay: '.8s',
+          animationDelay: '1.1s',
           class: 'far fa-envelope',
         },
       ]
