@@ -15,31 +15,37 @@ new Vue({
     },
     navItems: [
       {
+        id: 1,
         title: 'Bio',
         link: '#bio',
         delay: '1.2s'
       },
       {
+        id: 2,
         title: 'Projects',
         link: '#projects',
         delay: '1s'
       },
       {
+        id: 3,
         title: 'Tools',
         link: '#tools',
         delay: '.8s'
       },
       {
+        id: 4,
         title: 'Community',
         link: '#community-service',
         delay: '.6s'
       },
       {
+        id: 5,
         title: 'Awards',
         link: '#awards',
         delay: '.4s'
       },
       {
+        id: 6,
         title: 'Social',
         link: '#social',
         delay: '.2s'
@@ -65,16 +71,15 @@ new Vue({
       projects: [
         {
           id: 1,
-          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
-          imgPath: 'img/projects/ctf-white-label.png',
-          title: 'Clinical Pipeline',
-          description: 'This is an example of many touchscreen kiosks I\'ve developed for some of the world\'s most profitable pharmaceutical companies. Congresses where my Angular kiosks have been displayed include <a href="https://www.hematology.org" target="_blank">2017 & 2018 American Society of Hematology</a>, <a href="https://meetings.asco.org" target="_blank">2017 & 2018 American Society of Clinical Oncology</a>, and <a href="https://www.aad.org/" target="_blank">2018 American Academy of Dermatology</a>. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes.',
+          url: 'https://www.imne.com/',
+          imgPath: 'img/projects/imne.png',
+          title: 'IMNE',
+          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
           tools: [
-            'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
-            'Angular Animations are used for page transitions',
-            'Bootstrap is the CSS framework',
+            'Built with Angular 8',
+            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
-          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
         },
         {
           id: 2,
@@ -107,15 +112,16 @@ new Vue({
         },
         {
           id: 4,
-          url: 'https://www.imne.com/',
-          imgPath: 'img/projects/imne.png',
-          title: 'IMNE',
-          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
+          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
+          imgPath: 'img/projects/ctf-white-label.png',
+          title: 'Clinical Pipeline',
+          description: 'This is an example of many touchscreen kiosks I\'ve developed for some of the world\'s most profitable pharmaceutical companies. Congresses where my Angular kiosks have been displayed include <a href="https://www.hematology.org" target="_blank">2017 & 2018 American Society of Hematology</a>, <a href="https://meetings.asco.org" target="_blank">2017 & 2018 American Society of Clinical Oncology</a>, and <a href="https://www.aad.org/" target="_blank">2018 American Academy of Dermatology</a>. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes.',
           tools: [
-            'Built with Angular 8',
-            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+            'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
+            'Angular Animations are used for page transitions',
+            'Bootstrap is the CSS framework',
           ],
+          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
         },
         {
           id: 5,
