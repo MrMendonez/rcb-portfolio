@@ -8,17 +8,21 @@ new Vue({
     doubleLinebreak: '<br><br>',
     // data
     title: 'Darryl Mendonez',
-    brandLogoDelay: '.2s',
+    brandLogo: {
+      link: '#home',
+      delay: '.2s',
+      
+    },
     navItems: [
       {
         title: 'Bio',
         link: '#bio',
-        delay: '.4s'
+        delay: '1.2s'
       },
       {
         title: 'Projects',
         link: '#projects',
-        delay: '.6s'
+        delay: '1s'
       },
       {
         title: 'Tools',
@@ -28,23 +32,23 @@ new Vue({
       {
         title: 'Community',
         link: '#community-service',
-        delay: '1s'
+        delay: '.6s'
       },
       {
         title: 'Awards',
         link: '#awards',
-        delay: '1.2s'
+        delay: '.4s'
       },
       {
         title: 'Social',
         link: '#social',
-        delay: '1.4s'
+        delay: '.2s'
       },
     ],
-    titleDelay: '2.2s',
+    titleDelay: '2s',
     subtitle: {
       title: 'Front-End Web Dev',
-      delay: '3.2s'
+      delay: '2.8s'
     },
     homeBackgroundPath: 'img/home/macbookair.jpg',
     bioSection: {
@@ -61,10 +65,9 @@ new Vue({
       projects: [
         {
           id: 1,
-          animationDelay: '.4s',
           url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
           imgPath: 'img/projects/ctf-white-label.png',
-          title: 'Clinical Development Pipeline',
+          title: 'Clinical Pipeline',
           description: 'This is an example of many touchscreen kiosks I\'ve developed for some of the world\'s most profitable pharmaceutical companies. Congresses where my Angular kiosks have been displayed include <a href="https://www.hematology.org" target="_blank">2017 & 2018 American Society of Hematology</a>, <a href="https://meetings.asco.org" target="_blank">2017 & 2018 American Society of Clinical Oncology</a>, and <a href="https://www.aad.org/" target="_blank">2018 American Academy of Dermatology</a>. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes.',
           tools: [
             'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
@@ -75,7 +78,6 @@ new Vue({
         },
         {
           id: 2,
-          animationDelay: '.4s',
           url: 'https://email-generator-db.firebaseapp.com/',
           imgPath: 'img/projects/email-generator.png',
           title: 'Email Generator',
@@ -90,7 +92,6 @@ new Vue({
         },
         {
           id: 3,
-          animationDelay: '.4s',
           url: 'https://darrylmendonez.github.io/minimallists/',
           imgPath: 'img/projects/minimallists.png',
           title: 'Minimal Lists',
@@ -106,20 +107,18 @@ new Vue({
         },
         {
           id: 4,
-          animationDelay: '.4s',
-          url: 'http://www.scientificpathways.com/',
-          imgPath: 'img/projects/scientific-pathways.png',
-          title: 'Scientific Pathways',
-          description: 'Created this single-page website for Scientific Pathways, a global full-service medical communcations company that specializes in business planning and strategic consultation, client communications, account management, and overall program oversight with expertise in scientific research, strategic communication planning, scientific direction and content development.',
+          url: 'https://www.imne.com/',
+          imgPath: 'img/projects/imne.png',
+          title: 'IMNE',
+          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
           tools: [
-            'Built with AngularJS',
+            'Built with Angular 8',
             'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
             'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
         },
         {
           id: 5,
-          animationDelay: '.4s',
           url: 'http://www.chrysalismedical.com/',
           imgPath: 'img/projects/chrysalis-medical.png',
           title: 'Chrysalis Medical',
@@ -134,7 +133,6 @@ new Vue({
         },
         {
           id: 6,
-          animationDelay: '.4s',
           url: 'http://trustingpixels.herokuapp.com/',
           imgPath: 'img/trustingpixels.png',
           title: 'Trusting Pixels',
@@ -147,7 +145,6 @@ new Vue({
         },
         {
           id: 7,
-          animationDelay: '.4s',
           url: 'http://tripchats.herokuapp.com/',
           imgPath: 'img/projects/tripchats.png',
           title: 'Trip Chats',
@@ -163,7 +160,6 @@ new Vue({
         },
         {
           id: 8,
-          animationDelay: '.4s',
           url: 'http://dailybriefing.herokuapp.com/',
           imgPath: 'img/projects/dailybriefing.png',
           title: 'Daily Briefing',
@@ -191,27 +187,27 @@ new Vue({
       tools: [
         {
           class: 'devicons devicons-html5',
-          animationDelay: '.4s',
+          animationDelay: '.2s',
           title: 'HTML5',
         },
         {
           class: 'devicons devicons-css3',
-          animationDelay: '.8s',
+          animationDelay: '.4s',
           title: 'CSS3',
         },
         {
           class: 'devicons devicon-sass-original',
-          animationDelay: '1.6s',
+          animationDelay: '.6s',
           title: 'Sass',
         },
         {
           class: 'devicons devicons-javascript_badge',
-          animationDelay: '1.2s',
+          animationDelay: '.8s',
           title: 'JavaScript',
         },
         {
           class: 'devicons devicons-jquery',
-          animationDelay: '1.6s',
+          animationDelay: '.2s',
           title: 'jQuery',
           url: 'http://miketysonsshootout.herokuapp.com/',
           github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
@@ -224,19 +220,19 @@ new Vue({
         },
         {
           class: 'devicons devicons-materializecss',
-          animationDelay: '.8s',
+          animationDelay: '.6s',
           title: 'Materialize',
           url: 'http://www.scientificpathways.com/',
         },
         {
           class: 'devicons devicons-github',
-          animationDelay: '1.6s',
+          animationDelay: '.8s',
           title: 'GitHub',
           url: 'https://github.com/darrylmendonez',
         },
         {
           class: 'devicons devicons-atom',
-          animationDelay: '1.2s',
+          animationDelay: '.2s',
           title: 'Electron',
         },
         {
@@ -248,7 +244,7 @@ new Vue({
         },
         {
           class: 'fas fa-project-diagram',
-          animationDelay: '1.6s',
+          animationDelay: '.6s',
           title: 'GraphQL',
           url: 'https://github.com/darrylmendonez/reading-list'
         },
@@ -260,7 +256,7 @@ new Vue({
         },
         {
           class: 'devicons devicons-firebase',
-          animationDelay: '1.2s',
+          animationDelay: '.2s',
           title: 'Firebase',
           url: 'https://email-generator-db.firebaseapp.com/',
         },
@@ -273,14 +269,14 @@ new Vue({
         },
         {
           class: 'devicons devicons-react',
-          animationDelay: '.8s',
+          animationDelay: '.6s',
           title: 'React',
           url: 'https://email-generator-db.firebaseapp.com/',
           github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
           class: 'devicons devicon-vuejs-plain',
-          animationDelay: '1.2s',
+          animationDelay: '.8s',
           title: 'Vue.js',
           url: 'https://clinicalthinking.com/'
         },
@@ -342,34 +338,47 @@ new Vue({
       socialInfo: [
         {
           url: 'https://www.linkedin.com/in/darrylmendonez',
-          title: 'LinkedIn',
-          animationDelay: '.4s',
+          title: 'LinkedIn<br><br>',
+          animationDelay: '.2s',
           class: 'fab fa-linkedin',
-          username: 'darrylmendonez'
         },
         {
           url: 'https://github.com/darrylmendonez',
-          title: 'GitHub',
-          animationDelay: '.8s',
+          title: 'GitHub<br><br>',
+          animationDelay: '.4s',
           class: 'fab fa-github',
-          username: 'darrylmendonez'
         },
         {
           url: 'https://stackoverflow.com/users/5458425/darryl-mendonez',
           title: 'Stack Overflow',
-          animationDelay: '1.2s',
+          animationDelay: '.6s',
           class: 'fab fa-stack-overflow',
-          username: 'Darryl Mendonez'
         },
         {
-          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=darrylmendonez@gmail.com',
-          title: 'Gmail',
-          animationDelay: '1.6s',
+          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
+          title: 'Gmail<br><br>',
+          animationDelay: '.8s',
           class: 'far fa-envelope',
-          username: 'darrylmendonez'
         },
       ]
-    }
+    },
+    isScrollPastTitle: false,
   }, // /data
-  methods: {}, // /methods
+  methods: {
+    activateNavbarLogo: function() {
+      let scrollDistance = $(window).scrollTop();
+      if (scrollDistance >= 166) {
+        this.isScrollPastTitle = true;
+      }
+      else {
+        this.isScrollPastTitle = false;
+      }
+    }
+  }, // /methods
+  mounted () {
+    window.addEventListener('scroll', this.activateNavbarLogo)
+  },
+  // beforeDestroy () {
+  //   window.removeEventListener('scroll', this.activateNavbarLogo)
+  // }
 });

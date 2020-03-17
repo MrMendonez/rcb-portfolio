@@ -28,9 +28,9 @@
       <nav>
         <div class="nav-wrapper">
           <div class="container">
-            <a href="#home" class="brand-logo fadeInDown wow show-on-large" :data-wow-delay="brandLogoDelay">{{ title }}</a>
+            <a href="#home" class="brand-logo focus-in-expand-fwd wow show-on-large" v-if="isScrollPastTitle">{{ title }}</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" key="index"><a :href="navItem.link" class="fadeInDown wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
+              <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" key="index"><a :href="navItem.link" class="focus-in-expand-fwd wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
             </ul>
           </div>
         </div>
@@ -38,8 +38,8 @@
     </div>
     <div id="home" class="parallax-title-container scrollspy">
       <div class="center-align">
-        <h1 class="text-shadow fadeInDown wow" :data-wow-delay="titleDelay">{{ title }}</h1>
-        <h4 class="text-shadow fadeInDown wow" :data-wow-delay="subtitle.delay"><i>{{ subtitle.title }}</i></h4>
+        <h1 class="text-shadow focus-in-contract-bck wow" :data-wow-delay="titleDelay">{{ title }}</h1>
+        <h4 class="text-shadow focus-in-contract-bck wow" :data-wow-delay="subtitle.delay"><i>{{ subtitle.title }}</i></h4>
       </div>
       <div class="parallax">
         <img :src="homeBackgroundPath">
@@ -107,7 +107,7 @@
       </div>
       <div class="row container">
         <div class="col s12 m12 l6" v-for="(project, index) in projectsSection.projects" v-if="( (index >= 4) && (index < 6) )">
-          <div class="card z-depth-5" :data-wow-delay="project.animationDelay">
+          <div class="card z-depth-5">
             <div class="card-image card-image waves-effect waves-block waves-light">
               <a :href="project.url" target="_blank"><img :src="project.imgPath" class="wave"></a>
             </div>
@@ -137,63 +137,9 @@
     </div> <!-- end parallax-container -->
     <div class="section grey darken-1">
       <div class="row container">
-        <div v-for="(tool, index) in toolsSection.tools" v-if="index < 4" class="col s6 m3">
+        <div v-for="(tool, index) in toolsSection.tools" class="col s6 m3" :class="{'pulse-on-mouseenter': tool.url}">
           <div class="card-panel grey darken-3 center-align z-depth-5">
-            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
-              <span v-if="tool.url">
-                <a :href="tool.url" target="_blank">
-                  <span :class="tool.class" class="fa-5x"></span>
-                  <h5>{{ tool.title }}</h5>
-                </a>
-              </span>
-              <span v-else>
-                <span :class="tool.class" class="fa-5x"></span>
-                <h5>{{ tool.title }}</h5>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row container">
-        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 4) && (index < 8) )" class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
-              <span v-if="tool.url">
-                <a :href="tool.url" target="_blank">
-                  <span :class="tool.class" class="fa-5x"></span>
-                  <h5>{{ tool.title }}</h5>
-                </a>
-              </span>
-              <span v-else>
-                <span :class="tool.class" class="fa-5x"></span>
-                <h5>{{ tool.title }}</h5>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row container">
-        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 8) && (index < 12) )" class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
-              <span v-if="tool.url">
-                <a :href="tool.url" target="_blank">
-                  <span :class="tool.class" class="fa-5x"></span>
-                  <h5>{{ tool.title }}</h5>
-                </a>
-              </span>
-              <span v-else>
-                <span :class="tool.class" class="fa-5x"></span>
-                <h5>{{ tool.title }}</h5>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row container">
-        <div v-for="(tool, index) in toolsSection.tools" v-if="( (index >= 12) && (index < 16) )" class="col s6 m3">
-          <div class="card-panel grey darken-3 center-align z-depth-5">
-            <div class="fadeIn wow" :data-wow-delay="tool.animationDelay">
+            <div class="focus-in-contract-bck wow" :data-wow-delay="tool.animationDelay">
               <span v-if="tool.url">
                 <a :href="tool.url" target="_blank">
                   <span :class="tool.class" class="fa-5x"></span>
@@ -273,9 +219,8 @@
         <div v-for="info in socialSection.socialInfo" :key="info.title" class="col s6 m3 l3 pulse-on-mouseenter">
           <a :href="info.url" target="_blank">
             <div class="card-panel grey darken-3 center-align z-depth-5">
-              <h5 class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.title }}</h5>
-              <i :class="info.class" class="fab fa-5x fadeIn wow" data-wow-delay=".4s"></i>
-              <p class="fadeIn wow" :data-wow-delay="info.animationDelay">{{ info.username }}</p>
+              <h5 class="focus-in-contract-bck wow" :data-wow-delay="info.animationDelay" v-html="info.title"></h5>
+              <i :class="info.class" class="fab fa-5x focus-in-contract-bck wow" :data-wow-delay="info.animationDelay"></i>
             </div>
           </a>
         </div>
@@ -289,7 +234,7 @@
   </main>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>

@@ -1,6 +1,6 @@
 // Scripts for My Portfolio
 
-$(document).ready(function(){
+$(document).ready(function() {
 
   // Pulse animation on mouse hover for img links and buttons
   $(".pulse-on-mouseenter").on("mouseenter", function() {
@@ -16,6 +16,6 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 
   // Modal
-  $('.modal-trigger').leanModal();
+  // $('.modal-trigger').leanModal();
 
 }); // end document ready function
