@@ -215,7 +215,7 @@ new Vue({
           class: 'devicons devicons-jquery',
           animationDelay: '.2s',
           title: 'jQuery',
-          url: 'http://miketysonsshootout.herokuapp.com/',
+          url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
           github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
         },
         {
@@ -277,7 +277,7 @@ new Vue({
           class: 'devicons devicons-react',
           animationDelay: '.6s',
           title: 'React',
-          url: 'https://email-generator-db.firebaseapp.com/',
+          url: 'https://darrylmendonez.github.io/minimallists/',
           github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
