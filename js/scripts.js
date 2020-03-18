@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('.parallax').parallax();
 
   // Scrollspy Effect
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy({scrollOffset: 64});
 
   // Modal
   // $('.modal-trigger').leanModal();

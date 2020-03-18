@@ -57,7 +57,7 @@ a {
 
 nav, footer {
   background-color: #272B30;
-  opacity: 0.75;
+  /* opacity: 0.75; */
 }
 
 ul#footer-nav li {
