@@ -373,7 +373,8 @@ new Vue({
   methods: {
     activateNavbarLogo: function() {
       let scrollDistance = $(window).scrollTop();
-      if (scrollDistance >= 166) {
+      console.log('scrollDistance = ', scrollDistance);
+      if (scrollDistance >= 102) {
         this.isScrollPastTitle = true;
       }
       else {
