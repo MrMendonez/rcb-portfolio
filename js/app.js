@@ -82,6 +82,18 @@ new Vue({
         //   ],
         // },
         {
+          id: 1,
+          url: 'https://www.scientific-pathways.com/',
+          imgPath: 'img/projects/scientific-pathways.png',
+          title: 'Scientific Pathways',
+          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
+          tools: [
+            'Built with Angularjs',
+            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+          ],
+        },
+        {
           id: 3,
           url: 'https://darrylmendonez.github.io/minimallists/',
           imgPath: 'img/projects/minimallists.png',
@@ -95,18 +107,6 @@ new Vue({
             `Roadmap: edit task, edit list title, create multiple lists`
           ],
           github: `https://github.com/darrylmendonez/minimallists`
-        },
-        {
-          id: 1,
-          url: 'https://www.scientific-pathways.com/',
-          imgPath: 'img/projects/scientific-pathways.png',
-          title: 'Scientific Pathways',
-          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
-          tools: [
-            'Built with Angularjs',
-            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
-          ],
         },
         {
           id: 2,
