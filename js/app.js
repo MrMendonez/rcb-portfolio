@@ -69,14 +69,41 @@ new Vue({
       title: 'Projects',
       backgroundPath: 'img/projects/macandipad.jpg',
       projects: [
+        // {
+        //   id: 1,
+        //   url: 'https://www.imne.com/',
+        //   imgPath: 'img/projects/imne.png',
+        //   title: 'IMNE',
+        //   description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
+        //   tools: [
+        //     'Built with Angular 8',
+        //     'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
+        //     'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+        //   ],
+        // },
+        {
+          id: 3,
+          url: 'https://darrylmendonez.github.io/minimallists/',
+          imgPath: 'img/projects/minimallists.png',
+          title: 'Minimal Lists',
+          description: `A simple to-do list application with no frills. Created with React using Context and Hooks. Your data is saved locally on your device which means it's not in a cloud or accessible by the developer and does not get lost when you close or refresh the page making this a useful tool:`,
+          tools: [
+            'Built with React using Context API and Hooks',
+            'MaterializeCSS is the CSS framework',
+            'User data is saved on local storage so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
+            'Users can read, add, and delete task items',
+            `Roadmap: edit task, edit list title, create multiple lists`
+          ],
+          github: `https://github.com/darrylmendonez/minimallists`
+        },
         {
           id: 1,
-          url: 'https://www.imne.com/',
-          imgPath: 'img/projects/imne.png',
-          title: 'IMNE',
+          url: 'https://www.scientific-pathways.com/',
+          imgPath: 'img/projects/scientific-pathways.png',
+          title: 'Scientific Pathways',
           description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
           tools: [
-            'Built with Angular 8',
+            'Built with Angularjs',
             'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
             'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
@@ -94,21 +121,6 @@ new Vue({
             'Moment.js is used to add date and time of when email template is created and for notifications'
           ],
           github: 'https://github.com/darrylmendonez/email-generator',
-        },
-        {
-          id: 3,
-          url: 'https://darrylmendonez.github.io/minimallists/',
-          imgPath: 'img/projects/minimallists.png',
-          title: 'Minimal Lists',
-          description: `A simple to-do list application with no frills. Created with React using Context and Hooks. Your data is saved locally on your device which means it's not in a cloud or accessible by the developer and does not get lost when you close or refresh the page making this a useful tool:`,
-          tools: [
-            'Built with React using Context API and Hooks',
-            'MaterializeCSS is the CSS framework',
-            'User data is saved on local storage so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
-            'Users can read, add, and delete task items',
-            `Roadmap: edit task, edit list title, create multiple lists`
-          ],
-          github: `https://github.com/darrylmendonez/minimallists`
         },
         {
           id: 4,
