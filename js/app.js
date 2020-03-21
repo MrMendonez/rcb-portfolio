@@ -129,7 +129,7 @@ new Vue({
           title: 'Clinical Pipeline',
           description: 'This is an example of many touchscreen kiosks I\'ve developed for some of the world\'s most profitable pharmaceutical companies. Congresses where my Angular kiosks have been displayed include <a href="https://www.hematology.org" target="_blank">2017 & 2018 American Society of Hematology</a>, <a href="https://meetings.asco.org" target="_blank">2017 & 2018 American Society of Clinical Oncology</a>, and <a href="https://www.aad.org/" target="_blank">2018 American Academy of Dermatology</a>. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes.',
           tools: [
-            'Built with Angular6+ including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
+            'Built with Angular 6 including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
             'Angular Animations are used for page transitions',
             'Bootstrap is the CSS framework',
           ],
