@@ -83,7 +83,7 @@ new Vue({
         // },
         {
           id: 1,
-          url: 'https://www.scientific-pathways.com/',
+          url: 'https://www.scientificpathways.com/',
           imgPath: 'img/projects/scientific-pathways.png',
           title: 'Scientific Pathways',
           description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
