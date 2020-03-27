@@ -240,7 +240,7 @@ new Vue({
           class: 'devicons devicons-materializecss',
           animationDelay: '.6s',
           title: 'Materialize',
-          url: 'https://www.imne.com/',
+          url: 'https://www.scientificpathways.com/',
         },
         {
           class: 'devicons devicons-github',
