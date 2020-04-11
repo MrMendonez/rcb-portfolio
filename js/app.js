@@ -69,26 +69,14 @@ new Vue({
       title: 'Projects',
       backgroundPath: 'img/projects/macandipad.jpg',
       projects: [
-        // {
-        //   id: 1,
-        //   url: 'https://www.imne.com/',
-        //   imgPath: 'img/projects/imne.png',
-        //   title: 'IMNE',
-        //   description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
-        //   tools: [
-        //     'Built with Angular 8',
-        //     'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
-        //     'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
-        //   ],
-        // },
         {
           id: 1,
-          url: 'https://www.scientificpathways.com/',
-          imgPath: 'img/projects/scientific-pathways.png',
-          title: 'Scientific Pathways',
+          url: 'https://www.imne.com/',
+          imgPath: 'img/projects/imne.png',
+          title: 'IMNE',
           description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
           tools: [
-            'Built with Angularjs',
+            'Built with Angular 8',
             'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
             'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
@@ -124,19 +112,29 @@ new Vue({
         },
         {
           id: 4,
-          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
-          imgPath: 'img/projects/ctf-white-label.png',
-          title: 'Clinical Pipeline',
-          description: 'This is an example of many touchscreen kiosks I\'ve developed for some of the world\'s most profitable pharmaceutical companies. Congresses where my Angular kiosks have been displayed include <a href="https://www.hematology.org" target="_blank">2017 & 2018 American Society of Hematology</a>, <a href="https://meetings.asco.org" target="_blank">2017 & 2018 American Society of Clinical Oncology</a>, and <a href="https://www.aad.org/" target="_blank">2018 American Academy of Dermatology</a>. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All medical and business data have been removed for demo purposes.',
+          url: 'https://darrylmendonez.github.io/explorer-kiosk/',
+          imgPath: 'img/projects/explorer-kiosk.png',
+          title: 'Explorer Kiosk',
+          description: `This is example of many touchscreen kiosks I've developed for some of the world's most profitable pharmaceutical companies. Congresses where my  kiosks have been displayed include American Society of Hematology, American Society of Clinical Oncology, and American Academy of Dermatology. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All data and branding are placeholders as this project is used as an Vue.js boilerplate template that includes the common features and functions clients ask for which helps speed up production.`,
           tools: [
-            'Built with Angular 6 including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
-            'Angular Animations are used for page transitions',
-            'Bootstrap is the CSS framework',
+            'Built with Vue.js including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
           ],
-          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
+          github: 'https://github.com/darrylmendonez/explorer-kiosk',
         },
         {
           id: 5,
+          url: 'https://www.scientificpathways.com/',
+          imgPath: 'img/projects/scientific-pathways.png',
+          title: 'Scientific Pathways',
+          description: 'Created this single-page website for Scientific Pathways, a full-service medical communications group with offices around the globe.',
+          tools: [
+            'Built with Angularjs',
+            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+          ],
+        },
+        {
+          id: 6,
           url: 'http://www.chrysalismedical.com/',
           imgPath: 'img/projects/chrysalis-medical.png',
           title: 'Chrysalis Medical',
@@ -149,54 +147,6 @@ new Vue({
             'AngularJS Form Validation is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
           ],
         },
-        {
-          id: 6,
-          url: 'http://trustingpixels.herokuapp.com/',
-          imgPath: 'img/trustingpixels.png',
-          title: 'Trusting Pixels',
-          description: 'A freelance job I did for a new business that promotes photoshop-free advertisements. The business owner gave me mockups done on photoshop of what he wanted his site to look like. I was able to successfully create the site to his exact specifications. He had a very strong attention to detail and we were able to collaborate successfully.',
-          tools: [
-            'MaterializeCSS is the CSS framework',
-            'AngularJS is used for routing which gives it a snappy transition when going from page to page',
-          ],
-          github: 'https://github.com/darrylmendonez/tp'
-        },
-        {
-          id: 7,
-          url: 'http://tripchats.herokuapp.com/',
-          imgPath: 'img/projects/tripchats.png',
-          title: 'Trip Chats',
-          description: 'A full-stack project that allows users to post itineraries of trips they plan on going to. Other users can post comments to suggest to the original poster so they can get advice of what places to see and activities to do. This gives users access to insight from locals or other travelers to make the best of their trip.',
-          tools: [
-            'MySQL stores the data',
-            'Express is the web framework',
-            'AngularJS is the router and controller',
-            'Node.js is the engine',
-            'Bootstrap is the CSS framework'
-          ],
-          github: 'https://github.com/paulducsantos/tripchat'
-        },
-        {
-          id: 8,
-          url: 'http://dailybriefing.herokuapp.com/',
-          imgPath: 'img/projects/dailybriefing.png',
-          title: 'Daily Briefing',
-          description: 'Your one-stop shop for weather, traffic, news, events, and pictures going on in your current location or city of choice. Daily Briefing is a front-end project utilizing many web tools:',
-          tools: [
-            'MaterializeCSS is the CSS framework',
-            'jQuery is the engine',
-            'API\'s:',
-            [
-              'The Dark Sky Forecast',
-              'Google Maps',
-              'Bing',
-              'EventBrite',
-              'Flickr'
-            ],
-            'Firebase is used for the \'Like\' button counter'
-          ],
-          github: 'https://github.com/darrylmendonez/tp'
-        }
       ]
     },
     toolsSection: {
@@ -240,7 +190,7 @@ new Vue({
           class: 'devicons devicons-materializecss',
           animationDelay: '.6s',
           title: 'Materialize',
-          url: 'https://www.scientificpathways.com/',
+          url: 'https://www.imne.com/',
         },
         {
           class: 'devicons devicons-github',
@@ -296,7 +246,7 @@ new Vue({
           class: 'devicons devicon-vuejs-plain',
           animationDelay: '.8s',
           title: 'Vue.js',
-          url: 'https://clinicalthinking.com/'
+          url: 'http://imne.com/'
         },
       ]
     },
