@@ -115,7 +115,7 @@ new Vue({
           url: 'https://darrylmendonez.github.io/explorer-kiosk/',
           imgPath: 'img/projects/explorer-kiosk.png',
           title: 'Explorer Kiosk',
-          description: `This is example of many touchscreen kiosks I've developed for some of the world's most profitable pharmaceutical companies. Congresses where my  kiosks have been displayed include American Society of Hematology, American Society of Clinical Oncology, and American Academy of Dermatology. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All data and branding are placeholders as this project is used as an Vue.js boilerplate template that includes the common features and functions clients ask for which helps speed up production.`,
+          description: `This is example of many touchscreen kiosks I've developed for some of the world's most profitable pharmaceutical companies. Congresses where my  kiosks have been displayed include American Society of Hematology, American Society of Clinical Oncology, and American Academy of Dermatology. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All data and branding are placeholders as this project is used as a Vue.js boilerplate template that includes the common features and functions clients ask for which helps speed up production.`,
           tools: [
             'Built with Vue.js including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
           ],
