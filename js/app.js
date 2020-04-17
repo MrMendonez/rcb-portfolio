@@ -265,7 +265,6 @@ new Vue({
           imgPath: 'img/community-service/freehold-student.jpg',
           description: 'Trained five web development teachers on creating dynamic and interactive webpages using industry standard tools such as GitHub and Atom. Skills taught include HTML, CSS, JavaScript, and Bootstrap. I also worked closely with the Director of Curriculum and Instruction as well as the web development teachers on writing a three-year curriculum for their Web Design program',
           btnText: 'View Article',
-          url: 'https://www.app.com/story/money/business/career/2018/04/19/nj-jobs-freehold-hs-computer-class-facebook-model-phil-murphy/506372002/'
         },
         {
           title: 'Guest Speaker at Impact 2018 by Trilogy Education Services',
