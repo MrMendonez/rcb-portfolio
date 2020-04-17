@@ -190,7 +190,7 @@ new Vue({
           class: 'devicons devicons-materializecss',
           animationDelay: '.6s',
           title: 'Materialize',
-          url: 'https://www.imne.com/',
+          url: 'https://darrylmendonez.github.io/explorer-kiosk/',
         },
         {
           class: 'devicons devicons-github',
