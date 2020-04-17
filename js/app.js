@@ -246,7 +246,7 @@ new Vue({
           class: 'devicons devicon-vuejs-plain',
           animationDelay: '.8s',
           title: 'Vue.js',
-          url: 'https://darrylmendonez.github.io/explorer-kiosk/'
+          url: 'https://github.com/darrylmendonez/explorer-kiosk'
         },
       ]
     },
