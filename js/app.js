@@ -76,9 +76,9 @@ new Vue({
           title: 'IMNE',
           description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
           tools: [
-            'Built with Angular 8',
-            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+            'Built with <em>Angular 8</em>',
+            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax</em> effect as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
         },
         {
@@ -86,11 +86,11 @@ new Vue({
           url: 'https://darrylmendonez.github.io/minimallists/',
           imgPath: 'img/projects/minimallists.png',
           title: 'Minimal Lists',
-          description: `A simple to-do list application with no frills. Created with React using Context and Hooks. Your data is saved locally on your device which means it's not in a cloud or accessible by the developer and does not get lost when you close or refresh the page making this a useful tool:`,
+          description: `A simple to-do list application with no frills. Created with <em>React</em> using <em>Context and Hooks</em>. Your data is saved locally on your device which means it's not in a cloud or accessible by the developer and does not get lost when you close or refresh the page making this a useful tool:`,
           tools: [
-            'Built with React using Context API and Hooks',
-            'MaterializeCSS is the CSS framework',
-            'User data is saved on local storage so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
+            'Built with <em>React 16.8</em> using <em>Context API and Hooks</em>',
+            '<em>MaterializeCSS</em> is the CSS framework',
+            'User data is saved on <em>local storage</em> so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
             'Users can read, add, and delete task items',
             `Roadmap: edit task, edit list title, create multiple lists`
           ],
@@ -103,10 +103,10 @@ new Vue({
           title: 'Email Generator',
           description: 'This app is designed to make creating an html email simple. The idea is to build a template that would be used and reused by a company for sending emails. Once a design and format has been discussed with and approved by the client, the template can be styled to match the design and the client can simply fill out a form that will collect the contents of the email. Once submitted, the content would be appropriately placed within the template and the client can copy and paste the email directly into their email application.',
           tools: [
-            'Built with React and Redux',
-            'MaterializeCSS',
-            'Firebase is used for its real-time database to collect data submitted via a form and authentication for registration and login',
-            'Moment.js is used to add date and time of when email template is created and for notifications'
+            'Built with <em>React and Redux</em>',
+            '<em>MaterializeCSS</em>',
+            '<em>Firebase</em> is used for its <em>real-time database</em> to collect data submitted via a form and <em>authentication for registration and login</em>',
+            '<em>Moment.js</em> is used to add date and time of when email template is created and for <em>notifications</em>'
           ],
           github: 'https://github.com/darrylmendonez/email-generator',
         },
@@ -117,7 +117,7 @@ new Vue({
           title: 'Explorer Kiosk',
           description: `This is example of many touchscreen kiosks I've developed for some of the world's most profitable pharmaceutical companies. Congresses where my  kiosks have been displayed include American Society of Hematology, American Society of Clinical Oncology, and American Academy of Dermatology. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All data and branding are placeholders as this project is used as a Vue.js boilerplate template that includes the common features and functions clients ask for which helps speed up production.`,
           tools: [
-            'Built with Vue.js including components, nested components, data-binding, routing, & route parameters to bind the appropriate data',
+            'Built with <em>Vue.js</em> including <em>components, nested components, data-binding, routing, & route parameters to bind the appropriate data</em>',
           ],
           github: 'https://github.com/darrylmendonez/explorer-kiosk',
         },
@@ -128,9 +128,9 @@ new Vue({
           title: 'Scientific Pathways',
           description: 'Created this single-page website for Scientific Pathways, a full-service medical communications group with offices around the globe.',
           tools: [
-            'Built with Angularjs',
-            'MaterializeCSS is the CSS framework which allows for the parallax effect as a user scrolls up and down. When the user clicks on a navbar item smooth-scrolling is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this responsive site on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+            'Built with <em>AngularJS</em>',
+            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax effect</em> as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
           ],
         },
         {
@@ -140,11 +140,11 @@ new Vue({
           title: 'Chrysalis Medical',
           description: 'Created this minimalist-style website for Chrysalis Medical, a full-service agency that is dedicated to partnering with clients in the pharmaceutical industry to provide high-quality scientific and strategic medical communications support',
           tools: [
-            'Built with AngularJS',
-            'Angular Animate is used for fade-in page transitions',
-            'Animate.css is used to animate elements on each page load',
-            'Wow.js is used to control the timing of each animation',
-            'AngularJS Form Validation is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
+            'Built with <em>AngularJS</em> and <em>Bootstrap</em>',
+            '<em>Angular Animate</em> is used for <em>fade-in page transitions</em>',
+            '<em>Animate.css</em> is used to animate elements on each page load',
+            '<em>Wow.js</em> is used to control the timing of each animation',
+            '<em>AngularJS Form Validation</em> is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
           ],
         },
       ]
