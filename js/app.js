@@ -92,7 +92,6 @@ new Vue({
             '<em>MaterializeCSS</em> is the CSS framework',
             'User data is saved on <em>local storage</em> so to-do list items are persistent and remains even if user refreshes the site or closes their web browser',
             'Users can read, add, and delete task items',
-            `Roadmap: edit task, edit list title, create multiple lists`
           ],
           github: `https://github.com/darrylmendonez/minimallists`
         },
