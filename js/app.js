@@ -104,8 +104,8 @@ new Vue({
           title: 'Geo Maps Tracker',
           description: `This social media app tracks your location when given permission and allows you to see other user's locations an profiles. You are able to chat on their profile page along with other users.`,
           tools: [
-            '<em>Vue.js</em> is the javascript framework to develop as a single-page application',
-            '<em>Vuex</em> is used to manage state',
+            '<em>Vue.js</em> is the javascript framework used to develop as a single-page application',
+            '<em>Vuex</em> is used for state management',
             '<em>Google Maps api</em> is used for the map component and markers are clickable to link to profile of user',
             '<em>Firebase Database</em> is used for its real-time database which allows for the chat feature',
             '<em>Firebase Authentication</em> is used for user registration and login',
@@ -114,17 +114,6 @@ new Vue({
         },
         {
           id: 4,
-          url: 'https://darrylmendonez.github.io/explorer-kiosk/',
-          imgPath: 'img/projects/explorer-kiosk.png',
-          title: 'Explorer Kiosk',
-          description: `This is example of many touchscreen kiosks I've developed for some of the world's most profitable pharmaceutical companies. Congresses where my  kiosks have been displayed include American Society of Hematology, American Society of Clinical Oncology, and American Academy of Dermatology. Each of these major congresses have over 18,000 attendees including over 10,000 medical personnel. All data and branding are placeholders as this project is used as a Vue.js boilerplate template that includes the common features and functions clients ask for which helps speed up production.`,
-          tools: [
-            'Built with <em>Vue.js</em> including <em>components, nested components, data-binding, routing, & route parameters to bind the appropriate data</em>',
-          ],
-          github: 'https://github.com/darrylmendonez/explorer-kiosk',
-        },
-        {
-          id: 3,
           url: 'https://www.imne.com/',
           imgPath: 'img/projects/imne.png',
           title: 'IMNE',
@@ -260,7 +249,7 @@ new Vue({
           class: 'devicons devicon-vuejs-plain',
           animationDelay: '.8s',
           title: 'Vue.js',
-          url: 'https://github.com/darrylmendonez/explorer-kiosk'
+          url: 'https://geo-maps-tracker.web.app/'
         },
       ]
     },
