@@ -71,15 +71,17 @@ new Vue({
       projects: [
         {
           id: 1,
-          url: 'https://www.imne.com/',
-          imgPath: 'img/projects/imne.png',
-          title: 'IMNE',
-          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
+          url: 'https://email-generator-db.firebaseapp.com/',
+          imgPath: 'img/projects/email-generator.png',
+          title: 'Email Generator',
+          description: 'This app is designed to make creating an html email simple. The idea is to build a template that would be used and reused by a company for sending emails. Once a design and format has been discussed with and approved by the client, the template can be styled to match the design and the client can simply fill out a form that will collect the contents of the email. Once submitted, the content would be appropriately placed within the template and the client can copy and paste the email directly into their email application.',
           tools: [
-            'Built with <em>Angular 8</em>',
-            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax</em> effect as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+            'Built with <em>React and Redux</em>',
+            '<em>MaterializeCSS</em>',
+            '<em>Firebase</em> is used for its <em>real-time database</em> to collect data submitted via a form and <em>authentication for registration and login</em>',
+            '<em>Moment.js</em> is used to add date and time of when email template is created and for <em>notifications</em>'
           ],
+          github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
           id: 2,
@@ -97,17 +99,18 @@ new Vue({
         },
         {
           id: 3,
-          url: 'https://email-generator-db.firebaseapp.com/',
-          imgPath: 'img/projects/email-generator.png',
-          title: 'Email Generator',
-          description: 'This app is designed to make creating an html email simple. The idea is to build a template that would be used and reused by a company for sending emails. Once a design and format has been discussed with and approved by the client, the template can be styled to match the design and the client can simply fill out a form that will collect the contents of the email. Once submitted, the content would be appropriately placed within the template and the client can copy and paste the email directly into their email application.',
+          url: 'https://geo-maps-tracker.web.app/',
+          imgPath: 'img/projects/geo-maps-tracker.png',
+          title: 'Geo Maps Tracker',
+          description: `This social media app tracks your location when given permission and allows you to see other user's locations an profiles. You are able to chat on their profile page along with other users.`,
           tools: [
-            'Built with <em>React and Redux</em>',
-            '<em>MaterializeCSS</em>',
-            '<em>Firebase</em> is used for its <em>real-time database</em> to collect data submitted via a form and <em>authentication for registration and login</em>',
-            '<em>Moment.js</em> is used to add date and time of when email template is created and for <em>notifications</em>'
+            '<em>Vue.js</em> is the javascript framework to develop as a single-page application',
+            '<em>Vuex</em> is used to manage state',
+            '<em>Google Maps api</em> is used for the map component and markers are clickable to link to profile of user',
+            '<em>Firebase Database</em> is used for its real-time database which allows for the chat feature',
+            '<em>Firebase Authentication</em> is used for user registration and login',
           ],
-          github: 'https://github.com/darrylmendonez/email-generator',
+          github: 'https://github.com/darrylmendonez/geo-maps-tracker',
         },
         {
           id: 4,
@@ -119,6 +122,18 @@ new Vue({
             'Built with <em>Vue.js</em> including <em>components, nested components, data-binding, routing, & route parameters to bind the appropriate data</em>',
           ],
           github: 'https://github.com/darrylmendonez/explorer-kiosk',
+        },
+        {
+          id: 3,
+          url: 'https://www.imne.com/',
+          imgPath: 'img/projects/imne.png',
+          title: 'IMNE',
+          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
+          tools: [
+            'Built with <em>Angular 8</em>',
+            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax</em> effect as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
+            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
+          ],
         },
         {
           id: 5,
