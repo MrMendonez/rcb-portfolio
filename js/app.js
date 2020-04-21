@@ -258,16 +258,16 @@ new Vue({
       backgroundPath: 'img/community-service/background.jpg',
       services: [
         {
+          title: 'Web Dev Blog on Medium',
+          imgPath: 'img/community-service/javascript-basics.jpg',
+          description: `With all the different JavaScript frameworks web developers are using, it’s easy to get caught up in learning everything you can do along with all the packages you can add to each of them. Sometimes developers are so excited about learning a framework that the basics get left behind. I’m sure there are hundreds of other resources to get the same information I’m sharing below. By writing this, I am hoping to reaffirm my knowledge of basic JavaScript. If this collection of JS knowledge happens to help anyone else then lets consider it a win for the both of us! Cheers 🍻`,
+          btnText: 'View Blog',
+          url: 'https://medium.com/@dmendonez/basic-javascript-282d16b54157'
+        },
+        {
           title: 'Teaching Assistant at Rutgers Coding Bootcamp',
           imgPath: 'img/community-service/rcb-class.jpg',
           description: 'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects. Students expressed genuine appreciation for the support I was able to provide.',
-          btnText: 'View Video'
-        },
-        {
-          title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
-          imgPath: 'img/community-service/freehold-student.jpg',
-          description: 'Trained five web development teachers on creating dynamic and interactive webpages using industry standard tools such as GitHub and Atom. Skills taught include HTML, CSS, JavaScript, and Bootstrap. I also worked closely with the Director of Curriculum and Instruction as well as the web development teachers on writing a three-year curriculum for their Web Design program',
-          btnText: 'View Article',
         },
         {
           title: 'Guest Speaker at Impact 2018 by Trilogy Education Services',
@@ -275,6 +275,11 @@ new Vue({
           description: 'One of three graduates selected to participate in the Student Panel during Trilogy Education Services annual partner summit in Phoenix, Arizona. Partnering universities across the nation were able to hear first hand from graduates about what it was like being a student, how the program has helped our career path, and what are lives have been like since graduating. There were also plenty of opportunities for university representatives to speak to us personally and ask specific questions or just hear our stories.',
           btnText: 'View Video',
           url: 'https://trilogyed.wistia.com/medias/sn5qazljtr'
+        },
+        {
+          title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
+          imgPath: 'img/community-service/freehold-student.jpg',
+          description: 'Trained five web development teachers on creating dynamic and interactive webpages using industry standard tools such as GitHub and Atom. Skills taught include HTML, CSS, JavaScript, and Bootstrap. I also worked closely with the Director of Curriculum and Instruction as well as the web development teachers on writing a three-year curriculum for their Web Design program',
         },
       ]
     },
@@ -313,6 +318,12 @@ new Vue({
           class: 'fab fa-linkedin',
         },
         {
+          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
+          title: 'Gmail<br><br>',
+          animationDelay: '1.1s',
+          class: 'far fa-envelope',
+        },
+        {
           url: 'https://github.com/darrylmendonez',
           title: 'GitHub<br><br>',
           animationDelay: '.4s',
@@ -325,10 +336,10 @@ new Vue({
           class: 'fab fa-stack-overflow',
         },
         {
-          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
-          title: 'Gmail<br><br>',
-          animationDelay: '1.1s',
-          class: 'far fa-envelope',
+          url: 'https://medium.com/@dmendonez/basic-javascript-282d16b54157',
+          title: 'Medium<br><br>',
+          animationDelay: '.8s',
+          class: 'fab fa-medium',
         },
       ]
     },
