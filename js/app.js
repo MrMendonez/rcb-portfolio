@@ -318,10 +318,10 @@ new Vue({
           class: 'fab fa-linkedin',
         },
         {
-          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
-          title: 'Gmail<br><br>',
-          animationDelay: '1.1s',
-          class: 'far fa-envelope',
+          url: 'https://medium.com/@dmendonez',
+          title: 'Medium<br><br>',
+          animationDelay: '.8s',
+          class: 'fab fa-medium',
         },
         {
           url: 'https://github.com/darrylmendonez',
@@ -336,10 +336,10 @@ new Vue({
           class: 'fab fa-stack-overflow',
         },
         {
-          url: 'https://medium.com/@dmendonez',
-          title: 'Medium<br><br>',
-          animationDelay: '.8s',
-          class: 'fab fa-medium',
+          url: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dmendonez@gmail.com',
+          title: 'Gmail<br><br>',
+          animationDelay: '1.1s',
+          class: 'far fa-envelope',
         },
       ]
     },
