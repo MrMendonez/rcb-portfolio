@@ -260,9 +260,9 @@ new Vue({
         {
           title: 'Web Dev Blog on Medium',
           imgPath: 'img/community-service/javascript-basics.jpg',
-          description: `With all the different JavaScript frameworks web developers are using, it’s easy to get caught up in learning everything you can do along with all the packages you can add to each of them. Sometimes developers are so excited about learning a framework that the basics get left behind. I’m sure there are hundreds of other resources to get the same information I’m sharing below. By writing this, I am hoping to reaffirm my knowledge of basic JavaScript. If this collection of JS knowledge happens to help anyone else then lets consider it a win for the both of us! Cheers 🍻`,
+          description: `•	Started writing a blog as a way to not just share my knowledge of web development but as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately have a deeper level of understanding.`,
           btnText: 'View Blog',
-          url: 'https://medium.com/@dmendonez/basic-javascript-282d16b54157'
+          url: 'https://medium.com/@dmendonez'
         },
         {
           title: 'Teaching Assistant at Rutgers Coding Bootcamp',
@@ -336,7 +336,7 @@ new Vue({
           class: 'fab fa-stack-overflow',
         },
         {
-          url: 'https://medium.com/@dmendonez/basic-javascript-282d16b54157',
+          url: 'https://medium.com/@dmendonez',
           title: 'Medium<br><br>',
           animationDelay: '.8s',
           class: 'fab fa-medium',
