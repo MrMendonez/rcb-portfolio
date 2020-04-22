@@ -260,7 +260,7 @@ new Vue({
         {
           title: 'Blog on Medium',
           imgPath: 'img/community-service/javascript-basics.jpg',
-          description: `•	Started writing a blog as a way to not just share my knowledge of web development but as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately have a deeper level of understanding.`,
+          description: `Started writing a blog as a way to not just share my knowledge of web development to the community but as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately have a deeper level of understanding.`,
           btnText: 'View Blog',
           url: 'https://medium.com/@dmendonez'
         },
