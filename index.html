@@ -171,9 +171,7 @@
               </div>
               <div :key="service.title" class="card-content black-text">
                 <a :href="service.url" target="_blank"><span class="card-title grey-text text-darken-4 josefin-sans">{{ service.title }}</span></a>
-                <p>
-                  {{ service.description }}
-                </p>
+                <p v-html="service.description"></p>
                 <br>
                 <div class="center-btn">
                   <a v-if="service.url" class="waves-effect waves-light btn launch-btn grey darken-3 z-depth-5" :href="service.url" target="_blank">{{ service.btnText }} <i class="material-icons right">launch</i></a>

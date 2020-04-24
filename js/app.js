@@ -61,7 +61,7 @@ new Vue({
       title: 'Front-End Web Developer',
       descriptions: [
         '<i class="fa fa-smile fa-2x"></i> Welcome and thank you for taking the time to get to know me! My passions include web development, photography, traveling, and hiking. When I\'m not in the office, you can probably find me coding at random cafes, exploring all kinds of ethnic restaurants, or taking <a href="https://unsplash.com/@darrylbrian" target="_blank">photographs</a> of the beauty that is nature.',
-        '<i class="fa fa-code fa-2x"></i> Currently, I am a front-end web developer at <a href="https://www.synaptikdigital.com/" target="_blank">Synaptik Digital</a>, a world-wide medical communications company. My responsibilities include the creation, development, and implementation of responsive websites, applications for touchscreen kiosks, and web solutions for mobile and desktop devices. Medical clients I\'ve developed web apps for include Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, Pfizer, and more.',
+        '<i class="fa fa-code fa-2x"></i> Currently, I am a front-end web developer at <a href="https://www.nucleus-global.com/" target="_blank">Nucleus Global</a>, a world-wide medical communications company. My responsibilities include the creation, development, and implementation of responsive websites, applications for touchscreen kiosks, and web solutions for mobile and desktop devices. Medical clients I\'ve developed web apps for include Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, Pfizer, and more.',
         `<i class="fa fa-graduation-cap fa-2x"></i> I'm a graduate from NJIT with a Bachelor's in Computer Engineering, Rutgers University with a Master's in Education, and <a href="https://bootcamp.rutgers.edu/" target="_blank">Rutgers Coding Bootcamp</a>, where I gained the skills to become a full-stack web developer. Overall, as a life-long learner, I continue to learn more in everything I do as I strive to become the best version of myself.`,
       ]
     },
@@ -258,10 +258,10 @@ new Vue({
       backgroundPath: 'img/community-service/background.jpg',
       services: [
         {
-          title: 'Blog on Medium',
+          title: 'Writer for The Startup',
           imgPath: 'img/community-service/javascript-basics.jpg',
-          description: `Started writing a blog as a way to not just share my knowledge of web development to the community but as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately have a deeper level of understanding.`,
-          btnText: 'View Blog',
+          description: `The Startup is Medium’s largest active publication, followed by +620k people.<br><br>I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
+          btnText: 'View Blog Posts',
           url: 'https://medium.com/@dmendonez'
         },
         {
@@ -279,7 +279,7 @@ new Vue({
         {
           title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
           imgPath: 'img/community-service/freehold-student.jpg',
-          description: 'Trained five web development teachers on creating dynamic and interactive webpages using industry standard tools such as GitHub and Atom. Skills taught include HTML, CSS, JavaScript, and Bootstrap. I also worked closely with the Director of Curriculum and Instruction as well as the web development teachers on writing a three-year curriculum for their Web Design program',
+          description: 'Trained 8 web dev high school teachers across the Freehold School District on creating dynamic and interactive webpages using industry standard tools. Skills taught include HTML, CSS, JavaScript, Bootstrap, Animations, Vue.js, Terminal, Git, Github, & Github Pages. Worked directly with the Administrative Supervisor and teachers on writing a three-year curriculum for their Web Dev program.',
         },
       ]
     },
