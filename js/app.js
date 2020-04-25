@@ -280,6 +280,8 @@ new Vue({
           title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
           imgPath: 'img/community-service/freehold-student.jpg',
           description: 'Trained 8 web dev high school teachers across the Freehold School District on creating dynamic and interactive webpages using industry standard tools. Skills taught include HTML, CSS, JavaScript, Bootstrap, Animations, Vue.js, Terminal, Git, Github, & Github Pages. Worked directly with the Administrative Supervisor and teachers on writing a three-year curriculum for their Web Dev program.',
+          btnText: 'View article',
+          url: `https://www.app.com/story/money/business/career/2018/04/19/nj-jobs-freehold-hs-computer-class-facebook-model-phil-murphy/506372002/`
         },
       ]
     },
