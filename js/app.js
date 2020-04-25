@@ -258,9 +258,9 @@ new Vue({
       backgroundPath: 'img/community-service/background.jpg',
       services: [
         {
-          title: 'Writer for The Startup',
+          title: 'Blogger on Medium',
           imgPath: 'img/community-service/javascript-basics.jpg',
-          description: `The Startup is Medium’s largest active publication, followed by +620k people.<br><br>I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it helps me to think deeply about the aspect of which I’m covering, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
+          description: `I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it allows me to think deeply about an aspect, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
           btnText: 'View Blog Posts',
           url: 'https://medium.com/@dmendonez'
         },
