@@ -260,26 +260,35 @@ new Vue({
         {
           title: 'Blogger on Medium',
           imgPath: 'img/community-service/javascript-basics.jpg',
-          description: `I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it allows me to think deeply about an aspect, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
+          descriptions: [
+            `I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it allows me to think deeply about an aspect, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
+            `My post on the <a href="https://medium.com/swlh/javascript-execution-order-e1bebc3976ca" target="_blank">JavaScript Execution Order</a> was selected by Medium’s curators based on its quality to be recommended to readers interested in JavaScript across their homepage, app, topic page, and emails.`,
+          ],
           btnText: 'View Blog Posts',
           url: 'https://medium.com/@dmendonez'
         },
         {
           title: 'Teaching Assistant at Rutgers Coding Bootcamp',
           imgPath: 'img/community-service/rcb-class.jpg',
-          description: 'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects. Students expressed genuine appreciation for the support I was able to provide.',
+          descriptions: [
+            'After graduating from RCB in April 2016, I became a teaching assistant for a new cohort where I worked closely with students during class, during office hours, and online through chat or video conferencing. I would do code reviews, peer-to-peer coding sessions, and answered any questions they had while they worked on their projects. Students expressed genuine appreciation for the support I was able to provide.',
+          ]
         },
         {
           title: 'Guest Speaker at Impact 2018 by Trilogy Education Services',
           imgPath: 'img/community-service/graduate-panel.jpg',
-          description: 'One of three graduates selected to participate in the Student Panel during Trilogy Education Services annual partner summit in Phoenix, Arizona. Partnering universities across the nation were able to hear first hand from graduates about what it was like being a student, how the program has helped our career path, and what are lives have been like since graduating. There were also plenty of opportunities for university representatives to speak to us personally and ask specific questions or just hear our stories.',
+          descriptions: [
+            'One of three graduates selected to participate in the Student Panel during Trilogy Education Services annual partner summit in Phoenix, Arizona. Partnering universities across the nation were able to hear first hand from graduates about what it was like being a student, how the program has helped our career path, and what are lives have been like since graduating. There were also plenty of opportunities for university representatives to speak to us personally and ask specific questions or just hear our stories.',
+          ],
           btnText: 'View Video',
           url: 'https://trilogyed.wistia.com/medias/sn5qazljtr'
         },
         {
           title: 'Consultant for Freehold Regional High School District\'s Web Development Program',
           imgPath: 'img/community-service/freehold-student.jpg',
-          description: 'Trained 8 web dev high school teachers across the Freehold School District on creating dynamic and interactive webpages using industry standard tools. Skills taught include HTML, CSS, JavaScript, Bootstrap, Animations, Vue.js, Terminal, Git, Github, & Github Pages. Worked directly with the Administrative Supervisor and teachers on writing a three-year curriculum for their Web Dev program.',
+          descriptions: [
+            'Trained 8 web dev high school teachers across the Freehold School District on creating dynamic and interactive webpages using industry standard tools. Skills taught include HTML, CSS, JavaScript, Bootstrap, Animations, Vue.js, Terminal, Git, Github, & Github Pages. Worked directly with the Administrative Supervisor and teachers on writing a three-year curriculum for their Web Dev program.',
+          ],
           btnText: 'View article',
           url: `https://www.app.com/story/money/business/career/2018/04/19/nj-jobs-freehold-hs-computer-class-facebook-model-phil-murphy/506372002/`
         },
