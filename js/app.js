@@ -71,6 +71,20 @@ new Vue({
       projects: [
         {
           id: 1,
+          url: 'https://darrylmendonez.github.io/find-inspiration/',
+          imgPath: 'img/projects/find-inspiration.png',
+          title: 'Find Inspiration',
+          description: `This image gallery application allows users to find inspiration by searching through high quality images shared by photographers around the world. The images are provided by the Unsplash API.`,
+          tools: [
+            '<em>React</em> is the javascript framework used to develop as a single-page application',
+            'The <em>Unsplash API</em> is where the photographs come from',
+            '<em>CSS Flexbox </em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
+            '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
+          ],
+          github: 'https://github.com/darrylmendonez/find-inspiration',
+        },
+        {
+          id: 2,
           url: 'https://email-generator-db.firebaseapp.com/',
           imgPath: 'img/projects/email-generator.png',
           title: 'Email Generator',
@@ -84,7 +98,7 @@ new Vue({
           github: 'https://github.com/darrylmendonez/email-generator',
         },
         {
-          id: 2,
+          id: 3,
           url: 'https://darrylmendonez.github.io/minimallists/',
           imgPath: 'img/projects/minimallists.png',
           title: 'Minimal Lists',
@@ -96,21 +110,6 @@ new Vue({
             'Users can read, add, and delete task items',
           ],
           github: `https://github.com/darrylmendonez/minimallists`
-        },
-        {
-          id: 3,
-          url: 'https://geo-maps-tracker.web.app/',
-          imgPath: 'img/projects/geo-maps-tracker.png',
-          title: 'Geo Maps Tracker',
-          description: `This social media app tracks your location when given permission and allows you to see other user's locations an profiles. You are able to chat on their profile page along with other users.`,
-          tools: [
-            '<em>Vue.js</em> is the javascript framework used to develop as a single-page application',
-            '<em>Vuex</em> is used for state management',
-            '<em>Google Maps api</em> is used for the map component and markers are clickable to link to profile of user',
-            '<em>Firebase Database</em> is used for its real-time database which allows for the chat feature',
-            '<em>Firebase Authentication</em> is used for user registration and login',
-          ],
-          github: 'https://github.com/darrylmendonez/geo-maps-tracker',
         },
         {
           id: 4,
