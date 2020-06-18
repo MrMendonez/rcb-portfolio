@@ -74,10 +74,11 @@ new Vue({
           url: 'https://darrylmendonez.github.io/find-inspiration/',
           imgPath: 'img/projects/find-inspiration.png',
           title: 'Find Inspiration',
-          description: `This image gallery application allows users to find inspiration by searching through high quality images shared by photographers around the world. The images are provided by the Unsplash API.`,
+          description: `This image gallery application allows users to find inspiration by searching through about 2 million high quality images shared by close to 200,000 photographers around the world. The images are provided by the Unsplash API.`,
           tools: [
             '<em>React</em> is the javascript framework used to develop as a single-page application',
             'The <em>Unsplash API</em> is where the photographs come from',
+            '<em>Axios</em> fetches the data',
             '<em>CSS Flexbox </em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
             '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
           ],
