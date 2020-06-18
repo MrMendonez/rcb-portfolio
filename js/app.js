@@ -79,7 +79,7 @@ new Vue({
             '<em>React</em> is the javascript framework used to develop as a single-page application',
             'The <em>Unsplash API</em> is where the photographs come from',
             '<em>Axios</em> fetches the data',
-            '<em>CSS Flexbox </em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
+            '<em>CSS Flexbox and Grid Layout</em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
             '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
           ],
           github: 'https://github.com/darrylmendonez/find-inspiration',
