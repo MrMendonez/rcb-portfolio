@@ -81,7 +81,7 @@ new Vue({
             '<em>Axios</em> fetches the data',
             '<em>CSS Flexbox and Grid Layout</em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
             '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
-            `<a href="https://medium.com/@dmendonez/unsplash-api-with-react-part-1-4919c69f7edc" target="_blank">Unsplash API with React Part 1</a> - A tutorial I wrote up based on this app was selected by Medium's editorial curation staff to be featured on their homepage, app, topic page, and emails to readers interested in Javascript`
+            `<a href="https://medium.com/swlh/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> - A tutorial I wrote up based on this app was selected by Medium's editorial curation staff to be featured on their homepage, app, topic page, and emails to readers interested in Javascript`
           ],
           github: 'https://github.com/darrylmendonez/find-inspiration',
         },
@@ -263,7 +263,7 @@ new Vue({
           imgPath: 'img/community-service/javascript-basics.jpg',
           descriptions: [
             `I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it allows me to think deeply about an aspect, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
-            `My posts on the <a href="https://medium.com/swlh/javascript-execution-order-e1bebc3976ca" target="_blank">JavaScript Execution Order</a> and <a href="https://medium.com/@dmendonez/unsplash-api-with-react-part-1-4919c69f7edc" target="_blank">Unsplash API with React Part 1</a> were selected by Medium’s curators based on its quality to be recommended to readers interested in JavaScript across their homepage, app, topic page, and emails.`,
+            `My posts on the <a href="https://medium.com/swlh/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4" target="_blank">JavaScript Execution Order</a> and <a href="https://medium.com/swlh/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> were selected by Medium’s curators based on its quality to be recommended to readers interested in JavaScript across their homepage, app, topic page, and emails.`,
           ],
           btnText: 'View Blog Posts',
           url: 'https://medium.com/@dmendonez'
