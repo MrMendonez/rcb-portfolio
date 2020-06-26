@@ -158,6 +158,48 @@ new Vue({
       backgroundPath: 'img/tools/macdesktop.jpg',
       tools: [
         {
+          class: 'devicons devicons-react',
+          animationDelay: '.6s',
+          title: 'React',
+          url: 'https://darrylmendonez.github.io/find-inspiration/',
+        },
+        {
+          class: 'devicons devicons-atom',
+          animationDelay: '.8s',
+          title: 'Redux',
+          url: `https://pensive-spence-9a2907.netlify.app/`,
+        },
+        {
+          class: 'devicons devicons-angular fa-5x',
+          animationDelay: '.4s',
+          title: 'Angular',
+          url: 'https://www.imne.com/',
+        },
+        {
+          class: 'devicons devicon-vuejs-plain',
+          animationDelay: '.8s',
+          title: 'Vue.js',
+          url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/js/app.js'
+        },
+        {
+          class: 'devicons devicons-javascript_badge',
+          animationDelay: '.8s',
+          title: 'JavaScript',
+          url: `https://medium.com/swlh/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
+        },
+        {
+          class: 'devicons devicons-jquery',
+          animationDelay: '.2s',
+          title: 'jQuery',
+          url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
+          github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
+        },
+        {
+          class: 'fas devicon-typescript-plain',
+          animationDelay: '.6s',
+          title: 'TypeScript',
+        },
+        {
           class: 'devicons devicons-html5',
           animationDelay: '.2s',
           title: 'HTML5',
@@ -171,18 +213,6 @@ new Vue({
           class: 'devicons devicon-sass-original',
           animationDelay: '.6s',
           title: 'Sass',
-        },
-        {
-          class: 'devicons devicons-javascript_badge',
-          animationDelay: '.8s',
-          title: 'JavaScript',
-        },
-        {
-          class: 'devicons devicons-jquery',
-          animationDelay: '.2s',
-          title: 'jQuery',
-          url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
-          github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
         },
         {
           class: 'devicons devicons-bootstrap',
@@ -203,7 +233,7 @@ new Vue({
           url: 'https://github.com/darrylmendonez',
         },
         {
-          class: 'devicons devicons-atom',
+          class: 'devicons devicon-electron-original',
           animationDelay: '.2s',
           title: 'Electron',
         },
@@ -215,42 +245,10 @@ new Vue({
           github: 'https://github.com/darrylmendonez/charts',
         },
         {
-          class: 'fas fa-project-diagram',
-          animationDelay: '.6s',
-          title: 'GraphQL',
-          url: 'https://github.com/darrylmendonez/reading-list'
-        },
-        {
-          class: 'devicon-d3js-plain',
-          animationDelay: '.8s',
-          title: 'D3',
-          url: 'https://darrylmendonez.github.io/budget-planner/'
-        },
-        {
           class: 'devicons devicons-firebase',
           animationDelay: '.2s',
           title: 'Firebase',
           url: 'https://email-generator-db.firebaseapp.com/',
-        },
-        {
-          class: 'devicons devicons-angular fa-5x',
-          animationDelay: '.4s',
-          title: 'Angular',
-          url: 'https://darrylmendonez.github.io/ctf-white-label-kiosk-demo/',
-          github: 'https://github.com/darrylmendonez/ctf-white-label-kiosk-demo',
-        },
-        {
-          class: 'devicons devicons-react',
-          animationDelay: '.6s',
-          title: 'React',
-          url: 'https://darrylmendonez.github.io/minimallists/',
-          github: 'https://github.com/darrylmendonez/email-generator',
-        },
-        {
-          class: 'devicons devicon-vuejs-plain',
-          animationDelay: '.8s',
-          title: 'Vue.js',
-          url: 'https://geo-maps-tracker.web.app/'
         },
       ]
     },
