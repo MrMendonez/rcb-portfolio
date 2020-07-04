@@ -158,64 +158,64 @@ new Vue({
       backgroundPath: 'img/tools/macdesktop.jpg',
       tools: [
         {
-          class: 'devicons devicons-react',
+          class: 'devicon-react-original',
           animationDelay: '.6s',
           title: 'React',
           url: 'https://darrylmendonez.github.io/find-inspiration/',
         },
         {
-          class: 'devicons devicons-atom',
+          class: 'devicon-atom-original',
           animationDelay: '.8s',
           title: 'Redux',
           url: `https://pensive-spence-9a2907.netlify.app/`,
         },
         {
-          class: 'devicons devicons-angular fa-5x',
+          class: 'devicon-angularjs-plain',
           animationDelay: '.4s',
           title: 'Angular',
           url: 'https://www.imne.com/',
         },
         {
-          class: 'devicons devicon-vuejs-plain',
+          class: 'devicon-vuejs-plain',
           animationDelay: '.8s',
           title: 'Vue.js',
           url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/js/app.js'
         },
         {
-          class: 'devicons devicons-javascript_badge',
+          class: 'devicon-javascript-plain',
           animationDelay: '.8s',
           title: 'JavaScript',
           url: `https://medium.com/swlh/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
         },
         {
-          class: 'devicons devicons-jquery',
+          class: 'devicon-jquery-plain',
           animationDelay: '.2s',
           title: 'jQuery',
           url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
           github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
         },
         {
-          class: 'fas devicon-typescript-plain',
+          class: 'devicon-typescript-plain',
           animationDelay: '.6s',
           title: 'TypeScript',
         },
         {
-          class: 'devicons devicons-html5',
+          class: 'devicon-html5-plain',
           animationDelay: '.2s',
           title: 'HTML5',
         },
         {
-          class: 'devicons devicons-css3',
+          class: 'devicon-css3-plain',
           animationDelay: '.4s',
           title: 'CSS3',
         },
         {
-          class: 'devicons devicon-sass-original',
+          class: 'devicon-sass-original',
           animationDelay: '.6s',
           title: 'Sass',
         },
         {
-          class: 'devicons devicons-bootstrap',
+          class: 'devicon-bootstrap-plain',
           animationDelay: '.4s',
           title: 'Bootstrap',
           url: 'https://www.chrysalismedical.com/',
@@ -227,13 +227,13 @@ new Vue({
           url: 'https://www.imne.com/',
         },
         {
-          class: 'devicons devicons-github',
+          class: 'devicon-github-plain',
           animationDelay: '.8s',
           title: 'GitHub',
           url: 'https://github.com/darrylmendonez',
         },
         {
-          class: 'devicons devicon-electron-original',
+          class: 'devicon-electron-original',
           animationDelay: '.2s',
           title: 'Electron',
         },
