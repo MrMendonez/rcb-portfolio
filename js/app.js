@@ -81,6 +81,7 @@ new Vue({
             '<em>Axios</em> fetches the data',
             '<em>CSS Flexbox and Grid Layout</em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
             '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
+            `<em>Cypress</em> is used for <em>unit and e2e testing</em>`,
             `<a href="https://medium.com/swlh/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> - A tutorial I wrote up based on this app was selected by Medium's editorial curation staff to be featured on their homepage, app, topic page, and emails to readers interested in Javascript`
           ],
           github: 'https://github.com/darrylmendonez/find-inspiration',
