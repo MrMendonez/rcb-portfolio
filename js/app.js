@@ -61,8 +61,8 @@ new Vue({
       title: 'Front-End Web Developer',
       descriptions: [
         `<i class="fa fa-smile fa-2x"></i> Welcome and thank you for taking the time to get to know me! My passions include web development, photography, traveling, and hiking. When I\'m not in the office, you can probably find me coding at random cafes, exploring all kinds of ethnic restaurants, or taking <a href="https://unsplash.com/@darrylbrian" target="_blank">photographs</a> of the beauty that is nature.`,
-        `<i class="fa fa-code fa-2x"></i> Currently, I am a front-end web developer at Nucleus Global, a world-wide medical communications company. My responsibilities include the full-cycle development of responsive websites, desktop apps, and augmented-reality apps showcasing clinical trials hosted online and at congresses throughout the world each with over 10,000 medical attendees in the pharmaceutical space. Medical clients I've developed web apps for include Novartis, Celgene, Merck, Bristol-Myers Squibb, Abbvie, Boehringer Ingelheim, Gilead, Novo Nordisk, Amgen, GSK, Seattle Genetics, Pfizer, and more.`,
-        `<i class="fa fa-graduation-cap fa-2x"></i> I'm a graduate from the New Jersey Institute of Technology with a Bachelor's in Computer Engineering, Rutgers University with a Master's in Education, and Rutgers Coding Bootcamp, where I gained the skills to become a full-stack web developer. Overall, as a life-long learner, I continue to learn more in everything I do as I strive to become the best version of myself.`,
+        `<i class="fa fa-code fa-2x"></i> Currently, I am a senior applications engineer on the Data Science Platform team at Medidata Solutions where I work on a product that enables ingestion and standardization of clinical datasets into the Medidata platform. This data is then analyzed and used in various Medidata products, delivering value and insights to customers which includes Pfizer and Moderna for their COVID-19 vaccine clinical trials.`,
+        `<i class="fa fa-graduation-cap fa-2x"></i> I'm a graduate from the New Jersey Institute of Technology with a Bachelor's in Computer Engineering, Rutgers University with a Master's in Education, and Rutgers Coding Bootcamp's Full-Stack Web Development program. Overall, as a life-long learner, I continue to learn more in everything I do as I strive to become the best version of myself.`,
       ]
     },
     projectsSection: {
@@ -82,26 +82,12 @@ new Vue({
             '<em>CSS Flexbox and Grid Layout</em> is used to give the image gallery a mosaic style while also stacking the images for smaller browser widths or mobile devices',
             '<em>Bootstrap</em> is the css framework used to for the modal, navbar, and search form',
             `<em>Cypress</em> is used for <em>unit and e2e testing</em>`,
-            `<a href="https://medium.com/swlh/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> - A tutorial I wrote up based on this app was selected by Medium's editorial curation staff to be featured on their homepage, app, topic page, and emails to readers interested in Javascript`
+            `<a href="https://darrylmendonez.medium.com/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> - A tutorial I wrote up based on this app was selected by Medium's editorial curation staff to be featured on their homepage, app, topic page, and emails to readers interested in Javascript`
           ],
           github: 'https://github.com/darrylmendonez/find-inspiration',
         },
         {
           id: 2,
-          url: 'https://email-generator-db.firebaseapp.com/',
-          imgPath: 'img/projects/email-generator.png',
-          title: 'Email Generator',
-          description: 'This app is designed to make creating an html email simple. The idea is to build a template that would be used and reused by a company for sending emails. Once a design and format has been discussed with and approved by the client, the template can be styled to match the design and the client can simply fill out a form that will collect the contents of the email. Once submitted, the content would be appropriately placed within the template and the client can copy and paste the email directly into their email application.',
-          tools: [
-            'Built with <em>React and Redux</em>',
-            '<em>MaterializeCSS</em>',
-            '<em>Firebase</em> is used for its <em>real-time database</em> to collect data submitted via a form and <em>authentication for registration and login</em>',
-            '<em>Moment.js</em> is used to add date and time of when email template is created and for <em>notifications</em>'
-          ],
-          github: 'https://github.com/darrylmendonez/email-generator',
-        },
-        {
-          id: 3,
           url: 'https://darrylmendonez.github.io/minimallists/',
           imgPath: 'img/projects/minimallists.png',
           title: 'Minimal Lists',
@@ -115,7 +101,7 @@ new Vue({
           github: `https://github.com/darrylmendonez/minimallists`
         },
         {
-          id: 4,
+          id: 3,
           url: 'https://www.imne.com/',
           imgPath: 'img/projects/imne.png',
           title: 'IMNE',
@@ -127,19 +113,7 @@ new Vue({
           ],
         },
         {
-          id: 5,
-          url: 'https://www.scientificpathways.com/',
-          imgPath: 'img/projects/scientific-pathways.png',
-          title: 'Scientific Pathways',
-          description: 'Created this single-page website for Scientific Pathways, a full-service medical communications group with offices around the globe.',
-          tools: [
-            'Built with <em>AngularJS</em>',
-            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax effect</em> as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
-          ],
-        },
-        {
-          id: 6,
+          id: 4,
           url: 'http://www.chrysalismedical.com/',
           imgPath: 'img/projects/chrysalis-medical.png',
           title: 'Chrysalis Medical',
@@ -186,7 +160,7 @@ new Vue({
           class: 'devicon-javascript-plain',
           animationDelay: '.8s',
           title: 'JavaScript',
-          url: `https://medium.com/swlh/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
+          url: `https://darrylmendonez.medium.com/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
         },
         {
           class: 'devicon-jquery-plain',
@@ -262,10 +236,10 @@ new Vue({
           imgPath: 'img/community-service/javascript-basics.jpg',
           descriptions: [
             `I write to share my knowledge with the web development community as well as an exercise in reaffirming my knowledge. By writing a blog, it allows me to think deeply about an aspect, question and reassess what I think I know about it, and ultimately finish with a deeper level of understanding.`,
-            `My posts on the <a href="https://medium.com/swlh/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4" target="_blank">JavaScript Execution Order</a> and <a href="https://medium.com/swlh/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> were selected by Medium’s curators based on its quality to be recommended to readers interested in JavaScript across their homepage, app, topic page, and emails.`,
+            `My posts on the <a href="https://darrylmendonez.medium.com/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4" target="_blank">JavaScript Execution Order</a> and <a href="https://darrylmendonez.medium.com/unsplash-api-with-react-part-1-4919c69f7edc?source=friends_link&sk=4dcc2d62e2aeed4730c3824c4edf905f" target="_blank">Unsplash API with React Part 1</a> were selected by Medium’s curators based on its quality to be recommended to readers interested in JavaScript across their homepage, app, topic page, and emails.`,
           ],
           btnText: 'View Blog Posts',
-          url: 'https://medium.com/@dmendonez'
+          url: 'https://darrylmendonez.medium.com/'
         },
         {
           title: 'Teaching Assistant at Rutgers Coding Bootcamp',
@@ -329,7 +303,7 @@ new Vue({
           class: 'fab fa-linkedin',
         },
         {
-          url: 'https://medium.com/@dmendonez',
+          url: 'https://darrylmendonez.medium.com/',
           title: 'Medium<br><br>',
           animationDelay: '.8s',
           class: 'fab fa-medium',
