@@ -32,7 +32,7 @@
           <div class="container">
             <a href="#home" class="brand-logo focus-in-expand-fwd wow show-on-large" v-if="isScrollPastTitle">{{ title }}</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" key="index"><a :href="navItem.link" class="focus-in-expand-fwd wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
+              <li v-for="(navItem, index) in navItems" class="waves-effect waves-light" :key="index"><a :href="navItem.link" class="focus-in-expand-fwd wow" :data-wow-delay="navItem.delay">{{ navItem.title }}</a></li>
             </ul>
           </div>
         </div>
