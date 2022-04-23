@@ -100,38 +100,18 @@ new Vue({
           ],
           github: `https://github.com/darrylmendonez/minimallists`
         },
-        {
-          id: 3,
-          url: 'https://www.imne.com/',
-          imgPath: 'img/projects/imne.png',
-          title: 'IMNE',
-          description: 'Created this single-page website for the Institute for Medical and Nursing Education, a full-service, accredited medical education company devoted to enhancing the knowledge of healthcare professionals',
-          tools: [
-            'Built with <em>Angular 8</em>',
-            '<em>MaterializeCSS</em> is the CSS framework which allows for the <em>parallax</em> effect as a user scrolls up and down. When the user clicks on a navbar item <em>smooth-scrolling</em> is used to gracefully scroll to the appropriate section.',
-            'This site was built with all devices in mind. Viewing this <em>responsive site</em> on mobile, tablet, or desktop will adjust the elements for the best viewing experience'
-          ],
-        },
-        {
-          id: 4,
-          url: 'http://www.chrysalismedical.com/',
-          imgPath: 'img/projects/chrysalis-medical.png',
-          title: 'Chrysalis Medical',
-          description: 'Created this minimalist-style website for Chrysalis Medical, a full-service agency that is dedicated to partnering with clients in the pharmaceutical industry to provide high-quality scientific and strategic medical communications support',
-          tools: [
-            'Built with <em>AngularJS</em> and <em>Bootstrap</em>',
-            '<em>Angular Animate</em> is used for <em>fade-in page transitions</em>',
-            '<em>Animate.css</em> is used to animate elements on each page load',
-            '<em>Wow.js</em> is used to control the timing of each animation',
-            '<em>AngularJS Form Validation</em> is used on the Contact Us form to prevent invalidated data from being submitted. It is also used to provide appropriate border colors for each form input - blue is active, green is valid input, and red is invalid input. The Submit button will also fire success or error messages that zoom in and out as they enter or exit. Submit button will also shake when invalid information is trying to be submitted.'
-          ],
-        },
       ]
     },
     toolsSection: {
       title: 'Tools',
       backgroundPath: 'img/tools/macdesktop.jpg',
       tools: [
+        {
+          class: 'devicon-javascript-plain',
+          animationDelay: '.8s',
+          title: 'JavaScript',
+          url: `https://darrylmendonez.medium.com/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
+        },
         {
           class: 'devicon-react-original',
           animationDelay: '.6s',
@@ -148,19 +128,13 @@ new Vue({
           class: 'devicon-angularjs-plain',
           animationDelay: '.4s',
           title: 'Angular',
-          url: 'https://www.imne.com/',
+          url: '',
         },
         {
           class: 'devicon-vuejs-plain',
           animationDelay: '.8s',
           title: 'Vue.js',
-          url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/js/app.js'
-        },
-        {
-          class: 'devicon-javascript-plain',
-          animationDelay: '.8s',
-          title: 'JavaScript',
-          url: `https://darrylmendonez.medium.com/javascript-execution-order-e1bebc3976ca?source=friends_link&sk=1f010a999ef44cc098d30fd5769f43e4`,
+          url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/index.html'
         },
         {
           class: 'devicon-jquery-plain',
@@ -193,13 +167,7 @@ new Vue({
           class: 'devicon-bootstrap-plain',
           animationDelay: '.4s',
           title: 'Bootstrap',
-          url: 'https://www.chrysalismedical.com/',
-        },
-        {
-          class: 'devicons devicons-materializecss',
-          animationDelay: '.6s',
-          title: 'Materialize',
-          url: 'https://www.imne.com/',
+          url: '',
         },
         {
           class: 'devicon-github-plain',
@@ -208,9 +176,15 @@ new Vue({
           url: 'https://github.com/darrylmendonez',
         },
         {
-          class: 'devicon-electron-original',
+          class: 'devicon-jest-plain',
+          animationDelay: '.6s',
+          title: 'Jest',
+          url: '',
+        },
+        {
+          class: 'fas fa-clipboard-check',
           animationDelay: '.2s',
-          title: 'Electron',
+          title: 'Cypress',
         },
         {
           class: 'fas fa-chart-area',
@@ -220,10 +194,10 @@ new Vue({
           github: 'https://github.com/darrylmendonez/charts',
         },
         {
-          class: 'devicons devicons-firebase',
+          class: 'fas fa-chart-line',
           animationDelay: '.2s',
-          title: 'Firebase',
-          url: 'https://email-generator-db.firebaseapp.com/',
+          title: 'Analytics',
+          url: '',
         },
       ]
     },
