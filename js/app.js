@@ -61,7 +61,7 @@ new Vue({
       title: 'Front-End Web Developer',
       descriptions: [
         `<i class="fa fa-smile fa-2x"></i> Welcome and thank you for taking the time to get to know me! My passions include web development, photography, traveling, and hiking. When I\'m not in the office, you can probably find me coding at random cafes, exploring all kinds of ethnic restaurants, or taking <a href="https://unsplash.com/@darrylbrian" target="_blank">photographs</a> of the beauty that is nature.`,
-        `<i class="fa fa-code fa-2x"></i> I am a Senior Applications Engineer on the Data Science Platform team at Medidata Solutions. I am the Front-End Tech Lead working on SaaS products that deliver insight on clinical trial data to more than one million registered users including Moderna's COVID-19 vaccine trials.`,
+        `<i class="fa fa-code fa-2x"></i> I am a Senior Applications Engineer on the Data Science Platform team at Medidata Solutions. I am a Front-End Tech Lead working on SaaS products that deliver insight on clinical trial data to more than one million registered users including Moderna's COVID-19 vaccine trials.`,
         `<i class="fa fa-graduation-cap fa-2x"></i> I'm a graduate from the New Jersey Institute of Technology with a Bachelor's in Computer Engineering, Rutgers University with a Master's in Education, and Rutgers University's Full-Stack Web Development bootcamp program. Overall, as a life-long learner, I continue to learn more in everything I do as I strive to become the best version of myself.`,
       ]
     },
@@ -119,15 +119,48 @@ new Vue({
           url: 'https://darrylmendonez.github.io/find-inspiration/',
         },
         {
-          class: 'devicon-atom-original',
+          class: 'devicon-redux-original',
           animationDelay: '.8s',
           title: 'Redux',
           url: `https://pensive-spence-9a2907.netlify.app/`,
         },
         {
-          class: 'devicon-angularjs-plain',
+          class: 'devicon-bootstrap-plain',
           animationDelay: '.4s',
-          title: 'Angular',
+          title: 'Bootstrap',
+          url: '',
+        },
+        {
+          class: 'devicon-jest-plain',
+          animationDelay: '.6s',
+          title: 'Jest',
+          url: '',
+        },
+        {
+          class: 'fas fa-clipboard-check',
+          animationDelay: '.2s',
+          title: 'Cypress',
+        },
+        {
+          class: 'devicon-git-plain',
+          animationDelay: '.4s',
+          title: 'Git',
+        },
+        {
+          class: 'devicon-github-plain',
+          animationDelay: '.8s',
+          title: 'GitHub',
+          url: 'https://github.com/darrylmendonez',
+        },
+        {
+          class: 'devicon-sass-original',
+          animationDelay: '.6s',
+          title: 'Sass',
+        },
+        {
+          class: 'fas fa-chart-line',
+          animationDelay: '.2s',
+          title: 'Analytics',
           url: '',
         },
         {
@@ -137,11 +170,10 @@ new Vue({
           url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/index.html'
         },
         {
-          class: 'devicon-jquery-plain',
-          animationDelay: '.2s',
-          title: 'jQuery',
-          url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
-          github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
+          class: 'devicon-angularjs-plain',
+          animationDelay: '.4s',
+          title: 'Angular',
+          url: '',
         },
         {
           class: 'devicon-typescript-plain',
@@ -159,45 +191,11 @@ new Vue({
           title: 'CSS3',
         },
         {
-          class: 'devicon-sass-original',
-          animationDelay: '.6s',
-          title: 'Sass',
-        },
-        {
-          class: 'devicon-bootstrap-plain',
-          animationDelay: '.4s',
-          title: 'Bootstrap',
-          url: '',
-        },
-        {
-          class: 'devicon-github-plain',
-          animationDelay: '.8s',
-          title: 'GitHub',
-          url: 'https://github.com/darrylmendonez',
-        },
-        {
-          class: 'devicon-jest-plain',
-          animationDelay: '.6s',
-          title: 'Jest',
-          url: '',
-        },
-        {
-          class: 'fas fa-clipboard-check',
+          class: 'devicon-jquery-plain',
           animationDelay: '.2s',
-          title: 'Cypress',
-        },
-        {
-          class: 'fas fa-chart-area',
-          animationDelay: '.4s',
-          title: 'Chart.js',
-          url: 'https://darrylmendonez.github.io/charts/',
-          github: 'https://github.com/darrylmendonez/charts',
-        },
-        {
-          class: 'fas fa-chart-line',
-          animationDelay: '.2s',
-          title: 'Analytics',
-          url: '',
+          title: 'jQuery',
+          url: 'http://darrylmendonez.github.io/rocks-paper-scissors/',
+          github: 'https://github.com/darrylmendonez/rocks-paper-scissors'
         },
       ]
     },
