@@ -245,7 +245,15 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="(info, index) in socialSection.socialInfo" v-if="index >= 2" :key="info.title" class="col s6 m4 l4 pulse-on-mouseenter">
+          <div v-for="(info, index) in socialSection.socialInfo" v-if="((index === 2) || (index === 3))" :key="info.title" class="col s6 m4 l4 pulse-on-mouseenter">
+            <a :href="info.url" target="_blank">
+              <div class="card-panel grey darken-3 center-align z-depth-5">
+                <h5 class="focus-in-contract-bck wow" :data-wow-delay="info.animationDelay" v-html="info.title"></h5>
+                <i :class="info.class" class="fab fa-5x focus-in-contract-bck wow" :data-wow-delay="info.animationDelay"></i>
+              </div>
+            </a>
+          </div>
+          <div v-for="(info, index) in socialSection.socialInfo" v-if="index === socialSection.socialInfo.length - 1" :key="info.title" class="col offset-s3 s6 m4 l4 pulse-on-mouseenter">
             <a :href="info.url" target="_blank">
               <div class="card-panel grey darken-3 center-align z-depth-5">
                 <h5 class="focus-in-contract-bck wow" :data-wow-delay="info.animationDelay" v-html="info.title"></h5>
