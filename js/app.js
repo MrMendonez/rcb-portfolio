@@ -164,16 +164,16 @@ new Vue({
           url: '',
         },
         {
-          class: 'devicon-vuejs-plain',
-          animationDelay: '.8s',
-          title: 'Vue.js',
-          url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/index.html'
-        },
-        {
           class: 'devicon-angularjs-plain',
           animationDelay: '.4s',
           title: 'Angular',
           url: '',
+        },
+        {
+          class: 'devicon-vuejs-plain',
+          animationDelay: '.8s',
+          title: 'Vue.js',
+          url: 'https://github.com/darrylmendonez/darrylmendonez.github.io/blob/master/index.html'
         },
         {
           class: 'devicon-typescript-plain',
